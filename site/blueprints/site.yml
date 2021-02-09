@@ -1,0 +1,22 @@
+title: Blog
+
+sections:
+
+  drafts:
+    headline: Drafts
+    type: pages
+    info: "{{page.keywords}}"
+    status: drafts
+    templates: post
+
+  published:
+    headline: Published Articles
+    type: pages
+    info: "{{page.keywords}}"
+    status: listed
+    templates: post
+
+  about:
+    headline: About
+    type: pages
+    templates: info
