@@ -1,12 +1,15 @@
-<html>
-	<head>
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<?php snippet('meta/html'); ?>
 
-			<title>Wartenau</title>
+	<?= css('assets/css/index.css'); ?>
+	<?= css('@auto'); ?>
 
-			<?= css('assets/css/index.css'); ?>
-			<?= css('@auto'); ?>
-
-	</head>
+</head>
+<body>
 <body>
 
 	<h1>
@@ -14,10 +17,3 @@
 			<?= $site->title() ?>
 		</a>
 	</h1>
-
-	<h3>Authors</h3>
-	<nav>
-		<?php foreach( $pages as $child ): ?>
-			<a href="<?= $child->url() ?>"><?= $child->title() ?></a>
-		<?php endforeach; ?>
-	</nav>
