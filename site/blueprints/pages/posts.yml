@@ -1,0 +1,21 @@
+title: Blog
+
+icon: layers
+
+options:
+  changeSlug: false
+  changeStatus: false
+  delete: false
+  duplicate: false
+
+sections:
+
+  drafts:
+    extends: sections/posts
+    headline: Drafts
+    status: drafts
+
+  published:
+    extends: sections/posts
+    headline: Published
+    status: listed

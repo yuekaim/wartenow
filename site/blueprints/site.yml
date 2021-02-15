@@ -1,22 +1,16 @@
-title: Blog
+title: Wartenau
 
-sections:
+columns:
 
-  drafts:
-    headline: Drafts
-    type: pages
-    info: "{{page.keywords}}"
-    status: drafts
-    templates: post
+  - width: 1/2
+    sections:
 
-  published:
-    headline: Published Articles
-    type: pages
-    info: "{{page.keywords}}"
-    status: listed
-    templates: post
+      posts:
+        extends: sections/posts
+        parent: site.page('posts')
 
-  about:
-    headline: About
-    type: pages
-    templates: info
+  - width: 1/2
+    sections:
+
+      pages:
+        extends: sections/pages

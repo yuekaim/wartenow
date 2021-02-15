@@ -1,0 +1,7 @@
+lable: Credits
+type: structure
+fields:
+  role:
+    type: text
+  cerdit:
+    type: text

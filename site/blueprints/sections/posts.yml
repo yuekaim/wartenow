@@ -1,0 +1,8 @@
+headline: Pages
+type: pages
+empty: No pages created yet
+headline: Posts
+sortable: false
+info: "{{page.keywords}}"
+image:
+  back: white

@@ -1,0 +1,6 @@
+type: structure
+fields:
+
+  link:
+    type: url
+    required: true

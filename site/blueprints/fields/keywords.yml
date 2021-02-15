@@ -1,0 +1,4 @@
+type: tags
+options: query
+max: 10
+query: page.siblings.pluck("tags", ",", true)
