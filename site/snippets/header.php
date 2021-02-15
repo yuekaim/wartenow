@@ -17,3 +17,8 @@
 			<?= $site->title() ?>
 		</a>
 	</h1>
+
+	<?php $info = $site->find('info') ?>
+	<a href="<?= $info->url() ?>">
+		<?= $info->title() ?>
+	</a>
