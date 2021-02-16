@@ -2,6 +2,9 @@ main{
   color: #aaa5b2;
   font-size: 1.3em;
   margin: 30px 15vw 50px 15vw;
+  z-index: 0;
+  color:black;
+  mix-blend-mode: darken;
 }
 
 header{
@@ -19,10 +22,23 @@ header{
   padding: 5px 15px 0px 15px;
   transition: box-shadow 0.5s;
   margin: 0 0 0 150px;
+
+  color: black;
+  border: 1px solid black;
 }
 
 
 .downloads:hover{
   box-shadow: inset 0 0 5px #aaa5b2;
   transition: 0.5s;
+}
+
+#titleImg{
+  display: block;
+  width: 100vw;
+  filter: blur(100px);
+  z-index: -1000;
+  position: fixed;
+  top: 20vh;
+  left: 0px;
 }

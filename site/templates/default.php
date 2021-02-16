@@ -16,10 +16,10 @@
 
 	<?php if( $image = $page->titleImage()->toFile() ): ?>
 			<figure>
-					<img src="<?= $image->url() ?>" />
+					<img id="titleImg" src="<?= $image->url() ?>" />
 			</figure>
 	<?php endif ?>
-	
+
 	<main>
 		<?= $page->text()->kirbytext() ?>
 	</main>

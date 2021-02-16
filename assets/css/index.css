@@ -18,18 +18,18 @@ a{
   position: fixed;
   top: 20px;
   right: 20px;
+  z-index: 2000;
 }
 
 .tags{
   flex-direction: row;
-  background-color: #f0eff188;
+  background-color: #f0eff1;
   color: #22c959;
   border: 1px solid #22c959;
   font-size: 1em;
   border-radius: 50px;
   margin: 5px;
   padding: 5px 15px 0px 15px;
-  backdrop-filter: blur(10px);
 }
 
 .tags:hover{
