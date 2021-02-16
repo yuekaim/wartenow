@@ -34,7 +34,7 @@ Credits:
 
 ----
 
-Keywords: Projects, Research, tag1
+Keywords: Projects, Research, tag1, tag2
 
 ----
 

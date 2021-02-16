@@ -1,4 +1,5 @@
 <?php snippet('header'); ?>
+<?php snippet('keywordsList'); ?>
 
 <article>
 	<header>
