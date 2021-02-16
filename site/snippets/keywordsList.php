@@ -1,4 +1,7 @@
 <div class="keywords">
+    <button>All</button>
+    <button>Recently</button>
+    <button>Upcoming</button>
 
     <?php
       $articles = $kirby->collection('posts');
