@@ -1,7 +1,7 @@
 <div class="keywords">
-    <button>All</button>
-    <button>Recently</button>
-    <button>Upcoming</button>
+    <div class="tags">All</div>
+    <div class="tags">Recently</div>
+    <div class="tags">Upcoming</div>
 
     <?php
       $articles = $kirby->collection('posts');
@@ -10,6 +10,6 @@
     ?>
 
     <?php foreach($tags as $tag): ?>
-      <button><?php echo html($tag) ?></button>
+      <div class="tags"><?php echo html($tag) ?></div>
     <?php endforeach ?>
 </div>

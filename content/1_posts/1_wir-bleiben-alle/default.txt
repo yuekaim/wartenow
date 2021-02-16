@@ -35,7 +35,7 @@ Credits:
 
 ----
 
-Keywords: tag1, tag2
+Keywords: tag1
 
 ----
 
