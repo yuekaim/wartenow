@@ -1,4 +1,4 @@
-<div class="keywords">
+<div class="keywords_list">
     <div class="tags">All</div>
     <div class="tags">Recently</div>
     <div class="tags">Upcoming</div>

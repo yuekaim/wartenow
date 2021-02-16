@@ -1,0 +1,28 @@
+main{
+  color: #aaa5b2;
+  font-size: 1.3em;
+  margin: 30px 15vw 50px 15vw;
+}
+
+header{
+  margin: 0 0 0 150px;
+}
+
+.downloads{
+  flex-direction: row;
+  color: #aaa5b2;
+  border: 1px solid #aaa5b2;
+  font-size: 1em;
+  border-radius: 50px;
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px 15px 0px 15px;
+  transition: box-shadow 0.5s;
+  margin: 0 0 0 150px;
+}
+
+
+.downloads:hover{
+  box-shadow: inset 0 0 5px #aaa5b2;
+  transition: 0.5s;
+}

@@ -7,6 +7,19 @@
 		<p class="date"><?= $page->date() ?></p>
 	</header>
 
+	<?php
+	$files =  $page->downloads()->toFiles();
+	foreach($files as $file): ?>
+		<a class="downloads" href="<?= $file->url() ?>" target="_blank"><?= $file->filename() ?></a>
+	<?php endforeach ?>
+
+
+	<?php if( $image = $page->titleImage()->toFile() ): ?>
+			<figure>
+					<img src="<?= $image->url() ?>" />
+			</figure>
+	<?php endif ?>
+	
 	<main>
 		<?= $page->text()->kirbytext() ?>
 	</main>

@@ -15,7 +15,9 @@ columns:
         label: Text
         type: textarea
 
-      downloads: fields/downloads
+      downloads:
+        label: Downloads
+        type: files
 
       links: fields/links
 

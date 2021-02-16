@@ -1,18 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
 body{
   background-color: #f0eff1;
+  font-family: 'Tajawal', sans-serif;
+  color: #22c959;
 }
 
-.keywords{
+a{
+  text-decoration: none;
+  color: #22c959;
+}
+
+.keywords_list{
   display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
 
 .tags{
   flex-direction: row;
-  background-color: #f0eff1;
+  background-color: #f0eff188;
   color: #22c959;
   border: 1px solid #22c959;
   font-size: 1em;
   border-radius: 50px;
   margin: 5px;
-  padding: 5px 15px 5px 15px;
+  padding: 5px 15px 0px 15px;
+  backdrop-filter: blur(10px);
+}
+
+.tags:hover{
+  background-color: #22c959;
+  color: #f0eff1;
+  transition: 0.5s;
+  cursor: pointer;
 }
