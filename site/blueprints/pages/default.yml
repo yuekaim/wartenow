@@ -26,7 +26,13 @@ columns:
 
       credits: fields/credits
 
-      keywords: fields/keywords
+      keywords:
+        label: Keywords
+        type: tags
+        accept: options
+        options: query
+        query:
+          fetch: page.siblings.pluck("keywords", ",", true)
 
   - width: 1/3
     sections:
