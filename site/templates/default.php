@@ -15,14 +15,12 @@
 
 
 	<?php if( $image = $page->titleImage()->toFile() ): ?>
-			<figure>
-					<img id="titleImg" src="<?= $image->url() ?>" />
-			</figure>
+		<figure>
+			<img id="titleImg" src="<?= $image->url() ?>" />
+		</figure>
 	<?php endif ?>
 
-	<main>
-		<?= $page->text()->kirbytext() ?>
-	</main>
+	<?php snippet('postContent'); ?>
 
 	<ul class="authors">
 		<?php foreach( $page->authors()->split() as $author ): ?>

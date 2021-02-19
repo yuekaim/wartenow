@@ -1,0 +1,11 @@
+label: Content
+type: blocks
+empty: Click here to start adding some content
+fieldsets:
+  - text
+  - quote
+  - heading
+  - list
+  - image
+  - gallery
+  - video

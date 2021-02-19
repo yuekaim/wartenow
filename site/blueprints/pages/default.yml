@@ -7,13 +7,14 @@ columns:
   - width: 2/3
     fields:
 
+      subtitle:
+        type: text
+
       date:
         type: date
         label: Publishing date
 
-      text:
-        label: Text
-        type: textarea
+      text: fields/content
 
       downloads:
         label: Downloads
