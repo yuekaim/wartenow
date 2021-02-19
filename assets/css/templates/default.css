@@ -26,6 +26,10 @@ main{
   border: 1px dashed #22c959;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+}
 
 .downloads{
   flex-direction: row;
