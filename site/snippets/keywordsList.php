@@ -1,7 +1,9 @@
 <div class="keywords_list">
-    <div class="tags"></div>
-    <div class="tags"></div>
-    <div class="tags"></div>
+
+    <?php for ($i = 0; $i < 3; $i++): ?>
+      <div class="tags"></div>
+    <?php endfor; ?>
+
     <div class="tags real_tags">All</div>
     <div class="tags real_tags">Recently</div>
     <div class="tags real_tags">Upcoming</div>
@@ -16,16 +18,8 @@
       <div class="tags real_tags"><?php echo html($tag) ?></div>
     <?php endforeach ?>
 
-    <div class="tags"></div>
-    <div class="tags"></div>
-    <div class="tags"></div>
-    <div class="tags"></div>
-    <div class="tags"></div>
-    <div class="tags"></div>
-    <div class="tags"></div>
-    <div class="tags"></div>
-    <div class="tags"></div>
-    <div class="tags"></div>
-    <div class="tags"></div>
-    <div class="tags"></div>
+    <?php for ($i = 0; $i < 50; $i++): ?>
+      <div class="tags"></div>
+    <?php endfor; ?>
+
 </div>
