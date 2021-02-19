@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
 
 body{
-  background-color: #f0eff1;
+  background-color: #F0EFF1;
   font-family: 'Tajawal', sans-serif;
   color: #22c959;
+}
+
+::selection {
+  color: #f0eff1;
+  background: #aaa5b288;
+
 }
 
 a{
@@ -32,7 +38,7 @@ a{
   padding: 5px 15px 0px 15px;
 }
 
-.tags:hover{
+.real_tags:hover{
   background-color: #22c959;
   color: #f0eff1;
   transition: 0.5s;

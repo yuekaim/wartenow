@@ -1,7 +1,10 @@
 <div class="keywords_list">
-    <div class="tags">All</div>
-    <div class="tags">Recently</div>
-    <div class="tags">Upcoming</div>
+    <div class="tags"></div>
+    <div class="tags"></div>
+    <div class="tags"></div>
+    <div class="tags real_tags">All</div>
+    <div class="tags real_tags">Recently</div>
+    <div class="tags real_tags">Upcoming</div>
 
     <?php
       $articles = $kirby->collection('posts');
@@ -10,6 +13,19 @@
     ?>
 
     <?php foreach($tags as $tag): ?>
-      <div class="tags"><?php echo html($tag) ?></div>
+      <div class="tags real_tags"><?php echo html($tag) ?></div>
     <?php endforeach ?>
+
+    <div class="tags"></div>
+    <div class="tags"></div>
+    <div class="tags"></div>
+    <div class="tags"></div>
+    <div class="tags"></div>
+    <div class="tags"></div>
+    <div class="tags"></div>
+    <div class="tags"></div>
+    <div class="tags"></div>
+    <div class="tags"></div>
+    <div class="tags"></div>
+    <div class="tags"></div>
 </div>
