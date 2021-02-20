@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
 
+@keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 body{
   background-color: #F0EFF1;
   font-family: 'Tajawal', sans-serif;
@@ -25,7 +30,7 @@ a{
   width: 100vw;
   left: 0px;
   top: 0px;
-  z-index: -500;
+  z-index: 0;
 }
 
 .tags{
@@ -36,8 +41,8 @@ a{
   border-radius: 0;
   background-color: none;
   border-bottom: 1px solid #22c959;
-  margin: 0px;
-  height: 20px;
+  height: 25px;
+  text-align: justify;
 }
 
 .real_tags:hover{
@@ -45,8 +50,12 @@ a{
   color: #F0EFF1;
 }
 
+span{opacity: 0;}
+#selected span{opacity: 1;}
+
 /* post list on home page*/
 .posts{
+  animation: fade 1s;
   position: absolute;
   top: 0;
   right: 0;
@@ -57,6 +66,8 @@ a{
   z-index: 1000;
 }
 .post{
+  flex-grow: 3;
+  height: auto;
   background-color: #F0EFF1ff;
   border: 1px solid #22c959;
   font-size: 1em;

@@ -1,6 +1,13 @@
 <?php snippet('header'); ?>
 <?php snippet('keywordsList'); ?>
 
+<!--image bg -->
+<?php if( $image = $page->titleImage()->toFile() ): ?>
+	<figure>
+		<img id="titleImg" src="<?= $image->url() ?>" />
+	</figure>
+<?php endif ?>
+
 <article>
 	<header>
 		<h1><?= $page->title() ?></h1>
@@ -11,12 +18,6 @@
 
 
 	<div class="notes">
-
-		<?php if( $image = $page->titleImage()->toFile() ): ?>
-			<figure>
-				<img id="titleImg" src="<?= $image->url() ?>" />
-			</figure>
-		<?php endif ?>
 
 		<ul class="authors">
 			<p>Author(s)</p>
@@ -29,7 +30,8 @@
 			<?php
 			$files =  $page->downloads()->toFiles();
 			foreach($files as $file): ?>
-				<a class="downloads" href="<?= $file->url() ?>" target="_blank"><?= $file->filename() ?></a>
+				<a class="downloads" href="<?= $file->url() ?>" target="_blank">
+					<span><?= $file->filename() ?></span>.<?= pathinfo($file, PATHINFO_EXTENSION) ?></a>
 			<?php endforeach ?>
 		</div>
 

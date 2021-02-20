@@ -4,9 +4,10 @@
       <div class="tags"></div>
     <?php endfor; ?>
 
-    <div class="tags real_tags">All</div>
-    <div class="tags real_tags">Recently</div>
-    <div class="tags real_tags">Upcoming</div>
+    <a <?php if($page->url() == $site->url()) {echo 'id="selected"';} ?>
+    class="tags real_tags" href="<?= $site->url() ?>"><span> ● </span>All</a>
+    <a class="tags real_tags"><span> ● </span>Recently</a>
+    <a class="tags real_tags"><span> ● </span>Upcoming</a>
 
     <?php
       $articles = $kirby->collection('posts');
@@ -15,9 +16,9 @@
     ?>
 
     <?php foreach($tags as $tag): ?>
-      <div class="tags real_tags"><a href="<?= url($page->url(), ['params' => ['tag' => $tag]]) ?>">
-        <?= html($tag) ?>
-      </a></div>
+      <a <?php if($tag == param('tag')) {echo 'id="selected"';} ?> class="tags real_tags" href="<?= url('posts', ['params' => ['tag' => $tag]]) ?>">
+        <span> ● </span><?= html($tag) ?>
+      </a>
     <?php endforeach ?>
 
     <?php for ($i = 0; $i < 50; $i++): ?>
