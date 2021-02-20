@@ -15,7 +15,9 @@
     ?>
 
     <?php foreach($tags as $tag): ?>
-      <div class="tags real_tags"><?php echo html($tag) ?></div>
+      <div class="tags real_tags"><a href="<?= url($page->url(), ['params' => ['tag' => $tag]]) ?>">
+        <?= html($tag) ?>
+      </a></div>
     <?php endforeach ?>
 
     <?php for ($i = 0; $i < 50; $i++): ?>

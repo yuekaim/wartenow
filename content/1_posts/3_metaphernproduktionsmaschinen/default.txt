@@ -22,7 +22,7 @@ Links:
 
 ----
 
-Authors: Andrea Hubin und Karin Schneider
+Authors: Andrea Hubin, Karin Schneider
 
 ----
 
@@ -34,4 +34,6 @@ Keywords:
 
 ----
 
-Titleimage: 
+Titleimage:
+
+- ausschnitt_in_feiheit_dressiert.jpeg

@@ -1,56 +1,86 @@
 article{
-  width: 80%;
+  width: 90%;
   position: absolute;
   right:0px;
 }
 
 h1{
+  width: 70%;
   color: #22c959;
   font-size: 1em;
-  margin: 30px 15vw 50px 15vw;
+  margin-right: 5px;
+  margin-top: 50px;
   z-index: 0;
   background-color: #F0EFF1;
   padding: 10px 20px 10px 20px;
   border-radius: 20px;
-  border: 1px dashed #22c959;
+  border: 1px solid #22c959;
 }
 
 main{
+  width: 70%;
   color: #22c959;
   font-size: 1em;
-  margin: 30px 15vw 50px 15vw;
+  margin-right: 5vw;
+  margin-bottom: 30px;
   z-index: 0;
   background-color: #F0EFF1;
   padding: 20px;
   border-radius: 20px;
-  border: 1px dashed #22c959;
+  border: 1px solid #22c959;
 }
 
 img{
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
+blockquote::before{
+  content:"»";
+}
+
+blockquote::after{
+  content:"«";
+}
+
+.notes{
+  position: absolute;
+  right: 0px;
+  width: 20%;
+  color: #f0eff1;
+  top: 30px;
+  padding: 20px;
+}
+
+.downloadGroup{
+  border: 1px solid #22c959;
+  margin: 10px;
+  width: 100%;
+}
+
 .downloads{
-  flex-direction: row;
-  color: #22c959;
-  border: 1px dashed #22c959;
+  width: 95%;
+
   font-size: 1em;
   border-radius: 50px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  flex-direction: row;
+
   text-decoration: none;
   margin: 5px;
   padding: 5px 15px 0px 15px;
   transition: box-shadow 0.5s;
-  margin: 0 0 0 150px;
-  background-color: #F0EFF1;
+
+  color: #f0eff1;
+  background-color: #22c959;
 }
 
 
 .downloads:hover{
-  box-shadow: inset 0 0 5px #22c959;
-  border: 1px solid #22c959;
+  box-shadow: 0 0 15px #22c959;
   transition: 0.3s;
-
 }
 
 #titleImg{
@@ -59,31 +89,25 @@ img{
   z-index: -1000;
   position: fixed;
   top: 20vh;
-  left: 10vw;
+  left: 30vw;
   pointer-events: none;
   width: 70vw;
 }
 
-.keywords_list{
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  width: 100vw;
-  left: 0px;
-  z-index: -500;
+#authors,li{
+  color: #22c959;
+  list-style-type: none;
 }
 
-.tags{
+#authors,ul{
+  width: 30%;
+  color: #22c959;
   font-size: 1em;
-  border: none;
-  border-radius: 0;
-  background: none;
-  border-bottom: 1px solid #22c959;
-  margin: 0px;
-  height: 20px;
-}
-
-
-.real_tags:hover{
-
+  margin-right: 5px;
+  margin-top: 50px;
+  z-index: 0;
+  background-color: #F0EFF1;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #22c959;
 }
