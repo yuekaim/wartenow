@@ -136,7 +136,15 @@ blockquote::after{
 main img{
   width: 100%;
   height: auto;
+  border:none;
+  border-radius: 10px;
 
+}
+
+main figure ul img:hover{
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
 }
 
 main figure ul{
@@ -147,4 +155,11 @@ main figure ul{
 main figure ul li{
   width: 30%;
   margin: 10px;
+}
+
+main figure iframe{
+  width: 100%;
+  height: 100%;
+  border:none;
+  border-radius: 10px;
 }
