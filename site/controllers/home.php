@@ -11,13 +11,13 @@ return function ($kirby, $page) {
         // get current timestamp
         $now = time();
 
-        if( $filter === 'recently' ){
+        if( $filter === 'Recently' ){
             // get posts which past date
             $posts = $posts->filter(function($child) use($now){
                 return $child->date()->toDate() < $now;
             });
 
-        } else if( $filter === 'upcoming' ){
+        } else if( $filter === 'Upcoming' ){
             // get posts which future date
             $posts = $posts->filter(function($child) use($now){
                 return $child->date()->toDate() > $now;
