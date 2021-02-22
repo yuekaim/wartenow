@@ -1,7 +1,9 @@
 <?php
 
+// check if there is a filter in the url
 $currentFilter = param('filter');
 
+// create list off all availible filters + time based filters
 $filters = array_merge([
 	'Upcoming',
 	'Recently'

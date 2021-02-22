@@ -1,5 +1,3 @@
-<?php snippet('keywordsList'); ?>
-
 <?php snippet('header'); ?>
 
 <?php snippet('postsList'); ?>

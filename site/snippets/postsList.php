@@ -1,8 +1,7 @@
 <?php
-
-    /*
-    * The list of $posts is created in the controller `controllers/home.php`
-    */
+/*
+* The list of $posts is created in the controller `controllers/home.php`
+*/
 
 ?>
 <div class="posts">
