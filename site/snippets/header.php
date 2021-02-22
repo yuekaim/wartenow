@@ -3,14 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<?php snippet('meta/html'); ?>
+	<title><?= $page->title() ?> ● <?= $site->title() ?></title>
 
-	<?= css('assets/css/index.css'); ?>
-	<?= css('@auto'); ?>
+	<?php
+	echo css('assets/css/index.css');
+	/* automatically load css for the current template */
+	echo css('@auto'); ?>
 
 </head>
 <body>
 <body>
+
 	<div id="header">
 		<h1>
 			<a href="<?= $site->url() ?>">
@@ -23,3 +26,5 @@
 			<?= $info->title() ?>
 		</a>
 	</div id="header">
+
+	<?php snippet('keywordsList'); ?>

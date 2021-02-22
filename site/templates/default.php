@@ -1,5 +1,4 @@
 <?php snippet('header'); ?>
-<?php snippet('keywordsList'); ?>
 
 <!--image bg -->
 <?php if( $image = $page->titleImage()->toFile() ): ?>

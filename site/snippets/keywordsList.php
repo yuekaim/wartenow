@@ -1,28 +1,41 @@
+<?php
+
+// check if there is a filter in the url
+$currentFilter = param('filter');
+
+// create list off all availible filters + time based filters
+$filters = array_merge([
+	'Upcoming',
+	'Recently'
+], $kirby->collection('posts')->pluck('keywords', ',', true) );
+
+?>
 <div class="keywords_list">
 
     <?php for ($i = 0; $i < 3; $i++): ?>
-      <div class="tags"></div>
+		<div class="tags"></div>
     <?php endfor; ?>
 
-    <a <?php if($page->url() == $site->url()) {echo 'id="selected"';} ?>
-    class="tags real_tags" href="<?= $site->url() ?>"><span> ● </span>All</a>
-    <a class="tags real_tags"><span> ● </span>Recently</a>
-    <a class="tags real_tags"><span> ● </span>Upcoming</a>
+	<a <?php e(!$currentFilter, 'id="selected"') ?> class="tags real_tags" href="<?= $site->url() ?>"><span> ● </span>All</a>
 
-    <?php
-      $articles = $kirby->collection('posts');
-      $tags = $articles->pluck('keywords', ',', true);
-      $tags = array_unique($tags);
-    ?>
+    <?php foreach($filters as $filter):
 
-    <?php foreach($tags as $tag): ?>
-      <a <?php if($tag == param('tag')) {echo 'id="selected"';} ?> class="tags real_tags" href="<?= url('posts', ['params' => ['tag' => $tag]]) ?>">
-        <span> ● </span><?= html($tag) ?>
-      </a>
+		// check if one of the filter-words is currently active
+		$active = $filter === $currentFilter;
+
+		// create the href url for the filter link
+		$url = url('/', ['params' => ['filter' => $filter]]);
+
+		?>
+
+		<a <?php e( $active, 'id="selected"') ?> class="tags real_tags" href="<?= $url ?>">
+			<span> ● </span><?= html($filter) ?>
+		</a>
+
     <?php endforeach ?>
 
     <?php for ($i = 0; $i < 50; $i++): ?>
-      <div class="tags"></div>
+		<div class="tags"></div>
     <?php endfor; ?>
 
 </div>

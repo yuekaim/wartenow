@@ -1,5 +1,12 @@
+<?php
+/*
+* The list of $posts is created in the controller `controllers/home.php`
+*/
+
+?>
 <div class="posts">
 
+<<<<<<< HEAD
     <?php foreach( $kirby->collection('posts') as $post ): ?>
           <div class="post">
             <a href="<?= $post->url() ?>">
@@ -15,13 +22,25 @@
                         <img src="<?= $image->url() ?>" />
                     </figure>
                 <?php endif ?>
+=======
+    <?php foreach( $posts as $post ): ?>
 
-                <h2><?= $post->title() ?></h2>
+        <a class="post" href="<?= $post->url() ?>">
 
-                <?php if( $post->authors()->isNotEmpty() ): ?>
-                    <p>By <?= $post->authors() ?></p>
-                <?php endif ?>
+            <?php if( $image = $post->titleImage()->toFile() ): ?>
+                <figure>
+                    <img src="<?= $image->url() ?>" />
+                </figure>
+            <?php endif ?>
+>>>>>>> 79e8fc17456d16625e0d1b587812061abea748f9
 
+            <h2><?= $post->title() ?></h2>
+
+            <?php if( $post->authors()->isNotEmpty() ): ?>
+                <p>By <?= $post->authors() ?></p>
+            <?php endif ?>
+
+<<<<<<< HEAD
             </a>
           </div>
 
@@ -62,4 +81,10 @@
 
 
 
+=======
+        </a>
+
+    <?php endforeach ?>
+
+>>>>>>> 79e8fc17456d16625e0d1b587812061abea748f9
 </ul>

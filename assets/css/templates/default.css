@@ -135,6 +135,7 @@ blockquote::after{
 
 main img{
   width: 100%;
+<<<<<<< HEAD
   height: auto;
   border:none;
   border-radius: 10px;
@@ -151,10 +152,24 @@ main figure ul{
   display: flex;
   width: 100%;
   border: none;
+=======
 }
-main figure ul li{
-  width: 30%;
-  margin: 10px;
+
+main figure ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+>>>>>>> 79e8fc17456d16625e0d1b587812061abea748f9
+}
+main figure ul img {
+  display: block;
+}
+
+ul li p {
+  margin: 0.5em 0;
 }
 
 main figure iframe{

@@ -1,5 +1,10 @@
 <?php
 
+/*
+* create a $pages list from all posts
+* with date in the future
+*/
+
 return function ($kirby) {
 
     $now = time();
