@@ -135,16 +135,20 @@ blockquote::after{
 
 main img{
   width: 100%;
-  height: auto;
-
 }
 
-main figure ul{
-  display: flex;
-  width: 100%;
-  border: none;
+main figure ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
 }
-main figure ul li{
-  width: 30%;
-  margin: 10px;
+main figure ul img {
+  display: block;
+}
+
+ul li p {
+  margin: 0.5em 0;
 }
