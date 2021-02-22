@@ -1,7 +1,6 @@
 ### Wartenow
 
-HEELLOOOOOOOOOOOOO
-A small website for publishing recent activity happening at Wartenau Art Education, HFBK Hamburg.		 susususususaa
+A small website for publishing recent activity happening at Wartenau Art Education, HFBK Hamburg.
 
 ## Working on this project
 
