@@ -1,3 +1,9 @@
+<?php
+
+$tags = $kirby->collection('posts')->pluck('keywords', ',', true);
+// $tags = array_unique($tags);
+
+?>
 <div class="keywords_list">
 
     <?php for ($i = 0; $i < 3; $i++): ?>
@@ -6,17 +12,11 @@
 
     <a <?php if($page->url() == $site->url()) {echo 'id="selected"';} ?>
     class="tags real_tags" href="<?= $site->url() ?>"><span> ● </span>All</a>
-    <a class="tags real_tags"><span> ● </span>Recently</a>
-    <a class="tags real_tags"><span> ● </span>Upcoming</a>
-
-    <?php
-      $articles = $kirby->collection('posts');
-      $tags = $articles->pluck('keywords', ',', true);
-      $tags = array_unique($tags);
-    ?>
+    <a <?php if('recently' == param('filter')) {echo 'id="selected"';} ?> class="tags real_tags" href="<?= url('/', ['params' => ['filter' => 'recently']]) ?>"><span> ● </span>Recently</a>
+    <a <?php if('upcoming' == param('filter')) {echo 'id="selected"';} ?> class="tags real_tags" href="<?= url('/', ['params' => ['filter' => 'upcoming']]) ?>"><span> ● </span>Upcoming</a>
 
     <?php foreach($tags as $tag): ?>
-      <a <?php if($tag == param('tag')) {echo 'id="selected"';} ?> class="tags real_tags" href="<?= url('posts', ['params' => ['tag' => $tag]]) ?>">
+      <a <?php if($tag == param('filter')) {echo 'id="selected"';} ?> class="tags real_tags" href="<?= url('/', ['params' => ['filter' => $tag]]) ?>">
         <span> ● </span><?= html($tag) ?>
       </a>
     <?php endforeach ?>

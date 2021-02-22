@@ -1,5 +1,7 @@
 <?php snippet('keywordsList'); ?>
 
+<h1>Filter: <?= $filter ?></h1>
+
 <?php snippet('header'); ?>
 
 <?php snippet('postsList'); ?>
