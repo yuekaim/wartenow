@@ -4,4 +4,4 @@ label:
   de: Schlagworte
 options: query
 max: 10
-query: page.siblings.pluck("tags", ",", true)
+query: site.index.pluck("tags", ",", true)

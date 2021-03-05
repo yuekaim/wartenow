@@ -21,6 +21,7 @@ tabs:
 
           pages:
             extends: sections/pages
+            status: listed
 
   settings:
     label:
@@ -40,3 +41,43 @@ tabs:
         fields:
           name:
             type: text
+
+  meta:
+    label: Meta
+    icon: url
+    columns:
+      - width: 1/2
+        sections:
+
+          fields-1:
+            type: fields
+            fields:
+
+              description:
+                label: Meta description
+                type: textarea
+                buttons: false
+                maxlength: 200
+                help:
+                  en: Will be shown on search engine result pages
+                  de: Wird auf der Ergebnisseite von Suchmaschinen angezeigt
+
+              tags: fields/keywords
+
+      - width: 1/2
+        sections:
+
+          fields-2:
+            type: fields
+            fields:
+
+              ogimage:
+                extends: fields/image
+                label:
+                  en: Social media preview image
+                  de: Social Media Vorschau-Bild
+                help:
+                  en: Will be shown when this website is shared on social media
+                  de: Wird gezeigt, wenn diese Webseite geteilt wird
+
+          uploads: sections/files
