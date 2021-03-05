@@ -21,6 +21,7 @@ tabs:
 
           pages:
             extends: sections/pages
+            status: listed
 
   settings:
     label:
