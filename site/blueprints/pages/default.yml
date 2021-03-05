@@ -48,7 +48,7 @@ columns:
             type: checkboxes
             options: query
             query:
-              fetch: site.
+              fetch: site.categories.toStructure
               text: "{{ structureItem.name }}"
               value: "{{ structureItem.name }}"
 
