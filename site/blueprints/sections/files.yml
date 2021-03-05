@@ -1,3 +1,7 @@
-headline: Uploads
+headline:
+  en: Uploads
+  de: Hochgeladene Dateien
 type: files
-empty: No files uploaded yet
+empty:
+  en: No files uploaded yet
+  de: Noch keine Dateien hochgeladen

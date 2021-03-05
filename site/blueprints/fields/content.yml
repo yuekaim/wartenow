@@ -1,6 +1,10 @@
-label: Content
+label:
+  en: Content
+  de: Inhalt
 type: blocks
-empty: Click here to start adding some content
+empty:
+  en: Click here to start adding some content
+  de: Hier klicken um Inhalte hinzuzufügen
 fieldsets:
   - text
   - quote

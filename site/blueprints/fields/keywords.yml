@@ -1,4 +1,7 @@
 type: tags
+label:
+  en: Keywords
+  de: Schlagworte
 options: query
 max: 10
 query: page.siblings.pluck("tags", ",", true)

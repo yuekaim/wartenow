@@ -3,6 +3,9 @@ title: Wartenau
 tabs:
 
   dashboard:
+    label:
+      en: Dashboard
+      de: Übersicht
     icon: dashboard
     columns:
 
@@ -20,10 +23,19 @@ tabs:
             extends: sections/pages
 
   settings:
+    label:
+      en: Settings
+      de: Einstellungen
     icon: cog
     fields:
 
       categories:
+        label:
+          en: Categories
+          de: Kategorien
+        help:
+          en: Posts can be assigned to multiple categories from the entries above
+          de: Beiträge können einer oder mehreren der angelegten Kategorien zugeordnet werden
         type: structure
         fields:
           name:

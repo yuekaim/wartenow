@@ -1,6 +1,10 @@
-headline: Pages
+headline:
+  en: Pages
+  de: Seiten
 type: pages
-empty: No pages created yet
+empty:
+  en: No pages created yet
+  de: Noch keine Seiten angelegt
 sortable: false
 image:
   back: white

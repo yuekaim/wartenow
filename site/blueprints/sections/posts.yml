@@ -1,7 +1,10 @@
-headline: Pages
+headline:
+  en: Pages
+  de: Beiträge
+empty:
+  en: No pages created yet
+  de: Noch keine Beiträge angelegt
 type: pages
-empty: No pages created yet
-headline: Posts
 sortable: false
 info: "{{page.keywords}}"
 image:

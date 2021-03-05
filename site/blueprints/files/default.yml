@@ -3,6 +3,8 @@ title: Any File
 fields:
 
   caption:
-    label: Caption
+    label:
+      en: Caption
+      de: Bildbeschreibung
     type: text
     maxlenght: 200

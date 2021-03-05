@@ -1,4 +1,6 @@
-title: Blog
+title:
+  en: Posts
+  de: Beiträge
 
 icon: layers
 
@@ -12,10 +14,20 @@ sections:
 
   drafts:
     extends: sections/posts
-    headline: Drafts
+    headline:
+      en: Drafts
+      de: Entwürfe
+    empty:
+      en: No drafts created yet
+      de: Noch keine Entwürfe angelegt
     status: drafts
 
   published:
     extends: sections/posts
-    headline: Published
+    headline:
+      en: Published
+      de: Veröffentlichte Beiträge
+    empty:
+      en: No posts published yet
+      de: Noch keine Beiträge veröffentlicht
     status: listed
