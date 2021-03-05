@@ -5,3 +5,6 @@ type: files
 empty:
   en: No files uploaded yet
   de: Noch keine Dateien hochgeladen
+image:
+  back: white
+  cover: false

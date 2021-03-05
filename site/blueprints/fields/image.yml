@@ -3,3 +3,5 @@ multiple: false
 label:
   en: Image
   de: Bild
+image:
+  back: white

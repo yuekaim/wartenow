@@ -1,2 +1,5 @@
 type: files
 label: Downloads
+image:
+  cover: false
+  back: white
