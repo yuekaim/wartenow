@@ -1,0 +1,9 @@
+label:
+  en: Categories
+  de: Kategorien
+type: checkboxes
+options: query
+query:
+  fetch: site.categories.toStructure
+  text: "{{ structureItem.name }}"
+  value: "{{ structureItem.name }}"

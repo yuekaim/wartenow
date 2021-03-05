@@ -8,11 +8,19 @@ columns:
     fields:
 
       subtitle:
+        label:
+          en: Subtitle
+          de: Untertitel
         type: text
 
       date:
         type: date
-        label: Publishing date
+        label:
+          en: Date
+          de: Datum
+        help:
+          en: Can be publication date or event date
+          de: Kann Veröffentlichungs- oder Veranstaltungsdatum sein
 
       text: fields/content
 
@@ -23,19 +31,14 @@ columns:
       links: fields/links
 
       authors:
-        label: Author(s)
-        type: textarea
-        buttons: false
+        extends: fields/people
+        label:
+          en: About the author(s)
+          de: Über die Autoren
 
       credits: fields/credits
 
-      keywords:
-        label: Keywords
-        type: tags
-        accept: options
-        options: query
-        query:
-          fetch: page.siblings.pluck("keywords", ",", true)
+      keywords: fields/keywords
 
   - width: 1/3
     sections:
@@ -43,35 +46,13 @@ columns:
       fields2:
         type: fields
         fields:
-          categories:
-            label: Categories
-            type: checkboxes
-            options: query
-            query:
-              fetch: site.categories.toStructure
-              text: "{{ structureItem.name }}"
-              value: "{{ structureItem.name }}"
 
+          categories: fields/categories
 
           titleImage:
             extends: fields/image
-            label: Title image
+            label:
+              en: Title image
+              de: Titelbild
 
-          uploads: sections/files
-
-          aboutAuthor:
-              label: About the Authors
-              type: structure
-              fields:
-                name:
-                  label: Author name
-                  type: text
-                  width: 1/2
-                picture:
-                  label: Author Image
-                  extends: fields/image
-                  width: 1/2
-                aboutText:
-                  label: About
-                  type: textarea
-                  size: medium
+      uploads: sections/files

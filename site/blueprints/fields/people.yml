@@ -1,0 +1,23 @@
+label: People
+type: structure
+fields:
+
+  name:
+    label: Name
+    type: text
+    width: 1/3
+
+  image:
+    extends: fields/image
+    width: 1/3
+
+  link:
+    extends: fields/url
+    width: 1/3
+
+  intro:
+    label:
+      en: Introduction
+      de: Kurz-Vorstellung
+    type: textarea
+    buttons: false
