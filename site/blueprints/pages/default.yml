@@ -43,9 +43,35 @@ columns:
       fields2:
         type: fields
         fields:
+          categories:
+            label: Categories
+            type: checkboxes
+            options: query
+            query:
+              fetch: site.
+              text: "{{ structureItem.name }}"
+              value: "{{ structureItem.name }}"
+
 
           titleImage:
             extends: fields/image
             label: Title image
 
-      uploads: sections/files
+          uploads: sections/files
+
+          aboutAuthor:
+              label: About the Authors
+              type: structure
+              fields:
+                name:
+                  label: Author name
+                  type: text
+                  width: 1/2
+                picture:
+                  label: Author Image
+                  extends: fields/image
+                  width: 1/2
+                aboutText:
+                  label: About
+                  type: textarea
+                  size: medium

@@ -7,7 +7,7 @@
 <div class="posts">
 
 <<<<<<< HEAD
-    <?php foreach( $kirby->collection('posts') as $post ): ?>
+    <?php foreach( $posts as $post ): ?>
           <div class="post">
             <a href="<?= $post->url() ?>">
               <!-- test with random svg -->
@@ -22,17 +22,7 @@
                         <img src="<?= $image->url() ?>" />
                     </figure>
                 <?php endif ?>
-=======
-    <?php foreach( $posts as $post ): ?>
 
-        <a class="post" href="<?= $post->url() ?>">
-
-            <?php if( $image = $post->titleImage()->toFile() ): ?>
-                <figure>
-                    <img src="<?= $image->url() ?>" />
-                </figure>
-            <?php endif ?>
->>>>>>> 79e8fc17456d16625e0d1b587812061abea748f9
 
             <h2><?= $post->title() ?></h2>
 
@@ -40,7 +30,6 @@
                 <p>By <?= $post->authors() ?></p>
             <?php endif ?>
 
-<<<<<<< HEAD
             </a>
           </div>
 
@@ -81,10 +70,4 @@
 
 
 
-=======
-        </a>
-
-    <?php endforeach ?>
-
->>>>>>> 79e8fc17456d16625e0d1b587812061abea748f9
 </ul>
