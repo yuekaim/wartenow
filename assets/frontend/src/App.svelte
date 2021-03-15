@@ -7,7 +7,6 @@
 	import Archive from './templates/archive/index.svelte';
 	import Post from './templates/post/index.svelte';
 	import Info from './templates/info/index.svelte';
-	import Debug from './templates/debug/index.svelte';
 
 	export let data;
 	export let url = "";
@@ -27,8 +26,6 @@
 	<Route path="/*filter" let:params>
 		<Archive filter="{params.filter}" all={data.posts} />
 	</Route>
-
-	<!-- <Route path="*" component={Debug} page={data} /> -->
 
 </Router>
 

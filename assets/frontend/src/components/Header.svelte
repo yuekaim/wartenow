@@ -9,9 +9,9 @@
 
 <header>
 
-    <Link to="/">
-        <h1 class="logo">HFBK Art Education</h1>
-    </Link>
+    <h1 class="logo">
+        <Link to="/">HFBK Art Education</Link>
+    </h1>
 
     <nav class="categories">
         <Link to="/">All</Link>
@@ -29,5 +29,15 @@
 </header>
 
 <style lang="scss">
+
+    header {
+        display: flex;
+        background-color: red;
+        :global( a ){
+            padding: 0.5rem;
+            background-color: grey;
+            margin: 0.5rem;
+        }
+    }
 
 </style>

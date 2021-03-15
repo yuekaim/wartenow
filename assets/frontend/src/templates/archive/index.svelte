@@ -27,10 +27,8 @@
 
 <style lang="scss">
 
-    pre {
-        background-color: #eee;
-        padding: 0.5rem;
-        margin: 0.5rem;
+    h2 {
+        background-color: yellow;
     }
 
 </style>
