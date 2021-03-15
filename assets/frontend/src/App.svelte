@@ -25,7 +25,7 @@
 	</Route>
 
 	<Route path="/*filter" let:params>
-		<Archive filter="{params.filter}" posts={data.posts} />
+		<Archive filter="{params.filter}" all={data.posts} />
 	</Route>
 
 	<!-- <Route path="*" component={Debug} page={data} /> -->

@@ -1,8 +1,17 @@
 <script>
 
     import Link from '../../components/Link.svelte';
-    export let posts;
+
+    export let all;
     export let filter;
+
+    function filterPosts(){
+        if( !filter ){
+            return all;
+        }
+        return all.filter( post => post.categories.includes( filter ) );
+    }
+    $: posts = filterPosts( filter );
 
 </script>
 

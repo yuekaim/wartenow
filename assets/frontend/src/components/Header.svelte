@@ -14,6 +14,7 @@
     </Link>
 
     <nav class="categories">
+        <Link to="/">All</Link>
         {#each categories as category}
             <Link to={category}>{category}</Link>
         {/each}

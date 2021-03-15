@@ -6,7 +6,8 @@ class DefaultPage extends Page {
         $json = parent::json( $full );
 
         $json = array_merge($json, [
-            'subtitle' => $this->subtitle()->value()
+            'subtitle' => $this->subtitle()->value(),
+            'categories' => $this->categories()->split()
         ]);
 
         return $json;
