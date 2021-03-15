@@ -1,3 +1,10 @@
+# Development
+
+vendor
+node_modules
+/assets/frontend/build
+
+# ------------
 # System files
 # ------------
 

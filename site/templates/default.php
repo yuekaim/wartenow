@@ -1,47 +1,22 @@
-<?php snippet('header'); ?>
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <?php snippet('meta'); ?>
 
-<!--image bg -->
-<?php if( $image = $page->titleImage()->toFile() ): ?>
-	<figure>
-		<img id="titleImg" src="<?= $image->url() ?>" />
-	</figure>
-<?php endif ?>
+  <?= css('assets/frontend/build/bundle.css') ?>
 
-<article>
-	<header>
-		<h1><?= $page->title() ?></h1>
-		<p class="date"><?= $page->date() ?></p>
-	</header>
+  <?php snippet('favicon'); ?>
+  <?php snippet('jsonld'); ?>
 
-	<?php snippet('postContent'); ?>
+  <script>
+    window.siteData = <?= json_encode( $site->json() ) ?>;
+  </script>
 
-
-	<div class="notes">
-
-		<ul class="authors">
-			<p>Author(s)</p>
-			<?php foreach( $page->authors()->split() as $author ): ?>
-				<li><?= $author ?></li>
-			<?php endforeach ?>
-		</ul>
-
-		<div class="downloadGroup">
-			<?php
-			$files =  $page->downloads()->toFiles();
-			foreach($files as $file): ?>
-				<a class="downloads" href="<?= $file->url() ?>" target="_blank">
-					<span><?= $file->filename() ?></span>.<?= pathinfo($file, PATHINFO_EXTENSION) ?></a>
-			<?php endforeach ?>
-		</div>
-
-		<ul class="keywords">
-			<?php foreach ($page->keywords()->split() as $keyword): ?>
-				<li><?= $keyword ?></li>
-			<?php endforeach ?>
-		</ul>
-	</div>
-
-
-</article>
-
-<?php snippet('footer');
+</head>
+<!-- This website was made by Kim, Cleo and Moritz at HFBK Hamburg Klasse Digitale Grafik -->
+<body>
+  <?= js('assets/frontend/build/bundle.js') ?>
+</body>
+</html>
