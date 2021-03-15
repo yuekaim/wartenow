@@ -1,31 +1,32 @@
 <script>
 
-    import { Link } from "svelte-routing";
+    import Link from "./Link.svelte";
 
-    let pages = [
-        ['/','Start']
-    ];
+    export let categories = [];
+    export let pages = [];
 
 </script>
 
 <header>
 
-    <nav class="main">
-        {#each pages as [path,title]}
-            <Link to="{path}">{title}</Link>
+    <Link to="/">
+        <h1 class="logo">HFBK Art Education</h1>
+    </Link>
+
+    <nav class="categories">
+        {#each categories as category}
+            <Link to={category}>{category}</Link>
+        {/each}
+    </nav>
+
+    <nav class="pages">
+        {#each pages as page}
+            <Link to={page.path}>{page.title}</Link>
         {/each}
     </nav>
 
 </header>
 
 <style lang="scss">
-
-    nav {
-        display: flex;
-        padding: 0 1rem;
-        :global( a ){
-            padding: 0.5rem;
-        }
-    }
 
 </style>
