@@ -9,3 +9,4 @@ sortable: false
 info: "{{page.categories}}"
 image:
   back: white
+template: default
