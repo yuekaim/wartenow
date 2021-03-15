@@ -4,6 +4,6 @@ label:
 type: checkboxes
 options: query
 query:
-  fetch: site.categories.toStructure
+  fetch: site.content.categories.toStructure
   text: "{{ structureItem.name }}"
   value: "{{ structureItem.name }}"

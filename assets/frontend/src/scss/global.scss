@@ -1,0 +1,26 @@
+@import 'reset';
+
+// @font-face {
+// 	font-family: 'Sans';
+// 	src: url('/fonts/Inter-Light.woff2') format('woff2'),
+// 		 url('/fonts/Inter-Light.woff') format('woff');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+@import 'mixins';
+
+:root {
+	--full-height: 100vh;
+	--header-height: 1rem;
+	--unit: size();
+}
+
+html {
+	font-size: 1em;
+}
+
+body {
+	color: $black;
+	background-color: $white;
+}

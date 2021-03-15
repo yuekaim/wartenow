@@ -9,4 +9,16 @@ Categories:
 - 
   name: Versammlungen
 - 
-  name: Publikationen
+  name: Writings
+
+----
+
+Description: 
+
+----
+
+Tags: 
+
+----
+
+Ogimage: 

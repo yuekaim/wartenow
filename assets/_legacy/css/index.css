@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+body {
+  background-color: #F0EFF1;
+  font-family: 'Tajawal', sans-serif;
+  color: #22c959;
+}
+
+::selection {
+  color: #f0eff1;
+  background: #aaa5b288;
+
+}
+
+a {
+  text-decoration: none;
+  color: #22c959;
+}
+
+
+.keywords_list {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.tags {
+  padding-left: 10px;
+  padding-top: 4px;
+  font-size: 1em;
+  border: none;
+  border-radius: 0;
+  background-color: none;
+  border-bottom: 1px solid #22c959;
+  height: 25px;
+  text-align: justify;
+}
+
+.real_tags:hover{
+  background-color: #22c959;
+  color: #F0EFF1;
+}
+
+span{opacity: 0;}
+#selected span{opacity: 1;}
+
+/* post list on home page*/
+.posts {
+  animation: fade 1s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: stretch;*/
+  z-index: 1000;
+}
+.post {
+  flex-grow: 3;
+  height: auto;
+  background-color: #F0EFF1ff;
+  border: 1px solid #22c959;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  max-width: 30vw;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: 20vw;
+}
+h2, p {
+  font-size: 1em;
+}
+
+#header {
+  display: none;
+}
