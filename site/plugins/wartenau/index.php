@@ -1,11 +1,13 @@
 <?php
 
+require_once 'models/Info.php';
 require_once 'models/Default.php';
 
 Kirby::plugin('kimcleomoritz/wartenau', [
 
 	'pageModels' => [
-		'default' => 'DefaultPage'
+		'default' => 'DefaultPage',
+		'info' => 'InfoPage'
 	],
 
 	'siteMethods' => [

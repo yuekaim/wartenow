@@ -2,6 +2,19 @@
 
 class DefaultPage extends Page {
 
+    public function jsonAuthors(): array {
+        $json = [];
+        foreach( $this->authors()->toStructure() as $author ){
+            $json[] = [
+                'name' => $author->name()->value(),
+                'image' => $author->image()->json('file'),
+                'link' => $author->link()->value(),
+                'text' => $author->intro()->kirbytext(),
+            ];
+        }
+        return $json;
+    }
+
     public function json( bool $full = false ): array {
         $json = parent::json( $full );
 
@@ -9,14 +22,19 @@ class DefaultPage extends Page {
         $json = array_merge($json, [
             'subtitle' => $this->subtitle()->value(),
             'categories' => $this->categories()->split(),
-            'date' => $this->data()->toDate('d.m.Y'),
+            'date' => $this->date()->toDate('d.m.Y'),
+            'image' => $this->titleImage()->json('file')
         ]);
 
         if( $full === true ){
             // full dataset for detailed view
             $json = array_merge( $json, [
-                'info' => 'nice',
                 'content' => $this->text()->toBlocks()->toHtml(),
+                'authors' => $this->jsonAuthors(),
+                'downloads' => $this->downloads()->json('files'),
+                'links' => $this->links()->yaml(),
+                'attributes' => $this->attributes()->yaml(),
+                'keywords' => $this->keywords()->split(),
             ]);
         }
 

@@ -142,11 +142,11 @@ Kirby::plugin('moritzebeling/headless', [
 		'json' => function ( string $size = 'l' ): array {
 
 			$json = [
-				'alt' => $this->alt(),
-				'url' => $this->url()
+				'alt' => $this->alt()->value(),
+				'url' => $this->url(),
 			];
 
-			if( !$this->isResizable() || $this->extension() === 'gif' ){
+			if( !$size || !$this->isResizable() || $this->extension() === 'gif' ){
 				return $json;
 			}
 
@@ -177,6 +177,42 @@ Kirby::plugin('moritzebeling/headless', [
 			}
 			return $json;
         }
+	],
+
+	'fieldMethods' => [
+        'json' => function ( $field, string $type = 'text' ) {
+			if( $field->isEmpty() ){
+				return false;
+			}
+			switch ($type) {
+				case 'image':
+				case 'file':
+					if( $file = $field->parent()->file( $field->yaml()[0] ) ){
+						$file = $file->json( $type === 'image' );
+					}
+					return $file;
+					break;
+				case 'images':
+				case 'files':
+					$files = [];
+					foreach( $field->yaml() as $file ){
+						if( $file = $field->parent()->file( $file ) ){
+							$files[] = $file->json( $type === 'images' );
+						}
+					}
+					return $files;
+					break;
+				case 'kirbytext':
+					return $field->kirbytext()->value();
+					break;
+				case 'blocks':
+					return $field->toBlocks()->toHtml();
+					break;
+				default:
+					return $field->value();
+					break;
+			}
+        },
 	],
 
 ]);
