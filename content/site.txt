@@ -4,21 +4,21 @@ Title: Wartenau Art Education
 
 Categories:
 
-- 
+-
   name: Projekte
-- 
+-
   name: Versammlungen
-- 
+-
   name: Writings
 
 ----
 
-Description: 
+Description:
 
 ----
 
-Tags: 
+Tags:
 
 ----
 
-Ogimage: 
+Ogimage:
