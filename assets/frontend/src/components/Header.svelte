@@ -10,7 +10,7 @@
 <header>
 
     <h1 class="logo">
-        <Link to="/">HFBK Art Education</Link>
+        <Link to="/"><img src="assets/icons/logo.svg"></Link>
     </h1>
 
     <nav class="categories">
@@ -31,13 +31,31 @@
 <style lang="scss">
 
     header {
+        position: fixed;
+        top: 1rem;
+        left: 0.5rem;
         display: flex;
-        background-color: red;
         :global( a ){
-            padding: 0.5rem;
-            background-color: grey;
-            margin: 0.5rem;
+            /* padding: 0.5rem; */
+
+            /* margin: 0.5rem; */
         }
+    }
+    nav{
+      position: absolute;
+      margin-left: 200px;
+      height: 70px;
+    }
+    .categories{
+      position: absolute;
+      background-color: white;
+      border-radius: 10px;
+      border: 1px solid black;
+      height: 1.2em;
+      top: 28px;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+
     }
 
 </style>
