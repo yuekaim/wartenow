@@ -1,6 +1,6 @@
 <script>
 
-    import Link from '../../components/Link.svelte';
+    import Posts from './Posts.svelte';
 
     export let all;
     export let filter;
@@ -15,20 +15,7 @@
 
 </script>
 
-<h2>Filter: {filter}</h2>
-
-<ul>
-    {#each posts as post}
-        <li>
-            <Link to={post.path}>{post.title}</Link>
-        </li>
-    {/each}
-</ul>
+<Posts {posts} />
 
 <style lang="scss">
-
-    h2 {
-        background-color: yellow;
-    }
-
 </style>

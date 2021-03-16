@@ -10,13 +10,13 @@
 <header>
 
     <h1 class="logo">
-        <Link to="/"><img src="assets/icons/logo.svg"></Link>
+        <Link to="/"><img height="100%;" width="auto" src="/assets/icons/logo.svg"></Link>
     </h1>
 
     <nav class="categories">
-        <div><Link to="/">All</Link></div>
+        <Link to="/">All</Link>
         {#each categories as category}
-            <div><Link to={category}>{category}</Link></div>
+            <Link to={category}>{category}</Link>
         {/each}
     </nav>
 
@@ -31,43 +31,31 @@
 <style lang="scss">
 
     header {
-        position: fixed;
+        position: sticky;
         display: flex;
-        top: 0.5rem;
-        left: 0.5rem;
-        :global( a ){
-            /* padding: 0.5rem; */
-
-            /* margin: 0.5rem; */
-        }
+        top: 0;
+        width: 100%;
+        justify-content: space-between;
+        padding: 1rem;
+        align-items: flex-start;
     }
 
-    .categories{
-      display: flex;
-      position: absolute;
-      margin-left: 200px;
-      height: 70px;
+    img {
+        height: 4rem;
+        width: auto;
+    }
 
-      align-items: center;
-
-        div{
-          text-align: center;
-          background-color: white;
-          border-radius: 10px;
-          height: 1.5em;
-
-          padding-left: 1rem;
-          padding-right: 1rem;
-          margin-right: 0.5rem;
-          padding-top: 0.25em;
-          padding-bottom: 0.25em;
-          vertical-align: middle;
+    nav {
+        :global( a ){
+            background-color: #eee;
+            padding: 0.3em 0.6em;
+            margin: 0.3em;
         }
-        div:hover{
-          background-color: $yellow;
-          box-shadow: inset 0 0 10px 5px $white;
+        :global( a:hover ),
+        :global( a[aria-current=page] ){
+            background-color: $yellow;
+            box-shadow: inset 0 0 10px 5px $white;
         }
-
     }
 
 </style>

@@ -1,6 +1,12 @@
 <script>
 
     import Load from '../Load.svelte';
+    import Authors from './Authors.svelte';
+    import Tags from '../../components/Tags.svelte';
+    import Image from '../../components/Image.svelte';
+    import Links from '../../components/Links.svelte';
+    import Downloads from '../../components/Downloads.svelte';
+    import Attributes from '../../components/Attributes.svelte';
     import Debug from '../../components/Debug.svelte';
     export let path;
 
@@ -8,36 +14,54 @@
 
 <Load path="posts/{path}" let:prop={page}>
 
-    <img alt="Insta" src="/assets/icons/instagram.svg" />
+    <article>
 
-    <h1>{page.title}</h1>
-    <h2>{page.subtitle}</h2>
+        <header>
 
-    <h3>{page.info}</h3>
+            {#if page.date}
+                <h3 class="date">{page.date}</h3>
+            {/if}
 
-    <main>
-        {@html page.content}
-    </main>
+            <h1>{page.title}</h1>
 
-    <Debug data={page} />
+            {#if page.subtitle}
+                <h2>{page.subtitle}</h2>
+            {/if}
+
+            {#if page.image}
+                <figure>
+                    <Image image={page.image} />
+                </figure>
+            {/if}
+
+        </header>
+
+        <main class="text">
+            {@html page.content}
+        </main>
+
+        <footer>
+            <Authors persons={page.authors} />
+            <Links links={page.links} />
+            <Downloads downloads={page.downloads} />
+            <Attributes attributes={page.attributes} />
+            <Tags tags={page.categories} />
+            <Tags tags={page.keywords} />
+        </footer>
+
+        <!-- <Debug data={page} /> -->
+
+    </article>
 
 </Load>
 
 <style lang="scss">
 
-    h1 {
-        font-size: 2rem;
-        background-color: green;
-    }
-    h3 {
-        padding: 1rem;
-        margin: 1rem;
-        background-color: aqua;
-        border-radius: 2rem;
-    }
-    img {
-        width: 2rem;
-        height: auto;
+    article {
+        margin: 4rem;
+        header, main, footer {
+            margin-bottom: 4rem;
+        }
     }
 
 </style>

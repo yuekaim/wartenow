@@ -24,3 +24,42 @@ body {
 	color: $black;
 	background-color: $white;
 }
+
+h1, h2 {
+	font-size: 2rem;
+}
+
+blockquote {
+	&:before{
+		content:"»";
+	}
+	&:after{
+		content:"«";
+	}
+}
+
+.text {
+	blockquote,
+	figure {
+		margin: 2rem;
+	}
+	figure iframe {
+		margin: 2rem;
+		width: 100%;
+		height: auto;
+	}
+	figure {
+		ul {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 2rem;
+		}
+	}
+	h1, h2 {
+		margin-top: 4rem;
+		margin-bottom: 2rem;
+	}
+	h3, h4, h5, h6 {
+		margin-top: 2rem;
+	}
+}

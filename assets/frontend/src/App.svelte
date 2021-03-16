@@ -3,6 +3,7 @@
 	import { Router, Link, Route } from "svelte-routing";
 
 	import Header from './components/Header.svelte';
+	import Footer from './components/Footer.svelte';
 
 	import Archive from './templates/archive/index.svelte';
 	import Post from './templates/post/index.svelte';
@@ -26,6 +27,8 @@
 	<Route path="/*filter" let:params>
 		<Archive filter="{params.filter}" all={data.posts} />
 	</Route>
+
+	<Footer />
 
 </Router>
 

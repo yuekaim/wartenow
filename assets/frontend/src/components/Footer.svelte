@@ -6,7 +6,7 @@
 
 <footer>
 
-    Footer
+    <p>© {(new Date()).getFullYear()}</p>
 
 </footer>
 

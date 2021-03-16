@@ -6,7 +6,7 @@ Subtitle: Koloniale Denkmuster, die freie Kunst der Kinder und das Potenzial von
 
 ----
 
-Date: 
+Date:
 
 ----
 
@@ -14,23 +14,19 @@ Text: [{"content":{"text":"<p>Die folgenden \u00dcberlegungen wollen anschlie\u0
 
 ----
 
-Downloads: 
+Downloads:
 
 ----
 
-Links: 
+Links:
 
 ----
 
-Authors: Andrea Hubin, Karin Schneider
+Credits:
 
 ----
 
-Credits: 
-
-----
-
-Keywords: 
+Keywords:
 
 ----
 

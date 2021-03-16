@@ -9,7 +9,7 @@ class DefaultPage extends Page {
                 'name' => $author->name()->value(),
                 'image' => $author->image()->json('file'),
                 'link' => $author->link()->value(),
-                'text' => $author->intro()->kirbytext(),
+                'text' => $author->intro()->kirbytext()->value(),
             ];
         }
         return $json;
@@ -23,7 +23,7 @@ class DefaultPage extends Page {
             'subtitle' => $this->subtitle()->value(),
             'categories' => $this->categories()->split(),
             'date' => $this->date()->toDate('d.m.Y'),
-            'image' => $this->titleImage()->json('file')
+            'image' => $this->titleImage()->json('image')
         ]);
 
         if( $full === true ){

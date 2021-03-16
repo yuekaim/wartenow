@@ -12,11 +12,9 @@
 
 </script>
 
-<div class="img">
-    <img alt={image.alt}
-        src={image.url}
-        class="lazyload"
-        data-sizes="auto"
-        data-src={image.url}
-        data-srcset={srcset(image.srcset)} />
-</div>
+<img alt={image.alt}
+    src={image.url}
+    class="lazyload"
+    data-sizes="auto"
+    data-src={image.url}
+    data-srcset={srcset(image.srcset)} />

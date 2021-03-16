@@ -160,7 +160,7 @@ Kirby::plugin('moritzebeling/headless', [
 
 			return array_merge($json,[
 				'url' => $this->thumb( option('moritzebeling.headless.thumbs.thumb') )->url(),
-				'caption' => $this->caption()->kirbytextinline(),
+				'caption' => $this->caption()->kirbytextinline()->value(),
 				'srcset' => $srcset
 			]);
         },
@@ -188,7 +188,7 @@ Kirby::plugin('moritzebeling/headless', [
 				case 'image':
 				case 'file':
 					if( $file = $field->parent()->file( $field->yaml()[0] ) ){
-						$file = $file->json( $type === 'image' );
+						$file = $file->json();
 					}
 					return $file;
 					break;
@@ -197,7 +197,7 @@ Kirby::plugin('moritzebeling/headless', [
 					$files = [];
 					foreach( $field->yaml() as $file ){
 						if( $file = $field->parent()->file( $file ) ){
-							$files[] = $file->json( $type === 'images' );
+							$files[] = $file->json();
 						}
 					}
 					return $files;

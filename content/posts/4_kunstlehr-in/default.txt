@@ -10,7 +10,9 @@ Text: [{"content":{"text":"<p>Die Selbstdefinition und der Titel des kollektiven
 
 ----
 
-Titleimage: 
+Titleimage:
+
+- mg_9775_etwas-heller.jpg
 
 ----
 
@@ -55,15 +57,24 @@ Authors:
 
 ----
 
-Downloads: 
+Downloads:
+
+- mg_9775_etwas-heller.jpg
 
 ----
 
-Links: 
+Links:
+
+- 
+  link: https://gogle.com
 
 ----
 
-Attributes: 
+Attributes:
+
+- 
+  title: Lektorat
+  value: Moritz Ebeling
 
 ----
 
