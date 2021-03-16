@@ -6,6 +6,7 @@
 
 {#if attributes.length > 0}
     <section>
+        <h3>Colophon</h3>
         {#each attributes as attr}
             <dl>
                 <dt>{attr.title}</dt>
@@ -17,6 +18,9 @@
 
 <style lang="scss">
 
+    section {
+        margin-top: 2rem;
+    }
     dd {
         margin-left: 1em;
     }

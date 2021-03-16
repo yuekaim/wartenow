@@ -30,6 +30,7 @@ class DefaultPage extends Page {
             // full dataset for detailed view
             $json = array_merge( $json, [
                 'content' => $this->text()->toBlocks()->toHtml(),
+                'footnotes' => $this->footnotes()->kirbytext()->value(),
                 'authors' => $this->jsonAuthors(),
                 'downloads' => $this->downloads()->json('files'),
                 'links' => $this->links()->yaml(),

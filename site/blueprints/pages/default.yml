@@ -19,7 +19,21 @@ tabs:
               de: Untertitel
             type: text
 
+          abstract:
+            type: writer
+            label: Fußnoten
+            buttons: false
+
           text: fields/content
+
+          footnotes:
+            type: writer
+            label: Fußnoten
+            buttons: false
+
+          attributes:
+            extends: fields/attributes
+            label: Colophon
 
       - width: 1/3
         sections:
@@ -56,8 +70,6 @@ tabs:
           downloads: fields/downloads
 
           links: fields/links
-
-          attributes: fields/attributes
 
           keywords: fields/keywords
 

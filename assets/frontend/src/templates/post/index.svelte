@@ -2,11 +2,11 @@
 
     import Load from '../Load.svelte';
     import Authors from './Authors.svelte';
+    import Downloads from './Downloads.svelte';
+    import Attributes from './Attributes.svelte';
     import Tags from '../../components/Tags.svelte';
     import Image from '../../components/Image.svelte';
     import Links from '../../components/Links.svelte';
-    import Downloads from '../../components/Downloads.svelte';
-    import Attributes from '../../components/Attributes.svelte';
     import Debug from '../../components/Debug.svelte';
     export let path;
 
@@ -40,11 +40,18 @@
             {@html page.content}
         </main>
 
+        <aside class="footnotes">
+            {#if page.footnotes}
+                {@html page.footnotes}
+            {/if}
+        </aside>
+
         <footer>
+            <Attributes attributes={page.attributes} />
             <Authors persons={page.authors} />
+
             <Links links={page.links} />
             <Downloads downloads={page.downloads} />
-            <Attributes attributes={page.attributes} />
             <Tags tags={page.categories} />
             <Tags tags={page.keywords} />
         </footer>
@@ -61,6 +68,19 @@
         margin: 4rem;
         header, main, footer {
             margin-bottom: 4rem;
+        }
+    }
+    .date {
+        margin-bottom: 0.5em;
+    }
+    .footnotes {
+        border-top: 1px solid #000;
+        padding-top: 0.5em;
+    }
+
+    footer {
+        :global( section ){
+            margin-bottom: 2rem;
         }
     }
 
