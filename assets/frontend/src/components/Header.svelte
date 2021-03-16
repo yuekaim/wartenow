@@ -2,7 +2,7 @@
 
     import Link from "./Link.svelte";
 
-    export let categories = [];
+    export let categories = ["UPCOMING","RECENTLY"];
     export let pages = [];
 
 </script>
@@ -14,9 +14,9 @@
     </h1>
 
     <nav class="categories">
-        <Link to="/">All</Link>
+        <div><Link to="/">All</Link></div>
         {#each categories as category}
-            <Link to={category}>{category}</Link>
+            <div><Link to={category}>{category}</Link></div>
         {/each}
     </nav>
 
@@ -32,29 +32,41 @@
 
     header {
         position: fixed;
-        top: 1rem;
-        left: 0.5rem;
         display: flex;
+        top: 0.5rem;
+        left: 0.5rem;
         :global( a ){
             /* padding: 0.5rem; */
 
             /* margin: 0.5rem; */
         }
     }
-    nav{
+
+    .categories{
+      display: flex;
       position: absolute;
       margin-left: 200px;
       height: 70px;
-    }
-    .categories{
-      position: absolute;
-      background-color: white;
-      border-radius: 10px;
-      border: 1px solid black;
-      height: 1.2em;
-      top: 28px;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
+
+      align-items: center;
+
+        div{
+          text-align: center;
+          background-color: white;
+          border-radius: 10px;
+          height: 1.5em;
+
+          padding-left: 1rem;
+          padding-right: 1rem;
+          margin-right: 0.5rem;
+          padding-top: 0.25em;
+          padding-bottom: 0.25em;
+          vertical-align: middle;
+        }
+        div:hover{
+          background-color: $yellow;
+          box-shadow: inset 0 0 10px 5px $white;
+        }
 
     }
 

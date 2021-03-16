@@ -20,7 +20,7 @@ $title = $page->isHomePage() ? $site->title() : $page->title() .' • '. $site->
 
 <link rel="canonical" href="<?= $page->url() ?>" />
 <meta name="description" content="<?= $page->metaDescription() ?>">
-<meta name="keywords" content="<?= implode(',',$page->metaKeywords()) ?>">
+
 <meta name="subject" content="<?= $site->metaDescription() ?>">
 
 <meta name="generator" content="Kim, Cleo, Moritz">
