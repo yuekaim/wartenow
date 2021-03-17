@@ -2,16 +2,15 @@
 
     import Link from "./Link.svelte";
 
-    export let categories = ["UPCOMING","RECENTLY"];
+    export let categories = [];
     export let pages = [];
 
 </script>
 
 <header>
 
-    <h1 class="logo">
-        <Link to="/"><img height="100%;" width="auto" src="/assets/icons/logo.svg"></Link>
-    </h1>
+
+    <Link to="/"><img id="logo" height="100%;" width="auto" src="/assets/icons/logo.svg"></Link>
 
     <nav class="categories">
         <Link to="/">All</Link>

@@ -49,8 +49,8 @@ export default {
 				},
 				scss: {
 					// relative to root
-					prependData: `@import 'src/scss/_mixins.scss';`
-				},
+					prependData: `@import 'src/scss/_mixins.scss';`,
+					prependData: `@import 'src/scss/_print.scss';`
 			}),
 		}),
 
@@ -76,6 +76,7 @@ export default {
 		production && terser()
 	],
 	watch: {
-		clearScreen: false
+		clearScreen: false,
+		watch: "scss/_print.scss"
 	}
 };

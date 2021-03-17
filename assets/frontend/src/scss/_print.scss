@@ -1,3 +1,73 @@
-*{
-  color: green;
+@page {
+  size: A4;
+}
+
+#logo{
+  display: none;
+}
+
+nav{
+  display: none;
+}
+
+h1{
+  display: block;
+  position: absolute;
+  width: 311px;
+  height: 95px;
+  left: 12px;
+  top: 172px;
+
+  font-family: Favorit Std;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 95.5%;
+  /* or 46px */
+
+
+  color: #000000;
+
+}
+
+h2{
+  position: absolute;
+  width: 566px;
+  height: 76px;
+  left: 12px;
+  top: 267px;
+
+  font-family: Favorit Std;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22.6895px;
+  line-height: 130%;
+  /* or 29px */
+
+
+  color: #000000;
+
+  /*new page*/
+}
+
+.date{
+  position: absolute;
+  width: 253px;
+  height: 50px;
+  left: 12px;
+  top: 114px;
+
+  font-family: Favorit Std;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 102%;
+  /* or 18px */
+
+
+  color: #000000;
+}
+
+.text{
+  page-break-before: always;
 }

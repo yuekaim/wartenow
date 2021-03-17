@@ -64,3 +64,8 @@ blockquote {
 		margin-top: 2rem;
 	}
 }
+
+
+@media print {
+	@import 'print';
+}

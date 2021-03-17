@@ -34,6 +34,10 @@
                 </figure>
             {/if}
 
+            {#if page.abstract}
+                <p>{page.abstract}</p>
+            {/if}
+
         </header>
 
         <main class="text">
