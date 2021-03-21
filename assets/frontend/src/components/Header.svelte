@@ -52,8 +52,8 @@
         }
         :global( a:hover ),
         :global( a[aria-current=page] ){
-            /* background-color: $yellow; */
-            /* box-shadow: inset 0 0 10px 5px $white; */
+            background-color: $yellow;
+            box-shadow: inset 0 0 10px 5px $white;
         }
     }
 
