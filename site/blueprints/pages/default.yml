@@ -21,8 +21,9 @@ tabs:
 
           abstract:
             type: writer
-            label: Fußnoten
+            label: Abstract
             buttons: false
+            maxlength: 400
 
           text: fields/content
 
