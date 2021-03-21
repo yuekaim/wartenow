@@ -12,10 +12,10 @@ Kirby::plugin('kimcleomoritz/wartenau', [
 
 	'siteMethods' => [
         'posts' => function (): Kirby\Cms\Pages {
-			return $this->page('posts')->children()->listed();
+			return $this->categories()->children()->listed();
         },
-        'categories' => function (): array {
-			return $this->posts()->pluck('categories',',',true);
+        'categories' => function (): Kirby\Cms\Pages {
+			return $this->children()->listed()->filterBy('intendedTemplate','category');
         }
 	],
 
