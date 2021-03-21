@@ -50,7 +50,7 @@ export default {
 				scss: {
 					// relative to root
 					prependData: `@import 'src/scss/_mixins.scss';`,
-					prependData: `@import 'src/scss/_print.scss';`
+					prependData: `@import 'src/scss/_print.scss';`}
 			}),
 		}),
 
