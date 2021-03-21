@@ -13,8 +13,8 @@ tabs:
         sections:
 
           posts:
-            extends: sections/posts
-            parent: site.page('posts')
+            extends: sections/categories
+            template: category
 
       - width: 1/3
         sections:
@@ -22,6 +22,7 @@ tabs:
           pages:
             extends: sections/pages
             status: published
+            template: info
 
   settings:
     label:
@@ -29,18 +30,6 @@ tabs:
       de: Einstellungen
     icon: cog
     fields:
-
-      categories:
-        label:
-          en: Categories
-          de: Kategorien
-        help:
-          en: Posts can be assigned to multiple categories from the entries above
-          de: Beiträge können einer oder mehreren der angelegten Kategorien zugeordnet werden
-        type: structure
-        fields:
-          name:
-            type: text
 
   meta:
     label: Meta

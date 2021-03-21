@@ -1,0 +1,52 @@
+title:
+  en: Category
+  de: Kategorie
+
+icon: layers
+
+options:
+  changeSlug: false
+  changeStatus: false
+  delete: false
+  duplicate: false
+
+tabs:
+
+  content:
+    label:
+      de: Beiträge
+      en: Posts
+    icon: page
+    sections:
+
+      drafts:
+        extends: sections/posts
+        headline:
+          en: Drafts
+          de: Entwürfe
+        empty:
+          en: No drafts created yet
+          de: Noch keine Entwürfe angelegt
+        status: drafts
+
+      published:
+        extends: sections/posts
+        headline:
+          en: Published
+          de: Veröffentlichte Beiträge
+        empty:
+          en: No posts published yet
+          de: Noch keine Beiträge veröffentlicht
+        status: listed
+
+  info:
+    icon: question
+    label: Info
+    fields:
+
+      text:
+        type: writer
+        maxlength: 1000
+        label:
+          en: About this section
+          de: Über diese Sektion

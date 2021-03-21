@@ -1,0 +1,12 @@
+headline:
+  en: Sections
+  de: Sektionen
+empty:
+  en: No sections created yet
+  de: Noch keine Sektionen angelegt
+type: pages
+sortable: false
+info: "{{page.children.count}}"
+image:
+  back: white
+template: default

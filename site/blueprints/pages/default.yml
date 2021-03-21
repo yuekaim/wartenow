@@ -23,7 +23,7 @@ tabs:
             type: writer
             label: Abstract
             buttons: false
-            maxlength: 400
+            maxlength: 600
 
           text: fields/content
 
@@ -60,8 +60,6 @@ tabs:
       - width: 2/3
         fields:
 
-          date: fields/date
-
           authors:
             extends: fields/people
             label:
@@ -81,6 +79,6 @@ tabs:
             type: fields
             fields:
 
-              categories: fields/categories
+               date: fields/date
 
           uploads: sections/files

@@ -21,3 +21,4 @@ fields:
       de: Kurz-Vorstellung
     type: textarea
     buttons: false
+    maxlength: 400
