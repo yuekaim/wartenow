@@ -1,24 +1,20 @@
 <script>
 
+    import Link from './Link.svelte';
     export let tags;
 
 </script>
 
-<ul>
+<nav>
     {#each tags as tag}
-        <li>{tag}</li>
+        <Link to="/" class="button">{tag}</Link>
     {/each}
-</ul>
+</nav>
 
 <style lang="scss">
 
     ul {
-        li {
-            display: inline-block;
-            padding: 0.3em 0.6em;
-            margin: 0.3em;
-            background-color: #eee;
-        }
+        display: flex;
     }
 
 </style>

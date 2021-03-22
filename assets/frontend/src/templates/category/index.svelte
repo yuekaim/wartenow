@@ -9,6 +9,10 @@
 
 <Load path="{category}" let:prop={page}>
 
+    {#if page.text}
+        {@html page.text}
+    {/if}
+
     <Posts posts={page.posts} />
 
 </Load>

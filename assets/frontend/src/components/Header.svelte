@@ -12,15 +12,15 @@
     <Link to="/"><img id="logo" height="100%;" width="auto" src="/assets/icons/logo.svg"></Link>
 
     <nav class="categories">
-        <Link to="/">All</Link>
+        <Link class="button" to="/">All</Link>
         {#each categories as category}
-            <Link to={category.path}>{category.title}</Link>
+            <Link class="button" to={category.path}>{category.title}</Link>
         {/each}
     </nav>
 
     <nav class="pages">
         {#each pages as page}
-            <Link to={page.path}>{page.title}</Link>
+            <Link class="button" to={page.path}>{page.title}</Link>
         {/each}
     </nav>
 
@@ -41,19 +41,6 @@
     img {
         height: 4rem;
         width: auto;
-    }
-
-    nav {
-        :global( a ){
-            background-color: #eee;
-            padding: 0.3em 0.6em;
-            margin: 0.3em;
-        }
-        :global( a:hover ),
-        :global( a[aria-current=page] ){
-            background-color: $yellow;
-            box-shadow: inset 0 0 10px 5px $white;
-        }
     }
 
 </style>

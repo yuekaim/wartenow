@@ -25,6 +25,24 @@ body {
 	background-color: $white;
 }
 
+.button {
+	padding: 0.2em 0.5em;
+	text-transform: uppercase;
+	background-color: #eee;
+	border-radius: 0.35em;
+	transition: background-color 300ms ease;
+	&:hover,
+	&[aria-current=page] {
+		background-color: $yellow;
+	}
+}
+nav {
+	display: flex;
+	.button {
+		margin: 0.3em;
+	}
+}
+
 h1, h2 {
 	font-size: 2rem;
 }
