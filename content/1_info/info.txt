@@ -17,13 +17,12 @@ Team:
 - 
   name: Nora Sternfeld
   image:
-    - ueberuns-portrait-01-nora.jpg
+    - nora-sternfeld.jpg
   link: ""
   intro: 'Nora Sternfeld ist Kunstvermittlerin und Kuratorin. Sie ist Professorin für Kunstpädagogik an der HFBK Hamburg. Von 2018 bis 2020 war sie documenta Professorin an der Kunsthochschule Kassel und Gründungsdirektorin von TRACES (Transdisziplinäres Forschungszentrum für Ausstellungsstudien). Sie initiierte das zweijährige Forschungsprojekt Kunst Forschung Praxis documenta – künstlerische und kuratorische Forschung am documenta Institut, finanziert vom Hessischen Ministerium für Wissenschaft und Kunst. Von 2012 bis 2018 war sie Professorin für Curating and Mediating Art an der Aalto University in Helsinki. Darüber hinaus ist sie Co-Leiterin des /ecm – Masterlehrgangs für Ausstellungstheorie und -praxis an der Universität für angewandte Kunst Wien, im Kernteam von schnittpunkt. ausstellungstheorie & praxis, Mitbegründerin und Teilhaberin von trafo.K, Büro für Bildung, Kunst und kritische Wissensproduktion (Wien) und seit 2011 Teil von freethought, Plattform für Forschung, Bildung und Produktion (London). In diesem Zusammenhang war sie auch eine der künstlerischen LeiterInnen der Bergen Assembly 2016 und ist 2020 BAK Fellow, basis voor actuele kunst (Utrecht). Sie publiziert zu zeitgenössischer Kunst, Ausstellungen, Geschichtspolitik, Bildungstheorie und Antirassismus.'
 - 
   name: Carina Herring
-  image:
-    - carina_herring.jpg
+  image: [ ]
   link: ""
   intro: >
     Carina Herring ist Kunstvermittlerin und
@@ -52,13 +51,11 @@ Team:
     Kunstvermittlung untersucht.
 - 
   name: Nanne Buurman
-  image:
-    - ueberuns-portrait-02-nanne.jpg
+  image: [ ]
   link: ""
   intro: 'Nanne Buurman ist seit Januar 2018 wissenschaftliche Mitarbeiterin für documenta- und Ausstellungsstudien im Fachbereich Kunstwissenschaft der Kunsthochschule Kassel. Nach dem Studium in Leipzig war sie Promotionsstipendiatin der Deutschen Forschungsgemeinschaft im Internationalen Graduiertenkolleg InterArt an der Freien Universität Berlin, Gastwissenschaftlerin am Goldsmiths College in London sowie Lehrbeauftragte an den Universitäten Leipzig und Hildesheim. Sie arbeitete für verschiedene Kunstinstitutionen und war an zahlreichen Kunstvermittlungs-, Ausstellungs- und Publikationsprojekten beteiligt. Buurman forscht und publiziert zu kuratorischen Praktiken, Gender, Arbeit und Globalisierung im Feld der zeitgenössischen Kunst. Sie ist Mitherausgeberin der Bände documenta. Curating the History of the Present (2017) und Situating Global Art. Temporalities – Topologies – Trajectories (2018).'
 - 
   name: Ina Wudtke
-  image:
-    - ueberuns-portrait-03-ina.jpg
+  image: [ ]
   link: ""
   intro: 'Ina Wudtke ist bildende Künstlerin. Seit Januar 2018 ist sie künstlerische Mitarbeiterin der documenta Professur an der Kunsthochschule Kassel. Ihre recherchebasierte Arbeit hinterfragt hegemoniale politisch-gesellschaftliche Diskurse und stärkt Gegendiskurse zu Themenfeldern wie Arbeit, Gender und Wohnen. Von 1992 bis 2004 gab sie das queer-feministische Künstler*innenmagazin NEID heraus. 2011 brachte die Künstlerin, unter ihrem Pseudonym T-INA Darling, die Konzept LP The Fine Art of Living, über die Verdrängung von Einwohner*innen mit niedrigem Einkommen aus den Innenstädten, heraus. Zusammen mit dem belgischen Philosophen Dieter Lesage schrieb sie das Buch Black Sound White Cube. Die Audiologie des Ausstellungsraums (Wien, Löcker Verlag, 2011). In 2018 erschien ihr Buch The Fine Art of Living (Berlin, Archive Books). Ina Wudtke lebt seit 1998 in Berlin.'

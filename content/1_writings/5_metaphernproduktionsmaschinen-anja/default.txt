@@ -14,11 +14,24 @@ Footnotes: <p><a href="#_ednref1" rel="noopener noreferrer nofollow">[1]</a> Die
 
 ----
 
-Titleimage: 
+Attributes:
+
+- 
+  title: Impressum
+  value: '<p>para-educational papers #02, April 2021 MARIE PRESTON: Metaphernproduktionsmaschinen. Koloniale Denkmuster, die freie Kunst der Kinder und das Potenzial von Scharnierfiguren </p>'
+- 
+  title: Herausgeberinnen
+  value: '<p>Nora Sternfeld, Anja Steidinger, Nele Sock, Carina Herring</p>'
+- 
+  title: Redaktion
+  value: '<p>Carina Herring</p>'
+- 
+  title: Grafik Design
+  value: '<p>?</p>'
 
 ----
 
-Date: 2021-03-10
+Titleimage: 
 
 ----
 
@@ -71,15 +84,11 @@ Links:
 
 ----
 
-Attributes:
-
-- 
-  title: IMPRESSUM
-  value: 'para-educational papers #02, April 2021  MARIE PRESTON: Metaphernproduktionsmaschinen. Koloniale Denkmuster, die freie Kunst der Kinder und das Potenzial von Scharnierfiguren  HERAUSGEBERINNEN: Nora Sternfeld, Anja Steidinger, Nele Sock, Carina Herring  REDAKTION/LEKTORAT: Carina Herring  GRAFIK DESIGN: NOCH OFFEN  Kunstpädagogik HFBK Hamburg'
+Keywords: art, education
 
 ----
 
-Keywords: art, education
+Date: 2021-03-10
 
 ----
 
