@@ -12,7 +12,7 @@
 
 </script>
 
-<Load path="posts/{path}" let:prop={page}>
+<Load path="{path}" let:prop={page}>
 
     <article>
 
@@ -56,7 +56,6 @@
 
             <Links links={page.links} />
             <Downloads downloads={page.downloads} />
-            <Tags tags={page.categories} />
             <Tags tags={page.keywords} />
         </footer>
 

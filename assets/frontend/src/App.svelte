@@ -5,7 +5,8 @@
 	import Header from './components/Header.svelte';
 	import Footer from './components/Footer.svelte';
 
-	import Archive from './templates/archive/index.svelte';
+	import Start from './templates/start/index.svelte';
+	import Category from './templates/category/index.svelte';
 	import Post from './templates/post/index.svelte';
 	import Info from './templates/info/index.svelte';
 
@@ -20,15 +21,15 @@
 	<Route path="info" component={Info} />
 
 	<Route path="/">
-		<Archive posts={data.posts} filter={false} />
+		<Start posts={data.posts}/>
 	</Route>
 
-	<Route path=":filter" let:params>
-		<Archive posts={data.posts} filter="{params.filter}" />
+	<Route path="*category" let:params>
+		<Category category="{params.category}" />
 	</Route>
 
-	<Route path=":filter/:slug" let:params>
-		<Post path="{params.filter}/{params.slug}" />
+	<Route path=":category/:slug" let:params>
+		<Post path="{params.category}/{params.slug}" />
 	</Route>
 
 	<Footer />

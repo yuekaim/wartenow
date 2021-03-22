@@ -4,7 +4,7 @@
 
     export let path;
 
-    let data = load( path );
+    $: data = load( path );
 
 </script>
 
