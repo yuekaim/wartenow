@@ -11,5 +11,5 @@ fields:
       de: Titel
   value:
     label: Text
-    type: text
+    type: writer
     width: 2/3

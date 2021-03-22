@@ -10,7 +10,7 @@
         {#each attributes as attr}
             <dl>
                 <dt>{attr.title}</dt>
-                <dd>{attr.value}</dd>
+                <dd>{@html attr.value}</dd>
             </dl>
         {/each}
     </section>

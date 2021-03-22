@@ -1,9 +1,9 @@
 <script>
 
     import Load from '../Load.svelte';
-    import Authors from './Authors.svelte';
     import Downloads from './Downloads.svelte';
     import Attributes from './Attributes.svelte';
+    import Persons from '../../components/Persons.svelte';
     import Tags from '../../components/Tags.svelte';
     import Image from '../../components/Image.svelte';
     import Links from '../../components/Links.svelte';
@@ -52,7 +52,10 @@
 
         <footer>
             <Attributes attributes={page.attributes} />
-            <Authors persons={page.authors} />
+
+            <Persons persons={page.authors}>
+                <h2>Autor*innen</h2>
+            </Persons>
 
             <Links links={page.links} />
             <Downloads downloads={page.downloads} />

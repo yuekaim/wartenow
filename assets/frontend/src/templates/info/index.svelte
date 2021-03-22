@@ -1,7 +1,7 @@
 <script>
 
     import Load from '../Load.svelte';
-    import Team from './Team.svelte';
+    import Persons from '../../components/Persons.svelte';
     import Debug from '../../components/Debug.svelte';
 
 </script>
@@ -11,20 +11,16 @@
     <article>
 
         <header>
-            <h1>{page.title}</h1>
+            <h1>Wartenau Art Education</h1>
         </header>
 
         <main class="text">
             {@html page.content}
         </main>
 
-        <Team persons={page.team} />
-
-        <footer>
-
-        </footer>
-
-        <!-- <Debug data={page} /> -->
+        <Persons persons={page.team}>
+            <h2>Team</h2>
+        </Persons>
 
     </article>
 
@@ -37,6 +33,9 @@
         header, main, footer {
             margin-bottom: 4rem;
         }
+    }
+    h2 {
+        margin-bottom: 1rem;
     }
 
 </style>
