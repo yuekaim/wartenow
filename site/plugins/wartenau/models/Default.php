@@ -23,7 +23,8 @@ class DefaultPage extends Page {
             'subtitle' => $this->subtitle()->value(),
             'category' => $this->parent()->uid(),
             'date' => $this->date()->toDate('d.m.Y'),
-            'image' => $this->titleImage()->json('image')
+            'image' => $this->titleImage()->json('image'),
+            'color' => $this->color()->toColor('hex')
         ]);
 
         if( $full === true ){

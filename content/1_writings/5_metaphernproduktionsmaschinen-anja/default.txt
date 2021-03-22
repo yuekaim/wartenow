@@ -92,4 +92,8 @@ Date: 2021-03-10
 
 ----
 
+Color: #22c959
+
+----
+
 Categories: Writings

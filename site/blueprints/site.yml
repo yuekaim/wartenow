@@ -31,6 +31,23 @@ tabs:
     icon: cog
     fields:
 
+      semesters:
+        type: structure
+        label:
+          en: Semesters
+          de: Semester
+        min: 1
+        fields:
+          semester:
+            type: text
+            width: 1/2
+          color:
+            width: 1/2
+            type: colors
+            label:
+              en: Color
+              de: Farbe
+
   meta:
     label: Meta
     icon: url

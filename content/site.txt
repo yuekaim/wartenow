@@ -2,6 +2,32 @@ Title: Wartenau Art Education
 
 ----
 
+Semesters:
+
+- 
+  semester: Wintersemester 20/21
+  color: '#22c959'
+- 
+  semester: Sommersemester 2021
+  color: '#f3c903'
+- 
+  semester: Wintersemester 21/22
+  color: null
+
+----
+
+Description: 
+
+----
+
+Tags: 
+
+----
+
+Ogimage: 
+
+----
+
 Categories:
 
 -
@@ -10,15 +36,3 @@ Categories:
   name: Versammlungen
 -
   name: Writings
-
-----
-
-Description:
-
-----
-
-Tags:
-
-----
-
-Ogimage:

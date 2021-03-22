@@ -8,7 +8,7 @@
 </script>
 
 <Link to={post.path}>
-    <article>
+    <article style="background-color:{post.color};">
 
         {#if post.date}
             <p class="date">{post.date}</p>

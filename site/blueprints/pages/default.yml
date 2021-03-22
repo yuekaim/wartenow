@@ -79,6 +79,15 @@ tabs:
             type: fields
             fields:
 
-               date: fields/date
+              date: fields/date
+
+              color:
+                type: select
+                label: Semester
+                options: query
+                query:
+                  fetch: site.semesters.toStructure
+                  text: "{{ structureItem.semester }}"
+                  value: "{{ structureItem.color }}"
 
           uploads: sections/files

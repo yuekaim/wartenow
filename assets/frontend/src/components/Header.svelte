@@ -9,7 +9,7 @@
 
 <header>
 
-    <Link to="/"><img id="logo" height="100%;" width="auto" src="/assets/icons/logo.svg"></Link>
+    <Link to="/"><img id="logo" alt="Logo" height="100%;" width="auto" src="/assets/icons/logo.svg"></Link>
 
     <nav class="categories">
         <Link class="button" to="/">All</Link>

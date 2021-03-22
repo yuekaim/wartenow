@@ -14,11 +14,15 @@ Footnotes: <p><a href="#_ftnref1" rel="noopener noreferrer nofollow">[1]</a> Er 
 
 ----
 
-Titleimage: 
+Attributes:
+
+- 
+  title: Lektorat
+  value: Moritz Ebeling
 
 ----
 
-Date: 2021-03-10
+Titleimage: 
 
 ----
 
@@ -43,15 +47,19 @@ Links:
 
 ----
 
-Attributes:
-
-- 
-  title: Lektorat
-  value: Moritz Ebeling
+Keywords: art, education
 
 ----
 
-Keywords: art, education
+Date: 2021-03-10
+
+----
+
+Color: #22c959
+
+----
+
+Semester: 2020-winter
 
 ----
 
