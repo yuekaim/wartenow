@@ -9,13 +9,12 @@
 
 <header>
 
-
     <Link to="/"><img id="logo" height="100%;" width="auto" src="/assets/icons/logo.svg"></Link>
 
     <nav class="categories">
         <Link to="/">All</Link>
         {#each categories as category}
-            <Link to={category}>{category}</Link>
+            <Link to={category.path}>{category.title}</Link>
         {/each}
     </nav>
 

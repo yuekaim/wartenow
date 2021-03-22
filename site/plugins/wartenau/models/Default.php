@@ -21,7 +21,7 @@ class DefaultPage extends Page {
         // abstract dataset for list of posts
         $json = array_merge($json, [
             'subtitle' => $this->subtitle()->value(),
-            'categories' => $this->categories()->split(),
+            'category' => $this->parent()->uid(),
             'date' => $this->date()->toDate('d.m.Y'),
             'image' => $this->titleImage()->json('image')
         ]);

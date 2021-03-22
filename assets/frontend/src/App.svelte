@@ -15,21 +15,23 @@
 </script>
 
 <Router url="{url}">
-
 	<Header pages={data.pages} categories={data.categories} />
 
 	<Route path="info" component={Info} />
 
-	<Route path="posts/:path" let:params>
-		<Post path="{params.path}" />
+	<Route path="/">
+		<Archive posts={data.posts} filter={false} />
 	</Route>
 
-	<Route path="/*filter" let:params>
-		<Archive filter="{params.filter}" all={data.posts} />
+	<Route path=":filter" let:params>
+		<Archive posts={data.posts} filter="{params.filter}" />
+	</Route>
+
+	<Route path=":filter/:slug" let:params>
+		<Post path="{params.filter}/{params.slug}" />
 	</Route>
 
 	<Footer />
-
 </Router>
 
 <style lang="scss">

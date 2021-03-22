@@ -84,7 +84,7 @@ Kirby::plugin('moritzebeling/headless', [
 				'title' => $this->title()->value(),
 				'categories' => $this->categories()->json(),
 				'posts' => $this->posts()->limit(10)->json(),
-				'info' => $this->children()->listed()->filterBy('intendedTemplate','!=','category')->json()
+				'pages' => $this->children()->listed()->filterBy('intendedTemplate','!=','category')->json()
 			];
 
 			return $json;
@@ -102,7 +102,7 @@ Kirby::plugin('moritzebeling/headless', [
 
 			$json = [
 				'title' => $this->title()->value(),
-				'path' => $this->id(),
+				'path' => '/'.$this->id(),
 				'template' => $this->intendedTemplate()->name()
 			];
 
