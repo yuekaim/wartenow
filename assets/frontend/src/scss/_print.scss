@@ -2,6 +2,12 @@
   size: A4;
 }
 
+* {
+    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+    color-adjust: exact !important;                 /*Firefox*/
+    overflow: visible;
+}
+
 #logo{
   display: none;
 }
@@ -10,8 +16,7 @@ nav{
   display: none;
 }
 
-h1{
-  display: block;
+.title{
   position: absolute;
   width: 311px;
   height: 95px;
@@ -30,7 +35,7 @@ h1{
 
 }
 
-h2{
+.subtitle{
   position: absolute;
   width: 566px;
   height: 76px;
@@ -70,4 +75,33 @@ h2{
 
 .text{
   page-break-before: always;
+}
+
+.bg-circle{
+  display: block;
+  position: absolute;
+  width: 377px;
+  height: 359px;
+  left: -64px;
+  top: 87px;
+  z-index: -100;
+
+  border-radius: 200px;
+  background-color: $yellow;
+  filter: blur(300px);
+}
+
+.titleImg {
+  position: absolute;
+  width: 60vw;
+  height: 30vw;
+  right: 22px;
+  top: 335px;
+}
+
+.titleImg img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
 }
