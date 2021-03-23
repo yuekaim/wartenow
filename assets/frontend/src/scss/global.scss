@@ -83,6 +83,10 @@ blockquote {
 	}
 }
 
+.page-header{
+	display: none;
+}
+
 
 @media print {
 	@import 'print';

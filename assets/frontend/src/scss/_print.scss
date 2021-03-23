@@ -8,6 +8,17 @@
     overflow: visible;
 }
 
+@page:first {
+    margin-top: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    margin-right: 0cm;
+}
+
+@page {
+  overflow: visible;
+}
+
 #logo{
   display: none;
 }
@@ -18,9 +29,9 @@ nav{
 
 .title{
   position: absolute;
-  width: 311px;
+  width: 416px;
   height: 95px;
-  left: 12px;
+  left: 20px;
   top: 172px;
 
   font-family: Favorit Std;
@@ -32,6 +43,11 @@ nav{
 
 
   color: #000000;
+  word-break: break-all;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 
 }
 
@@ -39,7 +55,7 @@ nav{
   position: absolute;
   width: 566px;
   height: 76px;
-  left: 12px;
+  left: 20px;
   top: 267px;
 
   font-family: Favorit Std;
@@ -59,7 +75,7 @@ nav{
   position: absolute;
   width: 253px;
   height: 50px;
-  left: 12px;
+  left: 20px;
   top: 114px;
 
   font-family: Favorit Std;
@@ -75,6 +91,8 @@ nav{
 
 .text{
   page-break-before: always;
+  page-break-inside: avoid;
+  width: 65%;
 }
 
 .bg-circle{
@@ -88,7 +106,7 @@ nav{
 
   border-radius: 200px;
   background-color: $yellow;
-  filter: blur(300px);
+  filter: blur(1000px);
 }
 
 .titleImg {
@@ -96,7 +114,7 @@ nav{
   width: 60vw;
   height: 30vw;
   right: 22px;
-  top: 335px;
+  top: 360px;
 }
 
 .titleImg img {
@@ -104,4 +122,34 @@ nav{
   height: 100%;
   object-position: center;
   object-fit: cover;
+}
+
+.abstract{
+
+}
+
+.page-header{
+  display: block;
+
+  position: absolute;
+width: 260px;
+height: 95px;
+left: 600px;
+top: 100px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 102%;
+/* or 12px */
+
+
+color: #000000;
+
+transform: rotate(90deg);
+}
+
+.footnotes{
+  page-break-before: always;
 }

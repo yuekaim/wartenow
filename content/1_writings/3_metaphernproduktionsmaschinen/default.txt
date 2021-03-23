@@ -6,7 +6,7 @@ Subtitle: Koloniale Denkmuster, die freie Kunst der Kinder und das Potenzial von
 
 ----
 
-Date:
+Abstract: <p>here is the abstract </p>
 
 ----
 
@@ -14,22 +14,44 @@ Text: [{"content":{"text":"<p>Die folgenden \u00dcberlegungen wollen anschlie\u0
 
 ----
 
-Downloads:
-
-----
-
-Links:
-
-----
-
-Credits:
-
-----
-
-Keywords:
+Attributes: 
 
 ----
 
 Titleimage:
 
 - ausschnitt_in_feiheit_dressiert.jpeg
+
+----
+
+Authors:
+
+- 
+  name: author1
+  image: [ ]
+  link: ""
+  intro: 'Andrea Hubin ist Kunsthistorikerin und Kunstvermittlerin. Als wissenschaftliche Mitarbeiterin der Abteilung Dramaturgie der Kunsthalle Wien ist sie u.a. für die Entwicklung und leitende Betreuung des partizipativen Reflexions- und Aktionsraums »Community College« verantwortlich. Wichtige Stationen als Vermittlerin sind 2007 die documenta 12, wo auch das Wissenstransferprojekt DEUTSCH WISSEN entsteht sowie 2008 die Konzeption der Kunstvermittlung der 5. Berlin Biennale. Karin Schneider und Andrea Hubin unterrichten gemeinsam Vermittlungspraxen an der Universität für angewandte Kunst in Wien und sind Mitglieder der Wiener Gruppe des internationalen Netzwerks »Another Roadmap for Arts Education«. Zusammen entwickeln und moderieren sie für verschiedene Kontexte, etwa das Volkskundemuseum Wien, diskursive Projekte mit experimentell-performativem Charakter.'
+
+----
+
+Downloads: 
+
+----
+
+Links: 
+
+----
+
+Keywords: 
+
+----
+
+Date: 
+
+----
+
+Color: 
+
+----
+
+Credits: 

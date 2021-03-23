@@ -22,22 +22,26 @@
                 <h3 class="date">{page.date}</h3>
             {/if}
 
-            <h1>{page.title}</h1>
+            <h1 class="title">{page.title}</h1>
 
             {#if page.subtitle}
-                <h2>{page.subtitle}</h2>
+                <h2 class="subtitle">{page.subtitle}</h2>
             {/if}
 
             {#if page.image}
-                <figure>
+                <figure class="titleImg">
                     <Image image={page.image} />
                 </figure>
             {/if}
 
             {#if page.abstract}
-                <p>{page.abstract}</p>
+                <p class="abstract">{@html page.abstract}</p>
             {/if}
 
+            <p class="page-header">author<br>
+<u>{page.title}</u> {page.subtitle}</p>
+
+            <div class="bg-circle"></div>
         </header>
 
         <main class="text">
