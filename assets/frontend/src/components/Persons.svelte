@@ -21,7 +21,10 @@
     ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 4rem;
+        @media(min-width: $device-l){
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        gap: 1rem;
     }
     figure {
         width: 50%;

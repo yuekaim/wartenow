@@ -44,7 +44,7 @@ nav {
 }
 
 h1, h2 {
-	font-size: 2rem;
+	@include text-large;
 }
 
 blockquote {
@@ -57,7 +57,7 @@ blockquote {
 }
 
 .text {
-	font-size: 1.2rem;
+	@include text-medium;
 	blockquote,
 	figure {
 		margin: 2rem;
@@ -81,6 +81,29 @@ blockquote {
 	h3, h4, h5, h6 {
 		margin-top: 2rem;
 	}
+	a[href^="#_ftn"] {
+		font-size: 0.6em;
+		vertical-align: super;
+		&:hover {
+			color: blue;
+		}
+	}
+}
+
+@keyframes slide-up {
+	from {
+		opacity: 0;
+		transform: translateY(2rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.slide-up {
+	animation-name: slide-up;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
 }
 
 .page-header{

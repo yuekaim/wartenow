@@ -44,6 +44,15 @@
 
 <style lang="scss">
 
+    figure {
+        @include rounded;
+        overflow: hidden;
+    }
+
+    h3 {
+        margin: 0.5em 0;
+    }
+
     ul {
         li {
             display: inline-block;
