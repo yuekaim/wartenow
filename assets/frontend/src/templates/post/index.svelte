@@ -9,6 +9,7 @@
     import Image from '../../components/Image.svelte';
     import Links from '../../components/Links.svelte';
     import Debug from '../../components/Debug.svelte';
+    import Collapsable from '../../components/Collapsable.svelte';
     export let path;
 
 </script>
@@ -36,10 +37,16 @@
             {/if}
 
             {#if page.abstract}
+<<<<<<< HEAD
                 <div class="abstract">
                   <h3>Abstract</h3>
                   <p>{@html page.abstract}</p>
                 </div>
+=======
+                <Collapsable title="Abstract">
+                    <p class="abstract">{@html page.abstract}</p>
+                </Collapsable>
+>>>>>>> 05df7c42ccfbfe5fb54b64d6be8e26cc7706f9be
             {/if}
 
 <<<<<<< HEAD
