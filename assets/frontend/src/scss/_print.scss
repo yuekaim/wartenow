@@ -6,6 +6,7 @@
     -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
     color-adjust: exact !important;                 /*Firefox*/
     overflow: visible;
+
 }
 
 @page:first {
@@ -29,12 +30,12 @@ nav{
 
 .title{
   position: absolute;
-  width: 416px;
+  width: 500px;
   height: 95px;
   left: 20px;
   top: 172px;
 
-  font-family: Favorit Std;
+  // font-family: Favorit Std;
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
@@ -48,6 +49,15 @@ nav{
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
+  //
+  // /* legacy properties */
+  // -webkit-hyphenate-limit-before: 3;
+  // -webkit-hyphenate-limit-after: 3;
+  // /* current proposal */
+  // -moz-hyphenate-limit-chars: 6 3 3;     /* not yet supported */
+  // -webkit-hyphenate-limit-chars: 6 3 3;  /* not yet supported */
+  // -ms-hyphenate-limit-chars: 6 3 3;
+  // hyphenate-limit-chars: 6 3 3;
 
 }
 
@@ -58,7 +68,7 @@ nav{
   left: 20px;
   top: 267px;
 
-  font-family: Favorit Std;
+  // font-family: Favorit Std;
   font-style: normal;
   font-weight: normal;
   font-size: 22.6895px;
@@ -78,7 +88,7 @@ nav{
   left: 20px;
   top: 114px;
 
-  font-family: Favorit Std;
+  // font-family: Favorit Std;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -125,6 +135,21 @@ nav{
 }
 
 .abstract{
+  position: absolute;
+  width: 60vw;
+  // height: 178.74px;
+  right: 22px;
+  top: 17cm;
+
+  // font-family: Favorit Std;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.2403px;
+  line-height: 140%;
+
+  border: 1px solid $yellow;
+  border-radius: 10px;
+  padding: 0.5cm 0.5cm 0.5cm 0.5cm;
 
 }
 
@@ -132,16 +157,16 @@ nav{
   display: block;
 
   position: absolute;
-width: 260px;
-height: 95px;
-left: 600px;
-top: 100px;
+  width: 260px;
+  height: 95px;
+  left: 600px;
+  top: 100px;
 
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 102%;
+  // font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 102%;
 /* or 12px */
 
 

@@ -35,11 +35,14 @@
             {/if}
 
             {#if page.abstract}
-                <p class="abstract">{@html page.abstract}</p>
+                <div class="abstract">
+                  <h3>Abstract</h3>
+                  <p>{@html page.abstract}</p>
+                </div>
             {/if}
 
-            <p class="page-header">author<br>
-<u>{page.title}</u> {page.subtitle}</p>
+            <p class="page-header print-only">author<br>
+<strong>{page.title}</strong> {page.subtitle}</p>
 
             <div class="bg-circle"></div>
         </header>
