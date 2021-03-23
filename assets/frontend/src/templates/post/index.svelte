@@ -9,6 +9,7 @@
     import Image from '../../components/Image.svelte';
     import Links from '../../components/Links.svelte';
     import Debug from '../../components/Debug.svelte';
+    import Collapsable from '../../components/Collapsable.svelte';
     export let path;
 
 </script>
@@ -36,7 +37,9 @@
             {/if}
 
             {#if page.abstract}
-                <p class="abstract">{@html page.abstract}</p>
+                <Collapsable title="Abstract">
+                    <p class="abstract">{@html page.abstract}</p>
+                </Collapsable>
             {/if}
 
             <p class="page-header">author<br>
