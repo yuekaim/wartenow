@@ -50,35 +50,25 @@ $large2: size( 18 ); // 216px
 
 /* typography */
 
-@mixin small2 {
-    font-size: size( 0.75 );
+@mixin text-small {
+    font-size: size( 0.85 );
+    line-height: 1.23;
+    letter-spacing: 0.004em;
+}
+@mixin text-normal {
+    font-size: size( 1 );
     line-height: 1.2;
     letter-spacing: 0.004em;
 }
-@mixin small {
-    font-size: size( 1.08 ); // 13px
-    line-height: 1.23; // 16px
-    letter-spacing: 0.004em;
-}
-@mixin medium {
-    font-size: size( 1.67 ); // 20px
-    line-height: 1.2; // 24px
+@mixin text-medium {
+    font-size: size( 1.5 );
+    line-height: 1.2;
     letter-spacing: 0.002em;
 }
-@mixin large {
-    font-size: size( 2.5 ); // 30px
-    line-height: 1.2; // 36px
+@mixin text-large {
+    font-size: size( 2.5 );
+    line-height: 1.2;
     letter-spacing: 0.001em;
-}
-@mixin large2 {
-    font-size: size( 4.5 ); // 54px
-    line-height: 1.11; // 60px
-    letter-spacing: -0.004em;
-}
-@mixin large3 {
-    font-size: size( 7.58 ); // 91px
-    line-height: 1.05; // 96px
-    letter-spacing: -0.006em;
 }
 
 @mixin noSelect {
@@ -95,6 +85,10 @@ $large2: size( 18 ); // 216px
 /* forms */
 
 /* effects */
+
+@mixin rounded {
+    border-radius: 0.5em;
+}
 
 @mixin transition( $property: opacity, $duration: 300ms, $easing: ease ){
     transition-property: $property;

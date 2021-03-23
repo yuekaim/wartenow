@@ -8,7 +8,7 @@
 
 <ul>
     {#each posts as post}
-        <li>
+        <li class="slide-up">
             <Post {post} />
         </li>
     {/each}
@@ -19,10 +19,11 @@
     ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        padding: 4rem;
-        gap: 4rem;
+        padding: 1rem;
+        gap: 1rem;
     }
     li {
+
     }
 
 </style>

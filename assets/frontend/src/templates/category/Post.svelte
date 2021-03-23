@@ -30,4 +30,24 @@
 </Link>
 
 <style lang="scss">
+
+    article {
+        background-color: #eee;
+        padding: 0.5em;
+        @include rounded;
+    }
+
+    .date, figure, h3 {
+        margin-bottom: 0.5em;
+    }
+
+    h3 {
+        @include text-medium;
+    }
+
+    figure {
+        @include rounded;
+        overflow: hidden;
+    }
+
 </style>
