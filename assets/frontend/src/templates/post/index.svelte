@@ -3,6 +3,7 @@
     import Load from '../Load.svelte';
     import Downloads from './Downloads.svelte';
     import Attributes from './Attributes.svelte';
+    import Footnotes from './Footnotes.svelte';
     import Persons from '../../components/Persons.svelte';
     import Tags from '../../components/Tags.svelte';
     import Image from '../../components/Image.svelte';
@@ -41,8 +42,13 @@
                 </div>
             {/if}
 
+<<<<<<< HEAD
             <p class="page-header print-only">author<br>
 <strong>{page.title}</strong> {page.subtitle}</p>
+=======
+            <p class="page-header">author<br>
+            <u>{page.title}</u> {page.subtitle}</p>
+>>>>>>> fc92cba3ce2eedd8fa96f60e302798466772810f
 
             <div class="bg-circle"></div>
         </header>
@@ -51,11 +57,9 @@
             {@html page.content}
         </main>
 
-        <aside class="footnotes mono">
-            {#if page.footnotes}
-                {@html page.footnotes}
-            {/if}
-        </aside>
+        {#if page.footnotes}
+            <Footnotes text={page.footnotes} />
+        {/if}
 
         <footer>
             <Attributes attributes={page.attributes} />
@@ -85,10 +89,6 @@
     }
     .date {
         margin-bottom: 0.5em;
-    }
-    .footnotes {
-        border-top: 1px solid #000;
-        padding-top: 0.5em;
     }
 
     footer {
