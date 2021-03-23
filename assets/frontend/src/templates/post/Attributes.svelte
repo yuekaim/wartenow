@@ -8,7 +8,7 @@
     <section>
         <h3>Colophon</h3>
         {#each attributes as attr}
-            <dl>
+            <dl class="mono">
                 <dt>{attr.title}</dt>
                 <dd>{@html attr.value}</dd>
             </dl>

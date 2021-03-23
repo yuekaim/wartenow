@@ -48,7 +48,7 @@
             {@html page.content}
         </main>
 
-        <aside class="footnotes">
+        <aside class="footnotes mono">
             {#if page.footnotes}
                 {@html page.footnotes}
             {/if}

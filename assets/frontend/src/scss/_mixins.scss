@@ -38,12 +38,18 @@ $large2: size( 18 ); // 216px
 /* fonts */
 
 @mixin regular {
-    font-family: 'Regular', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
+
 }
-@mixin italic {
-    font-family: 'Italic', sans-serif;
+@mixin bold {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+}
+@mixin mono {
+    font-family: 'Space Mono', monospace;
     font-style: normal;
     font-weight: normal;
 }
@@ -57,16 +63,17 @@ $large2: size( 18 ); // 216px
 }
 @mixin text-normal {
     font-size: size( 1 );
-    line-height: 1.2;
+    line-height: 1.3;
     letter-spacing: 0.004em;
 }
 @mixin text-medium {
     font-size: size( 1.5 );
-    line-height: 1.2;
+    line-height: 1.22;
     letter-spacing: 0.002em;
 }
 @mixin text-large {
-    font-size: size( 2.5 );
+    @include bold;
+    font-size: size( 2 );
     line-height: 1.2;
     letter-spacing: 0.001em;
 }

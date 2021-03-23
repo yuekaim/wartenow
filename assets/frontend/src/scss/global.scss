@@ -23,6 +23,8 @@ html {
 body {
 	color: $black;
 	background-color: $white;
+	@include regular;
+	@include text-normal;
 }
 
 .button {
@@ -45,6 +47,13 @@ nav {
 
 h1, h2 {
 	@include text-large;
+}
+h3 {
+	@include bold;
+}
+.mono {
+	@include mono;
+	@include text-small;
 }
 
 blockquote {
