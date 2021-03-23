@@ -24,7 +24,7 @@ class DefaultPage extends Page {
             'category' => $this->parent()->uid(),
             'date' => $this->date()->toDate('d.m.Y'),
             'image' => $this->titleImage()->json('image'),
-            'color' => $this->color()->toColor('hex')
+            'color' => $this->color()->value()
         ]);
 
         if( $full === true ){
