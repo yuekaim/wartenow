@@ -21,8 +21,14 @@
     section {
         margin-top: 2rem;
     }
-    dd {
-        margin-left: 1em;
+    dl {
+        display: flex;
+        dt {
+            flex: 1 1 25%;
+        }
+        dd {
+            flex: 1 1 75%;
+        }
     }
 
 </style>

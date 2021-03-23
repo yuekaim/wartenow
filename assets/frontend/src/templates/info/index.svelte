@@ -31,7 +31,7 @@
     article {
         margin: 4rem;
         header, main, footer {
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
         }
     }
     h2 {
