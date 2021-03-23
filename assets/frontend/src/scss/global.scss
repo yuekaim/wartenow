@@ -91,7 +91,8 @@ blockquote {
 		margin-top: 2rem;
 	}
 	a[href^="#_ftn"] {
-		font-size: 0.6em;
+		@include mono;
+		@include text-small;
 		vertical-align: super;
 		&:hover {
 			color: blue;
@@ -115,11 +116,17 @@ blockquote {
 	animation-iteration-count: 1;
 }
 
-.page-header{
+.page-header {
 	display: none;
 }
 
+.print-only {
+	display: none;
+}
 
 @media print {
+	.print-only {
+		display: block;
+	}
 	@import 'print';
 }
