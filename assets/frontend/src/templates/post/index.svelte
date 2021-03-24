@@ -12,6 +12,10 @@
     import Collapsable from '../../components/Collapsable.svelte';
     export let path;
 
+    function handlePrint(){
+        window.print();
+    }
+
 </script>
 
 <Load path="{path}" let:prop={page}>
@@ -72,6 +76,8 @@
             <Links links={page.links} />
             <Downloads downloads={page.downloads} />
             <Tags tags={page.keywords} />
+
+            <button class="button" on:click={handlePrint}>Print</button>
         </footer>
 
         <!-- <Debug data={page} /> -->
