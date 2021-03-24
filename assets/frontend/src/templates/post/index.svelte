@@ -43,13 +43,25 @@
             {/if}
 
             {#if page.abstract}
+<<<<<<< HEAD
+                <div class="abstract">
+                  <h3>Abstract</h3>
+                  <p>{@html page.abstract}</p>
+                </div>
+=======
                 <Collapsable title="Abstract">
                     <p class="abstract">{@html page.abstract}</p>
                 </Collapsable>
+>>>>>>> 05df7c42ccfbfe5fb54b64d6be8e26cc7706f9be
             {/if}
 
+<<<<<<< HEAD
+            <p class="page-header print-only">author<br>
+<strong>{page.title}</strong> {page.subtitle}</p>
+=======
             <p class="page-header">author<br>
             <u>{page.title}</u> {page.subtitle}</p>
+>>>>>>> fc92cba3ce2eedd8fa96f60e302798466772810f
 
             <div class="bg-circle"></div>
         </header>
