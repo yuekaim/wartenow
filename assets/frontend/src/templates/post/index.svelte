@@ -15,13 +15,19 @@
 </script>
 
 <Load path="{path}" let:prop={page}>
-
     <article>
-
         <header>
 
             {#if page.date}
                 <h3 class="date">{page.date}</h3>
+            {/if}
+
+            {#if page.authors}
+                <p class="authors">{page.authors.map(author => author.name).join(', ')}</p>
+            {/if}
+
+            {#if page.issue}
+                <p class="issue">{page.issue}</p>
             {/if}
 
             <h1 class="title">{page.title}</h1>
@@ -71,7 +77,6 @@
         <!-- <Debug data={page} /> -->
 
     </article>
-
 </Load>
 
 <style lang="scss">

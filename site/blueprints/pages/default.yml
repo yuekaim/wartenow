@@ -19,6 +19,13 @@ tabs:
               de: Untertitel
             type: text
 
+          issue:
+            type: text
+            label:
+              en: Issue
+              de: Ausgabe
+            placeholder: "Essay #7"
+
           abstract:
             type: writer
             label: Abstract
