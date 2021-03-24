@@ -6,7 +6,7 @@
     -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
     color-adjust: exact !important;                 /*Firefox*/
     overflow: visible;
-
+    float: none !important;
 }
 
 @page:first {
@@ -18,6 +18,12 @@
 
 @page {
   overflow: visible;
+  margin-bottom: 0cm;
+  margin-top: 0cm;
+}
+
+.page {
+  page-break-after: always;
 }
 
 #logo{
@@ -99,10 +105,40 @@ nav{
   color: #000000;
 }
 
+// footer {page-break-after: always;}
+
 .text{
+  position: relative;
   page-break-before: always;
-  page-break-inside: avoid;
-  width: 65%;
+  // page-break-inside: auto;
+  width: 70%;
+  font-size: 12pt;
+  margin: 0;
+  // height: 10cm;
+  float: none !important;
+
+  // box-decoration-break: clone;
+  // border: 1px solid black;
+  // padding-top: 5cm;
+  // padding-bottom: 5cm;
+
+  // height: auto;
+  overflow: visible!important;
+  // page-break-inside: auto !important;
+  iframe{
+    display: none;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    line-height: 0pt !important;
+    white-space: nowrap;
+  }
+  img{
+    transform: translateX(3cm);
+  }
+  :global(h1, h2, h3, h4, h5, h6)
+      { page-break-after:avoid; page-break-inside:avoid }
+  img { page-break-inside:avoid; page-break-after:avoid; }
 }
 
 .bg-circle{
@@ -154,9 +190,9 @@ nav{
 }
 
 .page-header{
-  display: block;
+  // display: block;
 
-  position: absolute;
+  position: fixed;
   width: 260px;
   height: 95px;
   left: 600px;
@@ -169,12 +205,26 @@ nav{
   line-height: 102%;
 /* or 12px */
 
+  color: #000000;
 
-color: #000000;
+  transform: rotate(90deg);
+}
 
-transform: rotate(90deg);
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 .footnotes{
   page-break-before: always;
+}
+
+.page-header-space {
+  height: 100px;
+}
+
+.page-footer-space {
+  height: 100px;
+
 }
