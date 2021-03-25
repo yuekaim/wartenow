@@ -1,13 +1,11 @@
 <script>
 
     import Load from '../Load.svelte';
-    import Downloads from './Downloads.svelte';
-    import Attributes from './Attributes.svelte';
-    import Footnotes from './Footnotes.svelte';
+    import Attributes from '../post/Attributes.svelte';
+    import Footnotes from '../post/Footnotes.svelte';
     import Persons from '../../components/Persons.svelte';
     import Tags from '../../components/Tags.svelte';
     import Image from '../../components/Image.svelte';
-    import Link from '../../components/Link.svelte';
     import Links from '../../components/Links.svelte';
     import Debug from '../../components/Debug.svelte';
     import Collapsable from '../../components/Collapsable.svelte'
@@ -97,10 +95,9 @@
                   <Attributes attributes={page.attributes} />
 
             <Links links={page.links} />
-            <Downloads downloads={page.downloads} />
             <Tags tags={page.keywords} />
 
-            <Link to="print" class="button">Print</Link>
+            <button class="button" on:click={handlePrint}>Print</button>
         </footer>
 
                   <!-- <Links links={page.links} />

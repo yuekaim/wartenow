@@ -9,6 +9,7 @@
 	import Category from './templates/category/index.svelte';
 	import Post from './templates/post/index.svelte';
 	import Info from './templates/info/index.svelte';
+	import Print from './templates/print/index.svelte';
 
 	export let data;
 	export let url = "";
@@ -30,6 +31,9 @@
 
 	<Route path=":category/:slug" let:params>
 		<Post path="{params.category}/{params.slug}" />
+	</Route>
+	<Route path=":category/:slug/print" let:params>
+		<Print path="{params.category}/{params.slug}" />
 	</Route>
 
 	<Footer />
