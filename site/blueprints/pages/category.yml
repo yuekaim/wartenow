@@ -5,9 +5,6 @@ title:
 icon: layers
 
 options:
-  changeSlug: false
-  changeStatus: false
-  delete: false
   duplicate: false
 
 tabs:
