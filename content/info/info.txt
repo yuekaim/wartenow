@@ -1,0 +1,26 @@
+Title: Info
+
+----
+
+Text:
+
+Zwischen Kunst und Pädagogik, zwischen Theorie und Praxis, zwischen Disziplinen und ihrer Durchkreuzung sowie zwischen Institutionen und ihrer kritischen Befragung angesiedelt, ist die Kunstpädagogik mit vielen Erfahrungen, Aufbrüchen und Widersprüchen verbunden, die wir an der HFBK Hamburg reflektieren und diskutieren.
+
+Neben der Auseinandersetzung mit historischen und aktuellen Positionen der Kunstpädagogik und Kunstvermittlung geht es aber vor allem um die Entwicklung neuer Handlungsformen: um künstlerische, vermittlerische und kuratorische Praxis als Ausgangspunkt von Prozessen des (Ver-)Lernens, von kollaborativen Interventionen sowie als Forschung und kritische Wissensproduktion im gesellschaftlichen Kontext.
+
+----
+
+Team:
+
+- 
+  name: Nora Sternfeld
+  image:
+    - nora-sternfeld.jpg
+  link: ""
+  intro: 'Nora Sternfeld ist Kunstvermittlerin und Kuratorin. Sie ist Professorin für Kunstpädagogik an der HFBK Hamburg. Von 2018 bis 2020 war sie documenta Professorin an der Kunsthochschule Kassel und Gründungsdirektorin von TRACES (Transdisziplinäres Forschungszentrum für Ausstellungsstudien). Sie initiierte das zweijährige Forschungsprojekt Kunst Forschung Praxis documenta – künstlerische und kuratorische Forschung am documenta Institut, finanziert vom Hessischen Ministerium für Wissenschaft und Kunst. Von 2012 bis 2018 war sie Professorin für Curating and Mediating Art an der Aalto University in Helsinki. Darüber hinaus ist sie Co-Leiterin des /ecm – Masterlehrgangs für Ausstellungstheorie und -praxis an der Universität für angewandte Kunst Wien, im Kernteam von schnittpunkt. ausstellungstheorie & praxis, Mitbegründerin und Teilhaberin von trafo.K, Büro für Bildung, Kunst und kritische Wissensproduktion (Wien) und seit 2011 Teil von freethought, Plattform für Forschung, Bildung und Produktion (London). In diesem Zusammenhang war sie auch eine der künstlerischen LeiterInnen der Bergen Assembly 2016 und ist 2020 BAK Fellow, basis voor actuele kunst (Utrecht). Sie publiziert zu zeitgenössischer Kunst, Ausstellungen, Geschichtspolitik, Bildungstheorie und Antirassismus.'
+- 
+  name: Anja Steidinger
+  image:
+    - mg_9775_etwas-heller.jpg
+  link: ""
+  intro: ""

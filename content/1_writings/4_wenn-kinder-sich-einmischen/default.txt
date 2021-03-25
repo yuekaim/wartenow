@@ -6,7 +6,11 @@ Subtitle:
 
 ----
 
-Issue: Para Educational Paper #2
+Issue: para-educational papers #1
+
+----
+
+Abstract: 
 
 ----
 
