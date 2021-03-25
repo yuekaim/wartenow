@@ -199,8 +199,8 @@ nav{
   position: fixed;
   width: 260px;
   height: 95px;
-  left: 600px;
-  top: 100px;
+  left: 580px;
+  top: 120px;
 
   // font-family: Open Sans;
   font-style: normal;
@@ -216,19 +216,21 @@ nav{
 
 .page-footer {
   position: fixed;
-  bottom: 0;
-  left: 0;
+  bottom: 10mm;
+  left: 10mm;
+  font-size: 12px;
 }
 
 .footnotes{
   page-break-before: always;
+  width: 70%;
 }
 
 .page-header-space {
-  height: 100px;
+  height: 15mm;
 }
 
 .page-footer-space {
-  height: 100px;
+  height: 18mm;
 
 }

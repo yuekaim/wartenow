@@ -128,7 +128,7 @@
 
 
     <!-- header and footer -->
-
+<!--
     <div class="page-header print-only">
         {#each page.authors as author}
           {author.name}
@@ -138,7 +138,7 @@
 
     <div class="page-footer print-only">
     I'm The Footer
-    </div>
+    </div> -->
 
 
 </Load>

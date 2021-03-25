@@ -8,8 +8,14 @@
     import Image from '../../components/Image.svelte';
     import Links from '../../components/Links.svelte';
     import Debug from '../../components/Debug.svelte';
-    import Collapsable from '../../components/Collapsable.svelte'
+    import Collapsable from '../../components/Collapsable.svelte';
+    import { onMount } from 'svelte';
     export let path;
+
+    onMount(() => {
+      window.print();
+    })
+
 
     function handlePrint(){
         window.print();
@@ -36,51 +42,46 @@
 
               <header>
 
-            {#if page.authors}
-                <p class="authors">{page.authors.map(author => author.name).join(', ')}</p>
-            {/if}
+                {#if page.authors}
+                    <p class="authors">{page.authors.map(author => author.name).join(', ')}</p>
+                {/if}
 
-            {#if page.issue}
-                <p class="issue">{page.issue}</p>
-            {/if}
+                <h1 class="title">{page.title}</h1>
 
-            <h1 class="title">{page.title}</h1>
+                      <!-- {#each page.authors as author}
+                        <h3>{author.name}</h3>
+                      {/each}
 
-                  <!-- {#each page.authors as author}
-                    <h3>{author.name}</h3>
-                  {/each}
+                      <h1 class="title">{page.title}</h1> -->
 
-                  <h1 class="title">{page.title}</h1> -->
+                {#if page.subtitle}
+                    <h2 class="subtitle">{page.subtitle}</h2>
+                {/if}
 
-                  {#if page.subtitle}
-                      <h2 class="subtitle">{page.subtitle}</h2>
-                  {/if}
+                {#if page.image}
+                    <figure class="titleImg">
+                        <Image image={page.image} />
+                    </figure>
+                {/if}
 
-                  {#if page.image}
-                      <figure class="titleImg">
-                          <Image image={page.image} />
-                      </figure>
-                  {/if}
-
-                  {#if page.abstract}
-                      <Collapsable title="Abstract">
-                        <div class="abstract">
-                          <p>{@html page.abstract}</p>
-                        </div>
-                      </Collapsable>
-                  {/if}
-
-                  <!-- <p class="page-header">author<br>
-                  <u>{page.title}</u> {page.subtitle}</p> -->
-
-                  <!-- {#if page.abstract}
+                {#if page.abstract}
                       <div class="abstract">
-                        <h3>Abstract</h3>
+                        <h3>ABSTRACT</h3>
                         <p>{@html page.abstract}</p>
                       </div>
-                  {/if} -->
+                {/if}
 
-                  <div class="bg-circle"></div>
+                <!-- <p class="page-header">author<br>
+                <u>{page.title}</u> {page.subtitle}</p> -->
+
+                <!-- {#if page.abstract}
+                    <div class="abstract">
+                      <h3>Abstract</h3>
+                      <p>{@html page.abstract}</p>
+                    </div>
+                {/if} -->
+
+                <div class="bg-circle"></div>
               </header>
 
               <main class="text">
@@ -88,7 +89,7 @@
               </main>
 
               {#if page.footnotes}
-                  <Footnotes text={page.footnotes} />
+                    <Footnotes text={page.footnotes} />
               {/if}
 
               <footer>
@@ -97,7 +98,7 @@
             <Links links={page.links} />
             <Tags tags={page.keywords} />
 
-            <button class="button" on:click={handlePrint}>Print</button>
+            <!-- <button class="button" on:click={handlePrint}>Print</button> -->
         </footer>
 
                   <!-- <Links links={page.links} />
@@ -128,13 +129,15 @@
 
     <div class="page-header print-only">
         {#each page.authors as author}
-          {author.name}
+          {author.name}_
         {/each}
       <br>
-    <strong>{page.title}</strong> {page.subtitle}</div>
+    <h3>{page.title}</h3> {page.subtitle}</div>
 
     <div class="page-footer print-only">
-    I'm The Footer
+      {#if page.issue}
+          <p class="issue">{page.issue}</p>
+      {/if}
     </div>
 
 
