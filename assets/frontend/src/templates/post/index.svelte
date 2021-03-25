@@ -36,6 +36,10 @@
                       <h3 class="date">{page.date}</h3>
                   {/if}
 
+                  {#each page.authors as author}
+                    <h3>{author.name}</h3>
+                  {/each}
+
                   <h1 class="title">{page.title}</h1>
 
                   {#if page.subtitle}
@@ -96,8 +100,14 @@
 
   </table>
 
+
     <!-- header and footer -->
-    <div class="page-header print-only">author<br>
+
+    <div class="page-header print-only">
+        {#each page.authors as author}
+          {author.name}
+        {/each}
+      <br>
     <strong>{page.title}</strong> {page.subtitle}</div>
 
     <div class="page-footer print-only">
