@@ -10,6 +10,7 @@
 	import Post from './templates/post/index.svelte';
 	import Info from './templates/info/index.svelte';
 	import Print from './templates/print/index.svelte';
+	import Load from './templates/Load.svelte';
 
 	export let data;
 	export let url = "";
@@ -33,7 +34,9 @@
 		<Post path="{params.category}/{params.slug}" />
 	</Route>
 	<Route path=":category/:slug/print" let:params>
-		<Print path="{params.category}/{params.slug}" />
+		<Load path="{params.category}/{params.slug}" let:prop={page}>
+			<Print {page} />
+		</Load>
 	</Route>
 
 	<Footer />

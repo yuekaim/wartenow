@@ -10,12 +10,12 @@
     import Debug from '../../components/Debug.svelte';
     import Collapsable from '../../components/Collapsable.svelte';
     import { onMount } from 'svelte';
-    export let path;
+
+    export let page;
 
     onMount(() => {
       window.print();
     })
-
 
     function handlePrint(){
         window.print();
@@ -23,7 +23,6 @@
 
 </script>
 
-<Load path="{path}" let:prop={page}>
   <table>
 
     <thead>
@@ -141,8 +140,6 @@
     </div>
 
 
-</Load>
-
 <style lang="scss">
 
     article {
@@ -160,7 +157,5 @@
             margin-bottom: 2rem;
         }
     }
-
-
 
 </style>

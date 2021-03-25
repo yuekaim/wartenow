@@ -1,5 +1,6 @@
 <script>
 
+    import { navigate } from "svelte-navigator";
     import Load from '../Load.svelte';
     import Downloads from './Downloads.svelte';
     import Attributes from './Attributes.svelte';
@@ -14,10 +15,19 @@
     export let path;
 
     function handlePrint(){
-        window.print();
+      navigate(`${window.location.pathname}/print`, { replace: true });
+    }
+
+    function handleKeydown(event) {
+      if(event.key === 'p' && (event.metaKey || event.ctrlKey)){
+        event.preventDefault();
+        handlePrint();
+      }
     }
 
 </script>
+
+<svelte:window on:keydown={handleKeydown}/>
 
 <Load path="{path}" let:prop={page}>
   <table>
