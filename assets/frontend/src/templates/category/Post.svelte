@@ -4,14 +4,19 @@
     import Image from '../../components/Image.svelte';
 
     export let post;
+    console.log( post.authors );
 
 </script>
 
 <Link to={post.path}>
     <article style="background-color:{post.color};">
 
-        {#if post.date}
-            <p class="date">{post.date}</p>
+        {#if post.authors}
+            <p class="authors">{post.authors}</p>
+        {/if}
+
+        {#if post.issue}
+            <p class="issue">{post.issue}</p>
         {/if}
 
         {#if post.image}
@@ -37,7 +42,7 @@
         @include rounded;
     }
 
-    .date, figure, h3 {
+    .authors, figure, h3 {
         margin-bottom: 0.5em;
     }
 

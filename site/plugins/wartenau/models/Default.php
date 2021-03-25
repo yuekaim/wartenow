@@ -2,15 +2,23 @@
 
 class DefaultPage extends Page {
 
-    public function jsonAuthors(): array {
+    public function authors( bool $full = false ) {
+
         $json = [];
-        foreach( $this->authors()->toStructure() as $author ){
-            $json[] = [
-                'name' => $author->name()->value(),
-                'image' => $author->image()->json('file'),
-                'link' => $author->link()->value(),
-                'text' => $author->intro()->kirbytext()->value(),
-            ];
+        foreach( $this->content()->authors()->toStructure() as $author ){
+            if( $full ){
+                $json[] = [
+                    'name' => $author->name()->value(),
+                    'image' => $author->image()->json('file'),
+                    'link' => $author->link()->value(),
+                    'text' => $author->intro()->kirbytext()->value(),
+                ];
+            } else {
+                $json[] = $author->name()->value();
+            }
+        }
+        if( !$full ){
+            return implode(', ',$json);
         }
         return $json;
     }
@@ -24,7 +32,9 @@ class DefaultPage extends Page {
             'category' => $this->parent()->uid(),
             'date' => $this->date()->toDate('d.m.Y'),
             'image' => $this->titleImage()->json('image'),
-            'color' => $this->color()->value()
+            'color' => $this->color()->value(),
+            'issue' => $this->issue()->value(),
+            'authors' => $this->authors( $full ),
         ]);
 
         if( $full === true ){
@@ -33,7 +43,6 @@ class DefaultPage extends Page {
                 'content' => $this->text()->toBlocks()->toHtml(),
                 'abstract' => $this->abstract()->value(),
                 'footnotes' => $this->footnotes()->kirbytext()->value(),
-                'authors' => $this->jsonAuthors(),
                 'downloads' => $this->downloads()->json('files'),
                 'links' => $this->links()->yaml(),
                 'attributes' => $this->attributes()->yaml(),
