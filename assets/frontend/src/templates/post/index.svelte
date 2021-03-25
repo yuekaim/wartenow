@@ -9,6 +9,7 @@
     import Image from '../../components/Image.svelte';
     import Links from '../../components/Links.svelte';
     import Debug from '../../components/Debug.svelte';
+    import Collapsable from '../../components/Collapsable.svelte'
     export let path;
 
     function handlePrint(){
@@ -46,11 +47,11 @@
 
             <h1 class="title">{page.title}</h1>
 
-                  {#each page.authors as author}
+                  <!-- {#each page.authors as author}
                     <h3>{author.name}</h3>
                   {/each}
 
-                  <h1 class="title">{page.title}</h1>
+                  <h1 class="title">{page.title}</h1> -->
 
                   {#if page.subtitle}
                       <h2 class="subtitle">{page.subtitle}</h2>
@@ -64,12 +65,14 @@
 
                   {#if page.abstract}
                       <Collapsable title="Abstract">
-                        <p>{@html page.abstract}</p>
+                        <div class="abstract">
+                          <p>{@html page.abstract}</p>
+                        </div>
                       </Collapsable>
                   {/if}
 
-                  <p class="page-header">author<br>
-                  <u>{page.title}</u> {page.subtitle}</p>
+                  <!-- <p class="page-header">author<br>
+                  <u>{page.title}</u> {page.subtitle}</p> -->
 
                   <!-- {#if page.abstract}
                       <div class="abstract">
@@ -99,10 +102,10 @@
             <button class="button" on:click={handlePrint}>Print</button>
         </footer>
 
-                  <Links links={page.links} />
+                  <!-- <Links links={page.links} />
                   <Downloads downloads={page.downloads} />
                   <Tags tags={page.keywords} />
-              </footer>
+              </footer> -->
 
               <!-- <Debug data={page} /> -->
 
