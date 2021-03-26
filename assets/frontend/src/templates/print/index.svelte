@@ -21,6 +21,12 @@
         window.print();
     }
 
+    let userAgentString = navigator.userAgent;
+    let chromeAgent = userAgentString.indexOf("Chrome") > -1;
+    if (!chromeAgent){
+      alert('The print function works best with Chrome browser');
+    }
+
 </script>
 
   <table>
@@ -41,21 +47,23 @@
 
               <header>
 
-                {#if page.authors}
-                    <p class="authors">{page.authors.map(author => author.name).join(', ')}</p>
-                {/if}
+                <div class="cover_info">
+                  {#if page.authors}
+                      <p class="authors">{page.authors.map(author => author.name).join(', ')}</p>
+                  {/if}
 
-                <h1 class="title">{page.title}</h1>
+                  <h1 class="title">{page.title}</h1>
 
-                      <!-- {#each page.authors as author}
-                        <h3>{author.name}</h3>
-                      {/each}
+                        <!-- {#each page.authors as author}
+                          <h3>{author.name}</h3>
+                        {/each}
 
-                      <h1 class="title">{page.title}</h1> -->
+                        <h1 class="title">{page.title}</h1> -->
 
-                {#if page.subtitle}
-                    <h2 class="subtitle">{page.subtitle}</h2>
-                {/if}
+                  {#if page.subtitle}
+                      <h2 class="subtitle">{page.subtitle}</h2>
+                  {/if}
+                </div>
 
                 {#if page.image}
                     <figure class="titleImg">
@@ -64,7 +72,7 @@
                 {/if}
 
                 {#if page.abstract}
-                      <div class="abstract">
+                      <div class="abstract" style="border: 1px solid {page.color};">
                         <h3>ABSTRACT</h3>
                         <p>{@html page.abstract}</p>
                       </div>
@@ -80,25 +88,42 @@
                     </div>
                 {/if} -->
 
-                <div class="bg-circle"></div>
+                <div class="bg-circle"
+                style="background-color:{page.color};">
+                </div>
               </header>
 
-              <main class="text">
+              <main>
+                <div class="text">
                   {@html page.content}
+                </div>
               </main>
+
+
 
               {#if page.footnotes}
                     <Footnotes text={page.footnotes} />
               {/if}
 
+
+
               <footer>
                   <Attributes attributes={page.attributes} />
 
-            <Links links={page.links} />
-            <Tags tags={page.keywords} />
+              <Links links={page.links} />
+              <Tags tags={page.keywords} />
 
-            <!-- <button class="button" on:click={handlePrint}>Print</button> -->
-        </footer>
+
+              <!-- <button class="button" on:click={handlePrint}>Print</button> -->
+              </footer>
+              {#if page.authors}
+                <div class="author_info">
+                  {#each page.authors as author}
+                    <h3>{author.name}</h3><br/>
+                    {@html author.text}<br/>
+                  {/each}
+                </div>
+              {/if}
 
                   <!-- <Links links={page.links} />
                   <Downloads downloads={page.downloads} />

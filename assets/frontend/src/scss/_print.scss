@@ -10,6 +10,8 @@
 }
 
 @page:first {
+  counter-reset: pagenumber;
+    overflow: visible;
     margin-top: 0cm;
     margin-bottom: 0cm;
     margin-left: 0cm;
@@ -20,6 +22,10 @@
   overflow: visible;
   margin-bottom: 0cm;
   margin-top: 0cm;
+}
+
+body{
+
 }
 
 button{
@@ -38,12 +44,21 @@ nav{
   display: none;
 }
 
-.title{
+.cover_info{
   position: absolute;
+  top: 4cm;
+  left: 10mm;
+  width: 566px;
+}
+
+.title{
+  position: relative;
   width: 500px;
-  height: 95px;
-  left: 20px;
-  top: 172px;
+  // height: 95px;
+  // left: 10mm;
+  // top: 5cm;
+  margin-top: 5mm;
+  margin-bottom: 5mm;
 
   // font-family: Favorit Std;
   font-style: normal;
@@ -54,29 +69,23 @@ nav{
 
 
   color: #000000;
-  word-break: break-all;
+
+  // word-break: break-all;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
-  //
-  // /* legacy properties */
-  // -webkit-hyphenate-limit-before: 3;
-  // -webkit-hyphenate-limit-after: 3;
-  // /* current proposal */
-  // -moz-hyphenate-limit-chars: 6 3 3;     /* not yet supported */
-  // -webkit-hyphenate-limit-chars: 6 3 3;  /* not yet supported */
-  // -ms-hyphenate-limit-chars: 6 3 3;
-  // hyphenate-limit-chars: 6 3 3;
+
+  hyphenate-limit-chars: 8 4 3;
 
 }
 
 .subtitle{
-  position: absolute;
+  position: relative;
   width: 566px;
-  height: 76px;
-  left: 20px;
-  top: 267px;
+  // height: 76px;
+  // left: 10mm;
+  // top: 8cm;
 
   // font-family: Favorit Std;
   font-style: normal;
@@ -89,6 +98,16 @@ nav{
   color: #000000;
 
   /*new page*/
+}
+
+.authors{
+  position: relative;
+  // left: 10mm;
+  // top: 4cm;
+  font-size: 20pt;
+  h3{
+    margin-top: 0cm;
+  }
 }
 
 .date{
@@ -109,7 +128,7 @@ nav{
   color: #000000;
 }
 
-// footer {page-break-after: always;}
+footer {display: none;}
 
 .text{
   position: relative;
@@ -119,7 +138,7 @@ nav{
   font-size: 12pt;
   margin: 0;
   // height: 10cm;
-  float: none !important;
+  // float: none !important;
 
   // box-decoration-break: clone;
   // border: 1px solid black;
@@ -148,22 +167,22 @@ nav{
 .bg-circle{
   display: block;
   position: absolute;
-  width: 377px;
-  height: 359px;
-  left: -64px;
-  top: 87px;
+  width: 20cm;
+  height: 20cm;
+  left: -10cm;
+  top: -10cm;
   z-index: -100;
 
-  border-radius: 200px;
-  background-color: $yellow;
-  filter: blur(1000px);
+  border-radius: 15cm;
+  // background-color: $yellow;
+  filter: blur(20cm);
 }
 
 .titleImg {
   position: absolute;
   width: 60vw;
   height: 30vw;
-  right: 22px;
+  right: 10mm;
   top: 360px;
 }
 
@@ -176,9 +195,9 @@ nav{
 
 .abstract{
   position: absolute;
-  width: 60vw;
+  max-width: 60vw;
   // height: 178.74px;
-  right: 22px;
+  right: 10mm;
   top: 17cm;
 
   // font-family: Favorit Std;
@@ -187,7 +206,7 @@ nav{
   font-size: 13.2403px;
   line-height: 140%;
 
-  border: 1px solid $yellow;
+  // border: 1px solid $yellow;
   border-radius: 10px;
   padding: 0.5cm 0.5cm 0.5cm 0.5cm;
 
@@ -219,7 +238,18 @@ nav{
   bottom: 10mm;
   left: 10mm;
   font-size: 12px;
+
 }
+
+p{
+  counter-increment: pagenumber;
+}
+
+.page-footer::after{
+
+  // content: "Page "counter(pagenumber);
+}
+
 
 .footnotes{
   page-break-before: always;
@@ -233,4 +263,10 @@ nav{
 .page-footer-space {
   height: 18mm;
 
+}
+
+.author_info{
+  page-break-before: always;
+  width: 70%;
+  padding: 1cm;
 }
