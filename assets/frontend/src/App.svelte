@@ -31,7 +31,9 @@
 	</Route>
 
 	<Route path=":category/:slug" let:params>
-		<Post path="{params.category}/{params.slug}" />
+		<Load path="{params.category}/{params.slug}" let:prop={page}>
+			<Post {page} />
+		</Load>
 	</Route>
 	<Route path=":category/:slug/print" let:params>
 		<Load path="{params.category}/{params.slug}" let:prop={page}>
