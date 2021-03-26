@@ -138,6 +138,8 @@ ul{display: none;}
   width: 70%;
   font-size: 12pt;
   margin: 0;
+  padding: 0;
+  background-color: #ffffffff;
   // height: 10cm;
   // float: none !important;
 
@@ -247,6 +249,7 @@ ul{display: none;}
   bottom: 10mm;
   left: 10mm;
   font-size: 12px;
+  z-index: 1000;
 }
 
 // .page-footer::after {
