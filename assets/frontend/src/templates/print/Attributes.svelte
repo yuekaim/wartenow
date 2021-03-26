@@ -6,7 +6,7 @@
 
 {#if attributes.length > 0}
     <section class="colophon">
-        <h3>Colophon</h3>
+        <h3>Colophon</h3><br/>
         {#each attributes as attr}
             <dl class="mono">
                 <dt>{attr.title}</dt>
