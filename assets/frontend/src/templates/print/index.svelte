@@ -14,20 +14,30 @@
     export let page;
 
     onMount(() => {
-      window.print();
+      if (!chromeAgent){
+        alert('Please print with Chrome browser');
+      }else{
+        window.print();
+      }
     })
 
     function handlePrint(){
         window.print();
     }
 
+    function printDone(){
+      window.history.back();
+    }
+    //
     let userAgentString = navigator.userAgent;
     let chromeAgent = userAgentString.indexOf("Chrome") > -1;
-    if (!chromeAgent){
-      alert('The print function works best with Chrome browser');
-    }
+    // if (!chromeAgent){
+    //   alert('The print function works best with Chrome browser');
+    // }
 
 </script>
+
+<svelte:window on:afterprint={printDone}/>
 
   <table>
 
