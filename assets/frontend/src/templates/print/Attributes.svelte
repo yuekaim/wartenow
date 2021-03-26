@@ -19,18 +19,18 @@
 
 <style lang="scss">
 
-    section {
-        margin-top: 2rem;
-    }
-    dl {
-        display: flex;
-        width: 80%;
-        dt {
-            flex: 1 1 40%;
-        }
-        dd {
-            flex: 1 1 60%;
-        }
-    }
+  section {
+      margin-top: 2rem;
+  }
+  dl {
+      display: flex;
+      width: 80%;
+      dt {
+          flex: 1 1 32%;
+      }
+      dd {
+          flex: 1 1 68%;
+      }
+  }
 
 </style>
