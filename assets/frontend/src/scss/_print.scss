@@ -178,10 +178,10 @@ ul{display: none;}
 .bg-circle{
   display: block;
   position: absolute;
-  width: 20cm;
-  height: 20cm;
-  left: -10cm;
-  top: -10cm;
+  width: 18cm;
+  height: 18cm;
+  left: -8cm;
+  top: 8cm;
   z-index: -100;
 
   border-radius: 15cm;
@@ -191,7 +191,7 @@ ul{display: none;}
 
 .titleImg {
   position: absolute;
-  width: 60vw;
+  width: 45vw;
   height: 30vw;
   right: 10mm;
   top: 360px;
@@ -205,8 +205,9 @@ ul{display: none;}
 }
 
 .abstract{
+  background-color: #ffffff;
   position: absolute;
-  max-width: 60vw;
+  max-width: 45vw;
   // height: 178.74px;
   right: 10mm;
   top: 17cm;
