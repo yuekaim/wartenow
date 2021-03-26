@@ -3,9 +3,9 @@
     export let text;
 
 </script>
-
-<aside class="footnotes mono">
-    {@html text}
+<aside class="footnotes">
+    <h3>Fußnoten</h3><br/>
+    <div class="mono">{@html text}</div>
 </aside>
 
 <style lang="scss">

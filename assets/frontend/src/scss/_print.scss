@@ -10,7 +10,6 @@
 }
 
 @page:first {
-  counter-reset: pagenumber;
     overflow: visible;
     margin-top: 0cm;
     margin-bottom: 0cm;
@@ -22,10 +21,6 @@
   overflow: visible;
   margin-bottom: 0cm;
   margin-top: 0cm;
-}
-
-body{
-
 }
 
 button{
@@ -128,7 +123,13 @@ nav{
   color: #000000;
 }
 
-footer {display: none;}
+.year {display: none;}
+
+ul{display: none;}
+
+.colophon{
+  display: block;
+}
 
 .text{
   position: relative;
@@ -156,12 +157,20 @@ footer {display: none;}
     line-height: 0pt !important;
     white-space: nowrap;
   }
-  img{
-    transform: translateX(3cm);
+  figure{
+    transform: translateX(200px);
+    // display: inline;
+    // width: 100%;
+
+    figcaption{
+      text-align: right;
+      font-size: 10pt;
+      @include regular;
+    }
   }
-  :global(h1, h2, h3, h4, h5, h6)
+  h1, h2, h3, h4, h5, h6
       { page-break-after:avoid; page-break-inside:avoid }
-  img { page-break-inside:avoid; page-break-after:avoid; }
+  figure { page-break-inside:avoid; page-break-after:avoid; }
 }
 
 .bg-circle{
@@ -238,18 +247,12 @@ footer {display: none;}
   bottom: 10mm;
   left: 10mm;
   font-size: 12px;
-
 }
 
-p{
-  counter-increment: pagenumber;
-}
-
-.page-footer::after{
-
-  // content: "Page "counter(pagenumber);
-}
-
+// .page-footer::after {
+//   counter-increment: pagenumber;
+//   content: "Page "counter(pagenumber);
+// }
 
 .footnotes{
   page-break-before: always;
@@ -268,5 +271,5 @@ p{
 .author_info{
   page-break-before: always;
   width: 70%;
-  padding: 1cm;
+  // padding: 1cm;
 }
