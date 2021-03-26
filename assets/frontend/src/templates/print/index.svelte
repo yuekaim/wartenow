@@ -1,8 +1,8 @@
 <script>
 
     import Load from '../Load.svelte';
-    import Attributes from '../post/Attributes.svelte';
-    import Footnotes from '../post/Footnotes.svelte';
+    import Attributes from '../print/Attributes.svelte';
+    import Footnotes from '../print/Footnotes.svelte';
     import Persons from '../../components/Persons.svelte';
     import Tags from '../../components/Tags.svelte';
     import Image from '../../components/Image.svelte';
