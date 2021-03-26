@@ -21,7 +21,7 @@ Kirby::plugin('moritzebeling/headless', [
 
 	'routes' => [
 		[
-			'pattern' => 'json/(:all)',
+			'pattern' => ['json/(:all)', 'json/(:all)/print'],
 			'method' => 'GET',
 			'action'  => function ( $id ) {
 
