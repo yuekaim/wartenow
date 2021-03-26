@@ -28,6 +28,7 @@ body {
 }
 
 .button {
+	position: relative;
 	padding: 0.2em 0.5em;
 	text-transform: uppercase;
 	background-color: #eee;
@@ -45,8 +46,12 @@ nav {
 	}
 }
 
-h1, h2 {
+h1 {
 	@include text-large;
+}
+h2 {
+	@include text-medium;
+	@include bold;
 }
 h3 {
 	@include bold;
@@ -66,6 +71,16 @@ blockquote {
 }
 
 .text {
+	z-index: 100;
+	// position: absolute;
+	background-color: #FFFFFF;
+	padding: 10px;
+	width: 80%;
+	margin-bottom: 4rem;
+	margin-top: 2rem;
+	margin-left: 2rem;
+	border-radius: 20px;
+
 	@include text-medium;
 	blockquote,
 	figure {
@@ -118,6 +133,25 @@ blockquote {
 
 .print-only {
 	display: none;
+}
+
+.bg-circle{
+  display: block;
+  position: fixed;
+  width: 600px;
+  height: 600px;
+	left: 300px;
+	bottom: 34px;
+  z-index: -100;
+
+  border-radius: 400px;
+  // background-color: $yellow;
+  filter: blur(300px);
+}
+
+#print{
+	position: fixed;
+
 }
 
 @media print {

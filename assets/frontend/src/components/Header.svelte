@@ -8,7 +8,6 @@
 </script>
 
 <header>
-
     <Link to="/"><img id="logo" alt="Logo" height="100%;" width="auto" src="/assets/icons/logo.svg"></Link>
 
     <nav class="categories">
@@ -41,6 +40,10 @@
     img {
         height: 4rem;
         width: auto;
+    }
+
+    #logo{
+      z-index: -100;
     }
 
 </style>

@@ -3,6 +3,7 @@
     import { slide } from 'svelte/transition';
 
     export let title;
+    export let color;
 
     let open = false;
     function toggle(){
@@ -14,7 +15,8 @@
 <div class="collapsable">
 
     <div class="title">
-        <button class="button" on:click={toggle}>{title}</button>
+        <button class="button" style="--theme-color: {color}"
+        on:click={toggle}>{title}</button>
     </div>
 
     {#if open}
@@ -29,6 +31,33 @@
 
     .content {
         overflow: hidden;
+    }
+
+    .collapsable{
+      margin-top: 5px;
+      margin-bottom: 5px;
+      position: relative;
+      left: -4rem;
+      width: 100vw;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      border-radius: 0px;
+
+      button{
+        width: 100%;
+        border-radius: 0px;
+        text-align: left;
+        padding-left: 4rem;
+        @include bold;
+        /* border-top: 1px solid black;
+        border-bottom: 1px solid black; */
+      }
+      button:hover{
+        background-color: var(--theme-color);
+      }
+      .content{
+        margin: 10px 4rem 10px 4rem;
+      }
     }
 
 </style>

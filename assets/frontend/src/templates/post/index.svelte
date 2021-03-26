@@ -30,125 +30,85 @@
 <svelte:window on:keydown={handleKeydown}/>
 
 <Load path="{path}" let:prop={page}>
-  <table>
+  <article>
 
-    <thead>
-      <tr>
-        <td>
-          <!--place holder for the fixed-position header-->
-          <div class="page-header-space"></div>
-        </td>
-      </tr>
-    </thead>
+    <!-- <header> -->
+        <Link to="print" class="button" id="print">Print</Link>
 
-    <tbody>
-      <tr>
-        <td>
-          <article>
+        {#if page.issue}
+            <p class="issue">{page.issue}</p>
+        {/if}
 
-              <header>
+        {#if page.authors}
+            <p class="authors">{page.authors.map(author => author.name).join(', ')}</p>
+        {/if}
 
-            {#if page.authors}
-                <p class="authors">{page.authors.map(author => author.name).join(', ')}</p>
-            {/if}
+        <h1 class="title">{page.title}</h1>
 
-            {#if page.issue}
-                <p class="issue">{page.issue}</p>
-            {/if}
-
-            <h1 class="title">{page.title}</h1>
-
-                  <!-- {#each page.authors as author}
-                    <h3>{author.name}</h3>
-                  {/each}
-
-                  <h1 class="title">{page.title}</h1> -->
-
-                  {#if page.subtitle}
-                      <h2 class="subtitle">{page.subtitle}</h2>
-                  {/if}
-
-                  {#if page.image}
-                      <figure class="titleImg">
-                          <Image image={page.image} />
-                      </figure>
-                  {/if}
-
-                  {#if page.abstract}
-                      <Collapsable title="Abstract">
-                        <div class="abstract">
-                          <p>{@html page.abstract}</p>
-                        </div>
-                      </Collapsable>
-                  {/if}
-
-                  <!-- <p class="page-header">author<br>
-                  <u>{page.title}</u> {page.subtitle}</p> -->
-
-                  <!-- {#if page.abstract}
-                      <div class="abstract">
-                        <h3>Abstract</h3>
-                        <p>{@html page.abstract}</p>
-                      </div>
-                  {/if} -->
-
-                  <div class="bg-circle"></div>
-              </header>
-
-              <main class="text">
-                  {@html page.content}
-              </main>
-
-              {#if page.footnotes}
-                  <Footnotes text={page.footnotes} />
-              {/if}
-
-              <footer>
-                  <Attributes attributes={page.attributes} />
-
-            <Links links={page.links} />
-            <Downloads downloads={page.downloads} />
-            <Tags tags={page.keywords} />
-
-            <Link to="print" class="button">Print</Link>
-        </footer>
-
-                  <!-- <Links links={page.links} />
-                  <Downloads downloads={page.downloads} />
-                  <Tags tags={page.keywords} />
-              </footer> -->
-
-              <!-- <Debug data={page} /> -->
-
-          </article>
-        </td>
-      </tr>
-    </tbody>
-
-    <tfoot>
-      <tr>
-        <td>
-          <!--place holder for the fixed-position footer-->
-          <div class="page-footer-space"></div>
-        </td>
-      </tr>
-    </tfoot>
-
-  </table>
-
-
-    <!-- header and footer -->
-<!--
-    <div class="page-header print-only">
-        {#each page.authors as author}
-          {author.name}
+        <!-- {#each page.authors as author}
+          <h3>{author.name}</h3>
         {/each}
-      <br>
-    <strong>{page.title}</strong> {page.subtitle}</div>
 
-    <div class="page-footer print-only">
-    I'm The Footer
-    </div> -->
+        <h1 class="title">{page.title}</h1> -->
+
+        {#if page.subtitle}
+            <h2 class="subtitle">{page.subtitle}</h2><br/>
+        {/if}
+      <div class="bg-circle" style="background-color: {page.color};"></div>
+
+    <!-- </header> -->
+
+    {#if page.image}
+        <figure class="titleImg">
+            <Image image={page.image} />
+        </figure>
+    {/if}
+
+<!-- collapsable sections -->
+    {#if page.abstract}
+        <Collapsable title="Abstract" color={page.color}>
+          <div class="abstract">
+            <p>{@html page.abstract}</p>
+          </div>
+        </Collapsable>
+    {/if}
+
+    {#if page.authors}
+      {#each page.authors as author}
+        <Collapsable title={author.name} color={page.color}>
+          <div class="author_info">
+            <p>{@html author.text}</p>
+          </div>
+        </Collapsable>
+      {/each}
+    {/if}
+
+    <main class="text">
+        {@html page.content}
+    </main>
+
+    {#if page.footnotes}
+        <Footnotes text={page.footnotes} />
+    {/if}
+
+    <footer>
+        <Attributes attributes={page.attributes} />
+
+
+      <Links links={page.links} />
+      <Downloads downloads={page.downloads} />
+      <Tags tags={page.keywords} />
+
+    </footer>
+          <!-- <Links links={page.links} />
+          <Downloads downloads={page.downloads} />
+          <Tags tags={page.keywords} />
+      </footer> -->
+
+      <!-- <Debug data={page} /> -->
+
+  </article>
+
 
 
 </Load>
