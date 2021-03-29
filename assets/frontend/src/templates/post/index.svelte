@@ -31,14 +31,16 @@
 <article>
 
 	<!-- <header> -->
-	<Link to="print" class="button" id="print">Print</Link>
+	<div class="print-button">
+		<Link to="print" class="button" id="print">Print</Link>
+	</div>
 
 	{#if page.issue}
-			<p class="issue">{page.issue}</p>
+		<p class="issue">{page.issue}</p>
 	{/if}
 
 	{#if page.authors}
-			<p class="authors">{page.authors.map(author => author.name).join(', ')}</p>
+		<p class="authors">{page.authors.map(author => author.name).join(', ')}</p>
 	{/if}
 
 	<h1 class="title">{page.title}</h1>
@@ -114,6 +116,13 @@
 		:global( section ){
 			margin-bottom: 2rem;
 		}
+	}
+
+	.print-button {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		padding: 1rem;
 	}
 
 </style>
