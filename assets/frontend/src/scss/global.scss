@@ -74,12 +74,12 @@ blockquote {
 	z-index: 100;
 	// position: absolute;
 	background-color: #FFFFFF;
-	padding: 10px;
-	width: 80%;
+	padding: 2rem;
+	width: 60vw;
 	margin-bottom: 4rem;
-	margin-top: 2rem;
-	margin-left: 2rem;
-	border-radius: 20px;
+	margin-top: 0rem;
+	margin-left: 8rem;
+	border-radius: 10px;
 
 	@include text-medium;
 	blockquote,
