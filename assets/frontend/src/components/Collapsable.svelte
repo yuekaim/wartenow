@@ -37,17 +37,19 @@
       margin-top: 5px;
       margin-bottom: 5px;
       position: relative;
-      left: -4rem;
-      width: 100vw;
-      border-top: 1px solid black;
-      border-bottom: 1px solid black;
-      border-radius: 0px;
+      left: 8rem;
+      right: 4rem;
+      width: 60vw;
+      /* border: 1px solid black; */
+      /* border-bottom: 1px solid black; */
+      /* border-radius: 10rem; */
 
       button{
         width: 100%;
-        border-radius: 0px;
+        background-color: white;
+        border-radius: 10px;
         text-align: left;
-        padding-left: 4rem;
+        /* padding-left: 4rem; */
         @include bold;
         /* border-top: 1px solid black;
         border-bottom: 1px solid black; */
