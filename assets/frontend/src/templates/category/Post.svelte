@@ -11,6 +11,13 @@
 <Link to={post.path}>
     <article style="background-color:{post.color};">
 
+        {#if post.new}
+            <em>New</em>
+        {/if}
+        {#if post.soon}
+            <em>Soon</em>
+        {/if}
+
         {#if post.authors}
             <p class="authors">{post.authors}</p>
         {/if}
@@ -35,6 +42,14 @@
 </Link>
 
 <style lang="scss">
+
+    em {
+        display: inline-block;
+        padding: 0.1em 0.4em;
+        background-color: #fff;
+        font-size: 0.6em;
+        border-radius: 0.5em;
+    }
 
     article {
         background-color: #eee;

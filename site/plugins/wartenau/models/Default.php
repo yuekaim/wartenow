@@ -23,6 +23,24 @@ class DefaultPage extends Page {
         return $json;
     }
 
+    public function isSoon(): bool {
+        if( $this->date()->isEmpty() ){
+            return false;
+        }
+        $month = 60 * 60 * 24 * 30;
+        $date = $this->date()->toDate();
+        return time() < $date && time() + $month > $date;
+    }
+
+    public function isNew(): bool {
+        if( $this->date()->isEmpty() ){
+            return false;
+        }
+        $month = 60 * 60 * 24 * 30;
+        $date = $this->date()->toDate();
+        return time() > $date && time() - $month < $date;
+    }
+
     public function json( bool $full = false ): array {
         $json = parent::json( $full );
 
@@ -35,6 +53,8 @@ class DefaultPage extends Page {
             'color' => $this->color()->value(),
             'issue' => $this->issue()->value(),
             'authors' => $this->authors( $full ),
+            'new' => $this->isNew(),
+            'soon' => $this->isSoon(),
         ]);
 
         if( $full === true ){
