@@ -14,7 +14,7 @@
         :global(p) {
             padding-left: 3.5em;
         }
-        :global(p a) {
+        :global(p a:first-child) {
             min-width: 3em;
             margin-left: -3.5em;
             display: inline-block;
