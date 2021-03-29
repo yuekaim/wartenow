@@ -12,7 +12,6 @@
                 <dt>{attr.title}</dt>
                 <dd>{@html attr.value}</dd>
             </dl>
-            <br/>
         {/each}
     </section>
 {/if}
@@ -23,13 +22,17 @@
         margin-top: 2rem;
     }
     dl {
-        display: flex;
-        width: 80%;
+        // display: flex;
+        // width: 80%;
+        + dl {
+            margin-top: 0.5em;
+        }
         dt {
-            flex: 1 1 32%;
+            // flex: 1 1 32%;
         }
         dd {
-            flex: 1 1 68%;
+            // flex: 1 1 68%;
+            margin-left: 3.8em;
         }
     }
 

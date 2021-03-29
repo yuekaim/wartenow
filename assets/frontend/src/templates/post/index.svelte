@@ -84,18 +84,21 @@
 	{/if}
 
 	<main class="text">
+
 		{@html page.content}
+
+		{#if page.footnotes}
+			<Footnotes text={page.footnotes} />
+		{/if}
+
+		<Attributes attributes={page.attributes} />
+
 	</main>
 
-	{#if page.footnotes}
-		<Footnotes text={page.footnotes} />
-	{/if}
-
 	<footer>
-		<Attributes attributes={page.attributes} />
-		<Links links={page.links} />
-		<Downloads downloads={page.downloads} />
-		<Tags tags={page.keywords} />
+		<!-- <Links links={page.links} /> -->
+		<!-- <Downloads downloads={page.downloads} /> -->
+		<!-- <Tags tags={page.keywords} /> -->
 	</footer>
 
 </article>
