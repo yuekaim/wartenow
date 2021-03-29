@@ -105,7 +105,8 @@ blockquote {
 	h3, h4, h5, h6 {
 		margin-top: 2rem;
 	}
-	a[href^="#_ftn"] {
+	a[href^="#_ftn"],
+	a[href^="#_edn"] {
 		@include mono;
 		@include text-small;
 		vertical-align: super;
