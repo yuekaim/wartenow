@@ -109,7 +109,9 @@ blockquote {
 	a[href^="#_edn"] {
 		@include mono;
 		@include text-small;
-		vertical-align: super;
+		font-size: 0.6em;
+		transform: translateY(-0.5em);
+		display: inline-block;
 		&:hover {
 			color: blue;
 		}

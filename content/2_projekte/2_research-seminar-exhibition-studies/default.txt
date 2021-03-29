@@ -6,11 +6,23 @@ Subtitle:
 
 ----
 
-Date: 2020-09-24
+Issue: 
 
 ----
 
 Text: [{"content":{"text":"<p>Wie k\u00f6nnen wir etwas lernen, was wir noch nicht wissen? Das klingt einerseits nach einem Paradoxon, aber ist es nicht eigentlich das, worum es bei der Forschung geht? Und wie k\u00f6nnen Ausstellungen und kuratorische Praktiken der Wissensproduktion das, was gesagt, getan und gesehen werden kann, infrage stellen? Das Forschungsseminar bietet einen transnationalen Kontext f\u00fcr den Austausch von Arbeiten zu kritischen documenta und Ausstellungsstudien.\n \nDas Seminar findet jedes Semester f\u00fcr eine Woche in Kassel statt. Ziel ist sowohl die pragmatische Weiterentwicklung von Forschungsprozessen wie ein Bewusstsein daf\u00fcr zu entwickeln, dass die Forschung voller Schleifen, Blockaden und Neuanf\u00e4nge ist. Wir teilen Strategien der Wissensproduktion wie Exploration, Analyse, Reflexion, Untersuchung und Imagination. Wir diskutieren Methoden und Lesarten, erforschen Ans\u00e4tze und lassen uns in Sackgassen f\u00fchren.\n \nDas Seminar bietet einen offenen Kontext f\u00fcr ForscherInnen in der documenta und Ausstellungsforschung. Alle, die sich f\u00fcr diese Mailingliste anmelden, werden eingeladen und k\u00f6nnen mitwirken. Die Liste ist offen, sich einzutragen bedeutet gleichzeitig, sich am Prozess zu beteiligen.\n \nMit: Amarildo Valeriano Ajasse, Ahmed Al-Nawas, Farina Asche, Freja B\u00e4ckman, Alina Belishkina, Nanne Buurman, Eva Busch, Liset Castellanos, Raphael Daibert, Angelika Doppelbauer, Theresa Fichtel, Jan-Hendrik Gebbe, Ksenia Kaverina, Georg M\u00fcller, Malin Guten Schenk, Lydia Lierke, Marina Regel Lucena, Clara Ronsdorf, Clara Sakic, Mira Simon, Giulia Stevanin, Julia Stolba, Jelena Toopeekoff, Lorena Vicini, Gudrun Wallenb\u00f6ck, Liza Weber, Christopher Wessels, Leo Ya-Hsin und Anderen.<\/p>"},"id":"80b1318a-0f8d-4028-8b4d-a4d9c98fc4f0","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":[],"src":"","alt":"","caption":null,"link":"","ratio":"","crop":"false"},"id":"a52a80ba-5227-41fd-a865-a500cbbc0028","isHidden":false,"type":"image"}]
+
+----
+
+Attributes: 
+
+----
+
+Titleimage: 
+
+----
+
+Authors: 
 
 ----
 
@@ -22,7 +34,15 @@ Links:
 
 ----
 
-Authors: 
+Keywords: Projects, Research, hamburg
+
+----
+
+Date: 2020-09-24
+
+----
+
+Color: #22c959
 
 ----
 
@@ -30,12 +50,4 @@ Credits:
 
 ----
 
-Keywords: Projects, Research, hamburg
-
-----
-
 Categories: 
-
-----
-
-Titleimage: 
