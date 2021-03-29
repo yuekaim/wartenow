@@ -70,7 +70,7 @@ blockquote {
 	}
 }
 
-.text {
+main.page {
 	z-index: 100;
 	// position: absolute;
 	background-color: #FFFFFF;
@@ -80,7 +80,8 @@ blockquote {
 	margin-top: 0rem;
 	margin-left: 8rem;
 	border-radius: 10px;
-
+}
+.text {
 	@include text-medium;
 	blockquote,
 	figure {

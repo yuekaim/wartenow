@@ -83,9 +83,11 @@
 		{/each}
 	{/if}
 
-	<main class="text">
+	<main class="page">
 
-		{@html page.content}
+		<div class="text">
+			{@html page.content}
+		</div>
 
 		{#if page.footnotes}
 			<Footnotes text={page.footnotes} />
