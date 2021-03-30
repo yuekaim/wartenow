@@ -9,13 +9,15 @@
 </script>
 
 <Link to={post.path}>
-    <article style="background-color:{post.color};">
+    <article style="--theme-color:{post.color}">
 
         {#if post.new}
-            <em>New</em>
-        {/if}
-        {#if post.soon}
+            <em style="background-color:{post.color};">New</em>
+        <!-- {/if} -->
+        {:else if post.soon}
             <em>Soon</em>
+        {:else}
+            <span class="dot" style="background-color:{post.color};"></span>
         {/if}
 
         {#if post.authors}
@@ -57,6 +59,12 @@
         @include rounded;
     }
 
+    article:hover{
+      box-shadow: 0px 0px 50px var(--theme-color);
+      background-color: var(--theme-color);
+      transition: 0.3s;
+    }
+
     .authors, figure, h3 {
         margin-bottom: 0.5em;
     }
@@ -68,6 +76,13 @@
     figure {
         @include rounded;
         overflow: hidden;
+    }
+
+    .dot{
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      display: inline-block;
     }
 
 </style>

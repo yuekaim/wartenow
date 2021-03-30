@@ -126,11 +126,10 @@
 <!-- header and footer -->
 
 <div class="page-header print-only">
-		{#each page.authors as author}
-			{author.name}_
-		{/each}
+			{#if page.authors}{page.authors.map(author => author.name).join(', ')}{/if}
 	<br>
-<h3>{page.title}</h3> {page.subtitle}</div>
+{#if page.title}<h3>{page.title}</h3>{/if}
+{#if page.subtitle}{page.subtitle}{/if}</div>
 
 <div class="page-footer print-only">
 	{#if page.issue}

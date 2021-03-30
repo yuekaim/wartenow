@@ -15,7 +15,7 @@
 <div class="collapsable">
 
     <div class="title">
-        <button class="button" style="--theme-color: {color}"
+        <button class="button" style="--theme-color: {color};"
         on:click={toggle}>{title}</button>
     </div>
 

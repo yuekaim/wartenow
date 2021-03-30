@@ -23,6 +23,10 @@
   margin-top: 0cm;
 }
 
+@page :footer {
+        display: none
+    }
+
 button{
   display: none;
 }
@@ -191,10 +195,11 @@ ul{display: none;}
 
 .titleImg {
   position: absolute;
-  width: 45vw;
-  height: 30vw;
+  width: 8cm;
+  height: 5cm;
   right: 10mm;
-  top: 360px;
+  left: inherit;
+  top: 11.5cm;
 }
 
 .titleImg img {

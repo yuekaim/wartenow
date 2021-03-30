@@ -38,22 +38,23 @@
 	{#if page.issue}
 		<p class="issue">{page.issue}</p>
 	{/if}
+	<div class="article-info">
+		{#if page.authors}
+			<p class="authors">{page.authors.map(author => author.name).join(', ')}</p>
+		{/if}
 
-	{#if page.authors}
-		<p class="authors">{page.authors.map(author => author.name).join(', ')}</p>
-	{/if}
+		<h1 class="title">{page.title}</h1>
 
-	<h1 class="title">{page.title}</h1>
+		<!-- {#each page.authors as author}
+			<h3>{author.name}</h3>
+		{/each}
 
-	<!-- {#each page.authors as author}
-		<h3>{author.name}</h3>
-	{/each}
+		<h1 class="title">{page.title}</h1> -->
 
-	<h1 class="title">{page.title}</h1> -->
-
-	{#if page.subtitle}
-		<h2 class="subtitle">{page.subtitle}</h2><br/>
-	{/if}
+		{#if page.subtitle}
+			<h2 class="subtitle">{page.subtitle}</h2><br/>
+		{/if}
+	</div>
 	<div class="bg-circle" style="background-color: {page.color};"></div>
 
 	<!-- </header> -->

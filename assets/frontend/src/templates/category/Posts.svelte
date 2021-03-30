@@ -17,13 +17,14 @@
 <style lang="scss">
 
     ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        /* grid-template-columns: 1fr 1fr 1fr; */
         padding: 1rem;
         gap: 1rem;
     }
     li {
-
+      width: 400px;
     }
 
 </style>
