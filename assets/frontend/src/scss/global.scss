@@ -119,6 +119,9 @@ main.page {
 			color: blue;
 		}
 	}
+	p + p {
+		margin-top: 0.75em;
+	}
 }
 
 @keyframes slide-up {

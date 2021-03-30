@@ -4,12 +4,14 @@
 
 </script>
 <aside class="footnotes">
-    <h3>Fußnoten</h3><br/>
     <div class="mono">{@html text}</div>
 </aside>
 
 <style lang="scss">
 
+    .footnotes {
+        margin-top: 2rem;
+    }
     aside {
         :global(p) {
             padding-left: 3.5em;
