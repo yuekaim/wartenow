@@ -39,9 +39,7 @@ Attributes:
 
 ----
 
-Titleimage:
-
-- screen-shot-2021-03-01-at-1.18.51-pm.png
+Titleimage: 
 
 ----
 
