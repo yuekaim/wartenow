@@ -6,29 +6,55 @@ This runs on [Kirby CMS](https://getkirby.com/docs/reference) and [Svelte](https
 
 ## Working on this project
 
-### Install
+### Install the project
 
-Get a copy of the code via Git:
-```bash
+1. First you need to install **Node.js** and **Git**.
+
+2. Clone with current state of the project with Git:
+```
 git clone git@github.com:yuekaim/wartenow.git
+```
 
+3. Install npm packeges to work on the frontend:
+```
 cd assets/frontend
 npm install
 ```
 
+### Update to the current state
+Either press "Fetch/Pull" in you editor or do
+```
+git fetch
+git pull
+```
+
 ### Development
 
-Run a local PHP server, e.g. like:
+1. Run a local PHP server, e.g. like:
 ```bash
 php -S localhost:8000 kirby/router.php
+```
 
+2. Start npm and svelte
+```
 cd assets/frontend
 npm run dev
 ```
 
+### Commit your changes
+1. Go to the Git-Section of your editor
+2. select the files that you have changed and now want to commit
+3. Click "Stage"
+4. Enter a commit message that describes you changes
+5. Press "Commit"
+6. Press "Push"
+
 ### Deploy
 
+1. Compile JS
 ```bash
 cd assets/frontend
 npm run build
 ```
+
+2. Upload to FTP server
