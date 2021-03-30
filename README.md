@@ -41,6 +41,10 @@ cd assets/frontend
 npm run dev
 ```
 
+If you want to work on the Kirby backend, go to `/site/blueprints/...`
+If you want to work on the website design and frontend, start npm first and then go to `/assets/frontend/src/...`
+If you want to work on the dataset, that is transferred from the backend to the frontend, go to `/site/plugins/kirby-headless/` and `/site/plugins/wartenau/`.
+
 ### Commit your changes
 1. Go to the Git-Section of your editor
 2. select the files that you have changed and now want to commit
