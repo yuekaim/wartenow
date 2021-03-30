@@ -4,7 +4,7 @@
 
 </script>
 <aside class="footnotes">
-    <h3>Fußnoten</h3><br/>
+    
     <div class="mono">{@html text}</div>
 </aside>
 
