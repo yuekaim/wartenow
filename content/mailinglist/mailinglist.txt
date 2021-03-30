@@ -2,4 +2,4 @@ Title: Mailinglist
 
 ----
 
-Text: Lorem
+Text: lorem ipsum
