@@ -5,7 +5,7 @@
 </script>
 
 <aside class="footnotes mono">
-    <h3>Fußnoten</h3><br/>
+    
     {@html text}
 </aside>
 

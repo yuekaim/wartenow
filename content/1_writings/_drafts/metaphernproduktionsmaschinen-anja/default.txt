@@ -6,7 +6,7 @@ Subtitle: Koloniale Denkmuster, die freie Kunst der Kinder und das Potenzial von
 
 ----
 
-Issue: 
+Issue:
 
 ----
 
@@ -20,24 +20,24 @@ Footnotes: <p><a href="#_ednref1" rel="noopener noreferrer nofollow">[1]</a> Die
 
 Attributes:
 
-- 
+-
   title: IMPRESSUM
   value: 'para-educational papers #02, April 2021  MARIE PRESTON: Metaphernproduktionsmaschinen. Koloniale Denkmuster, die freie Kunst der Kinder und das Potenzial von Scharnierfiguren  HERAUSGEBERINNEN: Nora Sternfeld, Anja Steidinger, Nele Sock, Carina Herring  REDAKTION/LEKTORAT: Carina Herring  GRAFIK DESIGN: NOCH OFFEN  Kunstpädagogik HFBK Hamburg'
 
 ----
 
-Titleimage: 
+Titleimage:
 
 ----
 
 Authors:
 
-- 
+-
   name: 'Andrea Hubin '
   image: [ ]
   link: ""
   intro: 'Andrea Hubin ist Kunsthistorikerin und Kunstvermittlerin. Als wissenschaftliche Mitarbeiterin der Abteilung Dramaturgie der Kunsthalle Wien ist sie u.a. für die Entwicklung und leitende Betreuung des partizipativen Reflexions- und Aktionsraums »Community College« verantwortlich. Wichtige Stationen als Vermittlerin sind 2007 die documenta 12, wo auch das Wissenstransferprojekt DEUTSCH WISSEN entsteht sowie 2008 die Konzeption der Kunstvermittlung der 5. Berlin Biennale. Karin Schneider und Andrea Hubin unterrichten gemeinsam Vermittlungspraxen an der Universität für angewandte Kunst in Wien und sind Mitglieder der Wiener Gruppe des internationalen Netzwerks »Another Roadmap for Arts Education«. Zusammen entwickeln und moderieren sie für verschiedene Kontexte, etwa das Volkskundemuseum Wien, diskursive Projekte mit experimentell-performativem Charakter.'
-- 
+-
   name: Karin Schneider
   image: [ ]
   link: ""
@@ -71,11 +71,11 @@ Authors:
 
 ----
 
-Downloads: 
+Downloads:
 
 ----
 
-Links: 
+Links:
 
 ----
 
@@ -87,7 +87,7 @@ Date: 2021-03-10
 
 ----
 
-Color: 
+Color:
 
 ----
 
