@@ -22,7 +22,9 @@ tabs:
           pages:
             extends: sections/pages
             status: published
-            template: info
+            template:
+              - info
+              - mailinglist
 
   settings:
     label:
