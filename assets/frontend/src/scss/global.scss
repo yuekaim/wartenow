@@ -115,6 +115,7 @@ main.page {
 		font-size: 0.6em;
 		transform: translateY(-0.5em);
 		display: inline-block;
+		break-before: avoid;
 		&:hover {
 			color: blue;
 		}

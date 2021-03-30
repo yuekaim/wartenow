@@ -1,5 +1,0 @@
-Title: Mailinglist
-
-----
-
-Text: lorem ipsum
