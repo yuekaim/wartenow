@@ -141,7 +141,8 @@ ul{display: none;}
   position: relative;
   page-break-before: always;
   // page-break-inside: auto;
-  width: 70%;
+  // width: 70%;
+  width: 147mm;
   font-size: 12pt;
   margin: 0;
   padding: 0;
@@ -283,4 +284,8 @@ ul{display: none;}
   page-break-before: always;
   width: 70%;
   // padding: 1cm;
+}
+
+.text, .footnotes, .colophon, .author_info{
+  width: 147mm;
 }

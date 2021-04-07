@@ -19,12 +19,16 @@
 	// 	})
 	// }
 
-	let outerHeight;
+	let outerHeight, footnotesHeight, authorsHeight;
 
 	function countPages(){
 		let count = 1;
-		count += outerHeight / 842;
-		count = Math.ceil(count);
+		count += Math.ceil(outerHeight / 998);
+		console.log(count);
+		count += Math.ceil(footnotesHeight / 998);
+		console.log(footnotesHeight);
+		console.log(count);
+		count += Math.ceil(authorsHeight / 998);
 		console.log(count);
 	}
 
@@ -46,7 +50,7 @@
 		// startPaged();
 		countPages();
 		if( isChrome() ){
-			window.print();
+			// window.print();
 		} else {
 			alert('Please print with Chrome browser');
 			afterPrint();
@@ -57,7 +61,7 @@
 
 <svelte:window on:afterprint={afterPrint}/>
 
-<div style="height: 1123px; width: 10px; background-color: red;"></div>
+<!-- <div style="height: 1123px; width: 10px; background-color: red;"></div> -->
 
 <table>
 
@@ -110,6 +114,7 @@
 						</div>
 					</main>
 
+					<div bind:offsetHeight={footnotesHeight}>
 					{#if page.footnotes}
 						<Footnotes text={page.footnotes} />
 					{/if}
@@ -119,9 +124,10 @@
 						<Links links={page.links} />
 						<Tags tags={page.keywords} />
 					</footer>
+					</div>
 
 					{#if page.authors}
-						<div class="author_info">
+						<div class="author_info" bind:offsetHeight={authorsHeight}>
 							{#each page.authors as author}
 								<h3>{author.name}</h3><br/>
 								{@html author.text}<br/>
