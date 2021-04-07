@@ -41,11 +41,19 @@ class DefaultPage extends Page {
         return time() > $date && time() - $month < $date;
     }
 
+    public function beautiful(){
+        if( $this->content()->beautiful()->isNotEmpty() ){
+            return $this->content()->beautiful();
+        }
+        return $this->title();
+    }
+
     public function json( bool $full = false ): array {
         $json = parent::json( $full );
 
         // abstract dataset for list of posts
         $json = array_merge($json, [
+            'title' => $this->beautiful()->value(),
             'subtitle' => $this->subtitle()->value(),
             'category' => $this->parent()->uid(),
             'date' => $this->date()->toDate('d.m.Y'),

@@ -22,7 +22,9 @@ Attributes:
 
 ----
 
-Titleimage: 
+Titleimage:
+
+- header_research_seminar_2.jpg
 
 ----
 
@@ -38,7 +40,7 @@ Links:
 
 ----
 
-Keywords: 
+Keywords: research, para-education, seminar
 
 ----
 

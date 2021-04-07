@@ -32,33 +32,24 @@
     .content {
         overflow: hidden;
     }
-
     .collapsable{
-      margin-top: 5px;
-      margin-bottom: 5px;
+      margin-bottom: 1rem;
       position: relative;
-      left: 8rem;
-      right: 4rem;
-      width: 60vw;
-      /* border: 1px solid black; */
-      /* border-bottom: 1px solid black; */
-      /* border-radius: 10rem; */
-
+      background-color: white;
+      @include rounded;
       button{
+        display: block;
+        padding: 0.5em;
         width: 100%;
-        background-color: white;
-        border-radius: 10px;
+        background-color: inherit;
         text-align: left;
-        /* padding-left: 4rem; */
         @include bold;
-        /* border-top: 1px solid black;
-        border-bottom: 1px solid black; */
       }
       button:hover{
         background-color: var(--theme-color);
       }
       .content{
-        margin: 10px 4rem 10px 4rem;
+        padding: 1rem 2rem;
       }
     }
 

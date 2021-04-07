@@ -68,7 +68,7 @@ $large2: size( 18 ); // 216px
 }
 @mixin text-medium {
     font-size: size( 1.35 );
-    line-height: 1.22;
+    line-height: 1.3;
     letter-spacing: 0.002em;
 }
 @mixin text-large {
