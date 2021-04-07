@@ -48,6 +48,19 @@ class DefaultPage extends Page {
         return $this->title();
     }
 
+    public function blockContent(){
+        $html = '';
+        foreach( $this->text()->toBlocks() as $block ){
+            if( $block->type() === 'text' ){
+                $html .= preg_replace( '/\s([^\s]+?<a\s.+?>.+?<\/a>)/', ' <span class="nbsp">$1</span>', $block->text() );
+            } else {
+                $html .= $block->toHtml();
+            }
+        }
+        return $html;
+    }
+
+
     public function json( bool $full = false ): array {
         $json = parent::json( $full );
 
@@ -68,7 +81,7 @@ class DefaultPage extends Page {
         if( $full === true ){
             // full dataset for detailed view
             $json = array_merge( $json, [
-                'content' => $this->text()->toBlocks()->toHtml(),
+                'content' => $this->blockContent(),
                 'abstract' => $this->abstract()->value(),
                 'footnotes' => $this->footnotes()->kirbytext()->value(),
                 'downloads' => $this->downloads()->json('files'),
