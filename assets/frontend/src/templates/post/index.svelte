@@ -69,7 +69,7 @@
 	{#if page.abstract}
 		<Collapsable title="Abstract" color={page.color}>
 			<div class="abstract">
-				<p>{@html page.abstract}</p>
+				{@html page.abstract}
 			</div>
 		</Collapsable>
 	{/if}
