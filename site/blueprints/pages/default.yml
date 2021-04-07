@@ -13,18 +13,26 @@ tabs:
       - width: 2/3
         fields:
 
-          subtitle:
-            label:
-              en: Subtitle
-              de: Untertitel
-            type: text
+          beautiful:
+            type: writer
+            label: Beautiful title (with line breaks)
+            marks: false
+            inline: true
+            width: 1/2
 
           issue:
+            width: 1/2
             type: text
             label:
               en: Issue
               de: Ausgabe
             placeholder: "Essay #7"
+
+          subtitle:
+            label:
+              en: Subtitle
+              de: Untertitel
+            type: text
 
           abstract:
             type: writer

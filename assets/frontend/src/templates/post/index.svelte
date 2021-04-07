@@ -43,7 +43,7 @@
 			<p class="authors">{page.authors.map(author => author.name).join(', ')}</p>
 		{/if}
 
-		<h1 class="title">{page.title}</h1>
+		<h1 class="title">{@html page.title}</h1>
 
 		<!-- {#each page.authors as author}
 			<h3>{author.name}</h3>
