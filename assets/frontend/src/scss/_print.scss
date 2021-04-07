@@ -288,6 +288,21 @@ ul{display: none;}
   // padding: 1cm;
 }
 
-.text, .footnotes, .colophon, .author_info{
-  width: 147mm;
+
+.pageNumContainer{
+  position: absolute;
+  top:0; left:0;
 }
+
+.pageNum{
+  position: relative;
+  height: 297mm;
+  margin:0;
+  padding-top: 285mm;
+  padding-left: 200mm;
+  // border: 1px solid red;
+}
+
+// .text, .footnotes, .colophon, .author_info{
+//   width: 147mm;
+// }

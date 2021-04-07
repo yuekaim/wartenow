@@ -20,16 +20,29 @@
 	// }
 
 	let outerHeight, footnotesHeight, authorsHeight;
+	let count;
+	let pageNum = [];
+	// let pageNumContainer;
 
 	function countPages(){
-		let count = 1;
-		count += Math.ceil(outerHeight / 998);
+		count = 1;
+		count += Math.ceil(outerHeight / 1123);
 		console.log(count);
-		count += Math.ceil(footnotesHeight / 998);
+		count += Math.ceil(footnotesHeight / 1123);
 		console.log(footnotesHeight);
 		console.log(count);
-		count += Math.ceil(authorsHeight / 998);
+		count += Math.ceil(authorsHeight / 1123);
 		console.log(count);
+		console.log(authorsHeight);
+	}
+
+	function addPageNumber(){
+		for (var i = 1; i <= count; i++){
+			pageNum = [...pageNum, i];
+			// const pageNumSpan = document.createElement('span');
+			// pageNumSpan.textContent = 'Page ', i, ' of ', count;
+			// pageNumContainer.appendChild(pageNumSpan);
+		}
 	}
 
 	export let page;
@@ -49,6 +62,7 @@
 	onMount(() => {
 		// startPaged();
 		countPages();
+		addPageNumber();
 		if( isChrome() ){
 			// window.print();
 		} else {
@@ -60,6 +74,15 @@
 </script>
 
 <svelte:window on:afterprint={afterPrint}/>
+<!-- <div bind:this={pageNumContainer}/> -->
+
+<div class="pageNumContainer">
+	{#each pageNum as page}
+		<div class="pageNum">{page}</div>
+	{/each}
+</div>
+
+
 
 <!-- <div style="height: 1123px; width: 10px; background-color: red;"></div> -->
 
@@ -114,7 +137,7 @@
 						</div>
 					</main>
 
-					<div bind:offsetHeight={footnotesHeight}>
+					<div id="aftertext" bind:offsetHeight={footnotesHeight}>
 					{#if page.footnotes}
 						<Footnotes text={page.footnotes} />
 					{/if}
@@ -184,5 +207,55 @@
 			margin-bottom: 2rem;
 		}
 	}
+
+	.text, .footnotes, .colophon, .author_info{
+	  width: 555.797px;
+	}
+
+	.text{
+	  position: relative;
+	  page-break-before: always;
+	  // page-break-inside: auto;
+	  // width: 70%;
+	  width: 147mm;
+	  font-size: 12pt;
+	  margin: 0;
+	  padding: 0;
+	  background-color: #ffffffff;
+	  // height: 10cm;
+	  // float: none !important;
+
+	  // box-decoration-break: clone;
+	  // border: 1px solid black;
+	  // padding-top: 5cm;
+	  // padding-bottom: 5cm;
+
+	  // height: auto;
+	  overflow: visible!important;
+	  // page-break-inside: auto !important;
+		  iframe{
+		    display: none;
+		    width: 0 !important;
+		    height: 0 !important;
+		    overflow: hidden !important;
+		    line-height: 0pt !important;
+		    white-space: nowrap;
+		  }
+		  figure{
+		    transform: translateX(200px);
+		    // display: inline;
+		    // width: 100%;
+
+		    figcaption{
+		      text-align: right;
+		      font-size: 10pt;
+		      @include regular;
+		    }
+		  }
+		  h1, h2, h3, h4, h5, h6
+		      { page-break-after:avoid; page-break-inside:avoid }
+		  figure { page-break-inside:avoid; page-break-after:avoid; }
+		}
+
 
 </style>

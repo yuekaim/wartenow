@@ -5,13 +5,14 @@
 </script>
 
 <aside class="footnotes mono">
-    
+
     {@html text}
 </aside>
 
 <style lang="scss">
 
     aside {
+      width: 555.797px;
         :global(p) {
             padding-left: 3.5em;
         }
