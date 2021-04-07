@@ -19,6 +19,7 @@
   "dependencies": {
     "lazysizes": "^5.3.0",
     "node-sass": "^5.0.0",
+    "pagedjs": "^0.1.43",
     "rollup-plugin-scss": "^2.6.1",
     "sirv-cli": "^1.0.11",
     "svelte-navigator": "^3.1.5",

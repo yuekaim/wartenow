@@ -8,6 +8,25 @@
 	import Image from '../../components/Image.svelte';
 	import Links from '../../components/Links.svelte';
 	import { onMount } from 'svelte';
+	// import { Previewer } from 'pagedjs';
+
+	// let paged, flow;
+	//
+	// function startPaged(){
+	// 	paged = new Previewer();
+	// 	flow = paged.preview(DOMContent, ["/assets/css/print.css"], document.body).then((flow) => {
+	// 		console.log("Rendered", flow.total, "pages.");
+	// 	})
+	// }
+
+	let outerHeight;
+
+	function countPages(){
+		let count = 1;
+		count += outerHeight / 842;
+		count = Math.ceil(count);
+		console.log(count);
+	}
 
 	export let page;
 
@@ -24,6 +43,8 @@
 	}
 
 	onMount(() => {
+		// startPaged();
+		countPages();
 		if( isChrome() ){
 			window.print();
 		} else {
@@ -35,6 +56,8 @@
 </script>
 
 <svelte:window on:afterprint={afterPrint}/>
+
+<div style="height: 1123px; width: 10px; background-color: red;"></div>
 
 <table>
 
@@ -82,7 +105,7 @@
 					</header>
 
 					<main>
-						<div class="text">
+						<div class="text" bind:offsetHeight={outerHeight}>
 							{@html page.content}
 						</div>
 					</main>
