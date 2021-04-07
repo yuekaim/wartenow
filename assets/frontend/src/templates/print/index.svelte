@@ -73,7 +73,7 @@
 
 						{#if page.abstract}
 							<div class="abstract" style="border: 1px solid {page.color};">
-								<h3>ABSTRACT</h3>
+								<h3>Abstract</h3>
 								<p>{@html page.abstract}</p>
 							</div>
 						{/if}

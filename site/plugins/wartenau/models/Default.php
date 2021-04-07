@@ -53,6 +53,7 @@ class DefaultPage extends Page {
 
         // abstract dataset for list of posts
         $json = array_merge($json, [
+            'title' => $this->beautiful()->value(),
             'subtitle' => $this->subtitle()->value(),
             'category' => $this->parent()->uid(),
             'date' => $this->date()->toDate('d.m.Y'),
@@ -67,7 +68,6 @@ class DefaultPage extends Page {
         if( $full === true ){
             // full dataset for detailed view
             $json = array_merge( $json, [
-                'title' => $this->beautiful()->value(),
                 'content' => $this->text()->toBlocks()->toHtml(),
                 'abstract' => $this->abstract()->value(),
                 'footnotes' => $this->footnotes()->kirbytext()->value(),

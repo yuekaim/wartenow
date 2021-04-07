@@ -11,22 +11,25 @@
 <Link to={post.path}>
     <article style="--theme-color:{post.color}">
 
-        {#if post.new}
-            <em style="background-color:{post.color};">New</em>
-        <!-- {/if} -->
-        {:else if post.soon}
-            <em>Soon</em>
-        {:else}
-            <span class="dot" style="background-color:{post.color};"></span>
-        {/if}
-
-        {#if post.authors}
-            <p class="authors">{post.authors}</p>
-        {/if}
-
-        {#if post.issue}
-            <p class="issue">{post.issue}</p>
-        {/if}
+        <div class="taxonomy">
+            <div>
+                {#if post.authors}
+                    <p class="authors">{post.authors}</p>
+                {/if}
+                {#if post.issue}
+                    <p class="issue">{post.issue}</p>
+                {/if}
+            </div>
+            <div>
+                {#if post.new}
+                    <em style="background-color:{post.color};">New</em>
+                {:else if post.soon}
+                    <em>Soon</em>
+                {:else}
+                    <span class="dot" style="background-color:{post.color};"></span>
+                {/if}
+            </div>
+        </div>
 
         {#if post.image}
             <figure>
@@ -34,7 +37,7 @@
             </figure>
         {/if}
 
-        <h3>{post.title}</h3>
+        <h3>{@html post.title}</h3>
 
         {#if post.subtitle}
             <h4>{post.subtitle}</h4>
@@ -45,6 +48,20 @@
 
 <style lang="scss">
 
+    article {
+        background-color: #eee;
+        padding: 0.5em;
+        @include rounded;
+    }
+
+    .taxonomy {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+        p {
+            margin-bottom: 0;
+        }
+    }
     em {
         display: inline-block;
         padding: 0.1em 0.4em;
@@ -53,16 +70,10 @@
         border-radius: 0.5em;
     }
 
-    article {
-        background-color: #eee;
-        padding: 0.5em;
-        @include rounded;
-    }
-
     article:hover{
-      box-shadow: 0px 0px 50px var(--theme-color);
-      background-color: var(--theme-color);
-      transition: 0.3s;
+        box-shadow: 0px 0px 50px var(--theme-color);
+        background-color: var(--theme-color);
+        transition: 0.3s;
     }
 
     .authors, figure, h3 {

@@ -148,14 +148,13 @@ main.page {
 .bg-circle{
 	display: block;
 	position: fixed;
-	width: 600px;
-	height: 600px;
-	left: 300px;
-	bottom: 34px;
+	width: 60vw;
+	height: 60vh;
+	left: 30vw;
+	bottom: 5vh;
 	z-index: -100;
 
-	border-radius: 400px;
-	// background-color: $yellow;
+	border-radius: 60vw;
 	filter: blur(300px);
 }
 
@@ -188,4 +187,9 @@ main.page {
 		display: block;
 	}
 	@import 'print';
+}
+
+img {
+	width: 100%;
+	height: auto;
 }
