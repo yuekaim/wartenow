@@ -30,34 +30,29 @@
 
 <article>
 
-	<!-- <header> -->
-	<div class="print-button">
-		<Link to="print" class="button" id="print">Print</Link>
-	</div>
+	<header>
 
-	{#if page.issue}
-		<p class="issue">{page.issue}</p>
-	{/if}
-	<div class="article-info">
-		{#if page.authors}
-			<p class="authors">{page.authors.map(author => author.name).join(', ')}</p>
+		<div class="print-button">
+			<Link to="print" class="button" id="print">Print</Link>
+		</div>
+
+		{#if page.issue}
+			<p class="issue">{page.issue}</p>
 		{/if}
+		<div class="article-info">
+			{#if page.authors}
+				<p class="authors">{page.authors.map(author => author.name).join(', ')}</p>
+			{/if}
 
-		<h1 class="title">{@html page.title}</h1>
+			<h1 class="title">{@html page.title}</h1>
 
-		<!-- {#each page.authors as author}
-			<h3>{author.name}</h3>
-		{/each}
+			{#if page.subtitle}
+				<h2 class="subtitle">{page.subtitle}</h2><br/>
+			{/if}
+		</div>
+		<div class="bg-circle" style="background-color: {page.color};"></div>
 
-		<h1 class="title">{page.title}</h1> -->
-
-		{#if page.subtitle}
-			<h2 class="subtitle">{page.subtitle}</h2><br/>
-		{/if}
-	</div>
-	<div class="bg-circle" style="background-color: {page.color};"></div>
-
-	<!-- </header> -->
+	</header>
 
 	{#if page.image}
 		<figure class="titleImg">
@@ -65,7 +60,6 @@
 		</figure>
 	{/if}
 
-	<!-- collapsable sections -->
 	{#if page.abstract}
 		<Collapsable title="Abstract" color={page.color}>
 			<div class="abstract">
@@ -109,7 +103,13 @@
 <style lang="scss">
 
 	article {
-		margin: 4rem;
+		margin: 1rem;
+		@media (min-width: 680px ){
+			margin: 2rem;
+		}
+		@media (min-width: 920px ){
+			margin: 4rem;
+		}
 		header, main, footer {
 			margin-bottom: 4rem;
 		}
@@ -122,6 +122,18 @@
 		:global( section ){
 			margin-bottom: 2rem;
 		}
+	}
+
+	main.page {
+		padding: 0.5rem;
+		@media (min-width: 920px ){
+			padding: 2rem;
+		}
+		border-radius: 10px;
+		max-width: 1000px;
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.print-button {
