@@ -50,14 +50,43 @@ class DefaultPage extends Page {
 
     public function blockContent(){
         $html = '';
-        foreach( $this->text()->toBlocks() as $block ){
-            if( $block->type() === 'text' ){
-                $html .= preg_replace( '/\s([^\s]+?<a\s.+?>.+?<\/a>)/', ' <span class="nbsp">$1</span>', $block->text() );
+        $startAt = 1;
+        $notes   = [];
+        foreach($this->text()->toBlocks() as $block){
+            if(in_array($block->type(), ['text', 'markdown'])){
+                // we get the text with footnotes references but no bottom footnotes container
+                $text = $block->text()->withoutBlocksFootnotes($startAt);
+                $text = preg_replace( '/\s([^\s]*?\s?<sup.+?<\/sup>)/', ' <span class="nbsp">$1</span>', $text );
+                // instead, we get an array of the block's footnotes, and append it to our $notes array
+                $notesArr = $block->text()->onlyBlocksFootnotes($startAt);
+                if($notesArr !== '') {
+                    foreach($notesArr as $f) { $notes[] = $f; }
+                }
+                // the first note of the next block will now start at (number of current notes + 1)
+                $startAt = count($notes) + 1;
+                $html .= $text;
             } else {
-                $html .= $block->toHtml();
+                $html .= $block;
             }
         }
         return $html;
+    }
+
+    public function footnotes(){
+        $startAt = 1;
+        $notes   = [];
+        foreach($this->text()->toBlocks() as $block){
+            if(in_array($block->type(), ['text', 'markdown'])){
+                $notesArr = $block->text()->onlyBlocksFootnotes($startAt);
+                if($notesArr !== '') {
+                    foreach($notesArr as $f) {
+                        $notes[] = $f;
+                    }
+                }
+                $startAt = count($notes) + 1;
+            }
+        }
+        return $notes;
     }
 
 
@@ -83,7 +112,7 @@ class DefaultPage extends Page {
             $json = array_merge( $json, [
                 'content' => $this->blockContent(),
                 'abstract' => $this->abstract()->value(),
-                'footnotes' => $this->footnotes()->kirbytext()->value(),
+                'footnotes' => $this->footnotes(),
                 'downloads' => $this->downloads()->json('files'),
                 'links' => $this->links()->yaml(),
                 'attributes' => $this->attributes()->yaml(),

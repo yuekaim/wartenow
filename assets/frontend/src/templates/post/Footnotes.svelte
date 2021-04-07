@@ -3,23 +3,31 @@
     export let text;
 
 </script>
-<aside class="footnotes">
-    <div class="mono">{@html text}</div>
+<aside class="footnotes mono">
+    <ol>
+        {#each text as item}
+            {@html item}
+        {/each}
+    </ol>
 </aside>
 
 <style lang="scss">
 
-    .footnotes {
-        margin-top: 2rem;
-    }
-    aside {
-        :global(p) {
-            padding-left: 3.5em;
+    ol {
+        list-style: none;
+        counter-reset: my-awesome-counter;
+        :global(li) {
+            counter-increment: my-awesome-counter;
+            display: flex;
         }
-        :global(p a:first-child) {
-            min-width: 3em;
-            margin-left: -3.5em;
+        :global(li:before) {
+            display: block;
+            width: 3em;
+            content: counter(my-awesome-counter) ". ";
+        }
+        :global(.footnotereverse a) {
             display: inline-block;
+            margin-left: 0.5em;
         }
     }
 

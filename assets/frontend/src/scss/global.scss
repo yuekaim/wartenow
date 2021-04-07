@@ -108,8 +108,13 @@ main.page {
 	h3, h4, h5, h6 {
 		margin-top: 2rem;
 	}
-	a[href^="#_ftn"],
-	a[href^="#_edn"] {
+	sup.footnote {
+		&:before {
+			content: '[';
+		}
+		&:after {
+			content: ']';
+		}
 		@include mono;
 		@include text-small;
 		font-size: 0.6em;
