@@ -19,7 +19,9 @@
 	// 	})
 	// }
 
-	let outerHeight, footnotesHeight, authorsHeight;
+	let outerHeight = 0;
+	let footnotesHeight = 0;
+	let authorsHeight = 0;
 	let count;
 	let pageNum = [];
 	// let pageNumContainer;
@@ -75,12 +77,6 @@
 
 <svelte:window on:afterprint={afterPrint}/>
 <!-- <div bind:this={pageNumContainer}/> -->
-
-<div class="pageNumContainer">
-	{#each pageNum as page}
-		<div class="pageNum">{page}</div>
-	{/each}
-</div>
 
 
 
@@ -150,13 +146,16 @@
 					</div>
 
 					{#if page.authors}
-						<div class="author_info" bind:offsetHeight={authorsHeight}>
-							{#each page.authors as author}
-								<h3>{author.name}</h3><br/>
-								{@html author.text}<br/>
-							{/each}
-						</div>
+						{#each page.authors as author}
+							{#if author.name}
+								<div class="author_info" bind:offsetHeight={authorsHeight}>
+									<h3>{author.name}</h3><br/>
+									{@html author.text}<br/>
+								</div>
+							{/if}
+						{/each}
 					{/if}
+
 
 				</article>
 			</td>
@@ -187,6 +186,12 @@
 	{#if page.issue}
 		<p class="issue">{page.issue}</p>
 	{/if}
+</div>
+
+<div class="pageNumContainer">
+	{#each pageNum as page}
+		<div class="pageNum">{page}</div>
+	{/each}
 </div>
 
 <style lang="scss">

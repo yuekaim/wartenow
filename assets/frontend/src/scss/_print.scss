@@ -217,7 +217,7 @@ ul{display: none;}
 .abstract{
   background-color: #ffffff;
   position: absolute;
-  max-width: 45vw;
+  max-width: 150mm;
   // height: 178.74px;
   right: 10mm;
   top: 17cm;
@@ -296,10 +296,10 @@ ul{display: none;}
 
 .pageNum{
   position: relative;
-  height: 297mm;
-  margin:0;
+  height: 296mm;
   padding-top: 285mm;
   padding-left: 200mm;
+  box-sizing: border-box;
   // border: 1px solid red;
 }
 
