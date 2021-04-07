@@ -8,6 +8,29 @@
 	import Image from '../../components/Image.svelte';
 	import Links from '../../components/Links.svelte';
 	import { onMount } from 'svelte';
+	// import { Previewer } from 'pagedjs';
+
+	// let paged, flow;
+	//
+	// function startPaged(){
+	// 	paged = new Previewer();
+	// 	flow = paged.preview(DOMContent, ["/assets/css/print.css"], document.body).then((flow) => {
+	// 		console.log("Rendered", flow.total, "pages.");
+	// 	})
+	// }
+
+	let outerHeight, footnotesHeight, authorsHeight;
+
+	function countPages(){
+		let count = 1;
+		count += Math.ceil(outerHeight / 998);
+		console.log(count);
+		count += Math.ceil(footnotesHeight / 998);
+		console.log(footnotesHeight);
+		console.log(count);
+		count += Math.ceil(authorsHeight / 998);
+		console.log(count);
+	}
 
 	export let page;
 
@@ -24,8 +47,10 @@
 	}
 
 	onMount(() => {
+		// startPaged();
+		countPages();
 		if( isChrome() ){
-			window.print();
+			// window.print();
 		} else {
 			alert('Please print with Chrome browser');
 			afterPrint();
@@ -35,6 +60,8 @@
 </script>
 
 <svelte:window on:afterprint={afterPrint}/>
+
+<!-- <div style="height: 1123px; width: 10px; background-color: red;"></div> -->
 
 <table>
 
@@ -82,11 +109,12 @@
 					</header>
 
 					<main>
-						<div class="text">
+						<div class="text" bind:offsetHeight={outerHeight}>
 							{@html page.content}
 						</div>
 					</main>
 
+					<div bind:offsetHeight={footnotesHeight}>
 					{#if page.footnotes}
 						<Footnotes text={page.footnotes} />
 					{/if}
@@ -96,9 +124,10 @@
 						<Links links={page.links} />
 						<Tags tags={page.keywords} />
 					</footer>
+					</div>
 
 					{#if page.authors}
-						<div class="author_info">
+						<div class="author_info" bind:offsetHeight={authorsHeight}>
 							{#each page.authors as author}
 								<h3>{author.name}</h3><br/>
 								{@html author.text}<br/>
