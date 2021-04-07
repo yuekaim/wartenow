@@ -21,16 +21,10 @@
         margin-top: 2rem;
     }
     dl {
-        // display: flex;
-        // width: 80%;
         + dl {
             margin-top: 0.5em;
         }
-        dt {
-            // flex: 1 1 32%;
-        }
         dd {
-            // flex: 1 1 68%;
             margin-left: 3.8em;
         }
     }

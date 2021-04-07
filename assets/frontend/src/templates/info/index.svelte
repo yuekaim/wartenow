@@ -29,7 +29,13 @@
 <style lang="scss">
 
     article {
-        margin: 4rem;
+        margin: 1rem;
+		@media (min-width: 680px ){
+			margin: 2rem;
+		}
+		@media (min-width: 920px ){
+			margin: 4rem;
+		}
         header, main, footer {
             margin-bottom: 2rem;
         }

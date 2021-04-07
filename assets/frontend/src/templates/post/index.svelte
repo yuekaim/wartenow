@@ -2,7 +2,7 @@
 
 		import { navigate } from "svelte-navigator";
 		import Downloads from './Downloads.svelte';
-		import Attributes from './Attributes.svelte';
+		import Imprint from './Imprint.svelte';
 		import Footnotes from './Footnotes.svelte';
 		import Persons from '../../components/Persons.svelte';
 		import Tags from '../../components/Tags.svelte';
@@ -32,13 +32,10 @@
 
 	<header>
 
-		<div class="print-button">
-			<Link to="print" class="button" id="print">Print</Link>
-		</div>
-
 		{#if page.issue}
 			<p class="issue">{page.issue}</p>
 		{/if}
+
 		<div class="article-info">
 			{#if page.authors}
 				<p class="authors">{page.authors.map(author => author.name).join(', ')}</p>
@@ -50,7 +47,6 @@
 				<h2 class="subtitle">{page.subtitle}</h2><br/>
 			{/if}
 		</div>
-		<div class="bg-circle" style="background-color: {page.color};"></div>
 
 	</header>
 
@@ -70,11 +66,13 @@
 
 	{#if page.authors}
 		{#each page.authors as author}
-			<Collapsable title={author.name} color={page.color}>
-				<div class="author_info">
-					<p>{@html author.text}</p>
-				</div>
-			</Collapsable>
+			{#if author.name}
+				<Collapsable title={author.name} color={page.color}>
+					<div class="author_info">
+						<p>{@html author.text}</p>
+					</div>
+				</Collapsable>
+			{/if}
 		{/each}
 	{/if}
 
@@ -88,15 +86,21 @@
 			<Footnotes text={page.footnotes} />
 		{/if}
 
-		<Attributes attributes={page.attributes} />
+		<Imprint attributes={page.attributes} />
 
 	</main>
 
-	<footer>
-		<!-- <Links links={page.links} /> -->
-		<!-- <Downloads downloads={page.downloads} /> -->
-		<!-- <Tags tags={page.keywords} /> -->
-	</footer>
+	<!-- <footer>
+		<Links links={page.links} />
+		<Downloads downloads={page.downloads} />
+		<Tags tags={page.keywords} />
+	</footer> -->
+
+	<div class="print-button">
+		<Link to="print" class="button" id="print">Print</Link>
+	</div>
+
+	<div class="bg-circle" style="background-color: {page.color};"></div>
 
 </article>
 
