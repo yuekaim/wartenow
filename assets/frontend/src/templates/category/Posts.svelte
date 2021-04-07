@@ -17,11 +17,16 @@
 <style lang="scss">
 
     ul {
-        display: grid;
-        flex-wrap: wrap;
-        grid-template-columns: 1fr 1fr 1fr;
+        @media (min-width: 600px){
+            display: grid;
+            flex-wrap: wrap;
+            grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+            gap: 0 1rem;
+        }
         padding: 1rem;
-        gap: 1rem;
+    }
+    li {
+        margin-bottom: 1rem;
     }
 
 </style>

@@ -163,25 +163,6 @@ main.page {
 
 }
 
-.article-info{
-	width: 30vw;
-}
-
-.titleImg {
-  position: relative;
-  width: 45vw;
-  height: 30vw;
-  left: 40vw;
-	top: -6rem;
-	margin-bottom: -5rem;
-	img{
-		width: 100%;
-	  height: 100%;
-	  object-position: center;
-	  object-fit: cover;
-	}
-}
-
 @media print {
 	.print-only {
 		display: block;

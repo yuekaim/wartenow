@@ -36,22 +36,20 @@
 			<p class="issue">{page.issue}</p>
 		{/if}
 
-		<div class="article-info">
-			{#if page.authors}
-				<p class="authors">{page.authors.map(author => author.name).join(', ')}</p>
-			{/if}
+		{#if page.authors}
+			<p class="authors">{page.authors.map(author => author.name).join(', ')}</p>
+		{/if}
 
-			<h1 class="title">{@html page.title}</h1>
+		<h1 class="title">{@html page.title}</h1>
 
-			{#if page.subtitle}
-				<h2 class="subtitle">{page.subtitle}</h2><br/>
-			{/if}
-		</div>
+		{#if page.subtitle}
+			<h2 class="subtitle">{page.subtitle}</h2><br/>
+		{/if}
 
 	</header>
 
 	{#if page.image}
-		<figure class="titleImg">
+		<figure class="title-img">
 			<Image image={page.image} />
 		</figure>
 	{/if}
@@ -118,6 +116,11 @@
 			margin-bottom: 4rem;
 		}
 	}
+	@media (min-width: 920px ){
+		header {
+			padding-right: 50%;
+		}
+	}
 	.date {
 		margin-bottom: 0.5em;
 	}
@@ -126,6 +129,10 @@
 		:global( section ){
 			margin-bottom: 2rem;
 		}
+	}
+
+	h1 {
+		@include text-huge;
 	}
 
 	main.page {
@@ -145,6 +152,16 @@
 		bottom: 0;
 		right: 0;
 		padding: 1rem;
+	}
+
+	.title-img {
+		margin-bottom: 4rem;
+		img {
+			width: 100%;
+			height: 100%;
+			object-position: center;
+			object-fit: cover;
+		}
 	}
 
 </style>
