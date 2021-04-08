@@ -5,4 +5,17 @@ fields:
   footnotes:
     type: info
     text: |
-      [^Fußnoten-Beschreibung]
+      Footnotes will be counted automatically. Just add [^Fußnoten-Beschreibung] in the running text to add a footnote.
+
+  images:
+    type: info
+    text: |
+      Images can be uploaded in various sizes but best is:
+      **JPG**, RGB color space
+      **500kb-4mb** filesize or **2000-4000px** width
+
+  figcaptions:
+    type: info
+    label: Image captions
+    text: |
+      can be edited when clicking onto an image in the uploads section.

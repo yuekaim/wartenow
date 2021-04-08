@@ -46,6 +46,9 @@ tabs:
             extends: fields/attributes
             label: Colophon
 
+          footnotes:
+            type: writer
+
       - width: 1/3
         sections:
 
