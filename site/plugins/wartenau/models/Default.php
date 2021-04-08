@@ -48,6 +48,48 @@ class DefaultPage extends Page {
         return $this->title();
     }
 
+    public function blockContent(){
+        $html = '';
+        $startAt = 1;
+        $notes   = [];
+        foreach($this->text()->toBlocks() as $block){
+            if(in_array($block->type(), ['text', 'markdown'])){
+                // we get the text with footnotes references but no bottom footnotes container
+                $text = $block->text()->withoutBlocksFootnotes($startAt);
+                $text = preg_replace( '/\s([^\s]*?\s?<sup.+?<\/sup>)/', ' <span class="nbsp">$1</span>', $text );
+                // instead, we get an array of the block's footnotes, and append it to our $notes array
+                $notesArr = $block->text()->onlyBlocksFootnotes($startAt);
+                if($notesArr !== '') {
+                    foreach($notesArr as $f) { $notes[] = $f; }
+                }
+                // the first note of the next block will now start at (number of current notes + 1)
+                $startAt = count($notes) + 1;
+                $html .= $text;
+            } else {
+                $html .= $block;
+            }
+        }
+        return $html;
+    }
+
+    public function footnotes(){
+        $startAt = 1;
+        $notes   = [];
+        foreach($this->text()->toBlocks() as $block){
+            if(in_array($block->type(), ['text', 'markdown'])){
+                $notesArr = $block->text()->onlyBlocksFootnotes($startAt);
+                if($notesArr !== '') {
+                    foreach($notesArr as $f) {
+                        $notes[] = $f;
+                    }
+                }
+                $startAt = count($notes) + 1;
+            }
+        }
+        return $notes;
+    }
+
+
     public function json( bool $full = false ): array {
         $json = parent::json( $full );
 
@@ -68,9 +110,9 @@ class DefaultPage extends Page {
         if( $full === true ){
             // full dataset for detailed view
             $json = array_merge( $json, [
-                'content' => $this->text()->toBlocks()->toHtml(),
+                'content' => $this->blockContent(),
                 'abstract' => $this->abstract()->value(),
-                'footnotes' => $this->footnotes()->kirbytext()->value(),
+                'footnotes' => $this->footnotes(),
                 'downloads' => $this->downloads()->json('files'),
                 'links' => $this->links()->yaml(),
                 'attributes' => $this->attributes()->yaml(),

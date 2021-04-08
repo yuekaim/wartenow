@@ -25,7 +25,7 @@
             margin-top: 0.5em;
         }
         dd {
-            margin-left: 3.8em;
+            margin-left: 3em;
         }
     }
 

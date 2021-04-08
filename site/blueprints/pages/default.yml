@@ -42,11 +42,6 @@ tabs:
 
           text: fields/content
 
-          footnotes:
-            type: writer
-            label: Fußnoten
-            buttons: false
-
           attributes:
             extends: fields/attributes
             label: Colophon

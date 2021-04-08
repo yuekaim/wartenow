@@ -89,3 +89,5 @@ tabs:
                   de: Wird gezeigt, wenn diese Webseite geteilt wird
 
           uploads: sections/files
+
+  help: tabs/help
