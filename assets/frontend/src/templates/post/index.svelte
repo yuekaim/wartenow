@@ -9,7 +9,7 @@
 		import Image from '../../components/Image.svelte';
 		import Link from '../../components/Link.svelte';
 		import Links from '../../components/Links.svelte';
-		import Collapsable from '../../components/Collapsable.svelte'
+		import Collapsable from '../../components/Collapsable.svelte';
 
 		export let page;
 

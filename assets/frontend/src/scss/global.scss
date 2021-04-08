@@ -26,6 +26,7 @@ body {
 	@include regular;
 	@include text-normal;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 .button {
