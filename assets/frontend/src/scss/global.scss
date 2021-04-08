@@ -22,7 +22,7 @@ html {
 
 body {
 	color: $black;
-	background-color: $white;
+	background-color: #ddd;
 	@include regular;
 	@include text-normal;
 	overflow-x: hidden;

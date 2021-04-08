@@ -42,6 +42,12 @@
         width: auto;
     }
 
+    // .categories{
+    //   :global(a){
+    //     box-shadow: 0px 0px 2px 2px #eee;
+    //   }
+    // }
+
     #logo{
       z-index: -100;
     }

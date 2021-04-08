@@ -41,9 +41,6 @@
 	function addPageNumber(){
 		for (var i = 1; i <= count; i++){
 			pageNum = [...pageNum, i];
-			// const pageNumSpan = document.createElement('span');
-			// pageNumSpan.textContent = 'Page ', i, ' of ', count;
-			// pageNumContainer.appendChild(pageNumSpan);
 		}
 	}
 
@@ -66,7 +63,7 @@
 		countPages();
 		addPageNumber();
 		if( isChrome() ){
-			// window.print();
+			setTimeout('window.print();', 1000);
 		} else {
 			alert('Please print with Chrome browser');
 			afterPrint();
@@ -145,16 +142,18 @@
 					</footer>
 					</div>
 
+					<div class="authorWrapper" bind:offsetHeight={authorsHeight}>
 					{#if page.authors}
 						{#each page.authors as author}
 							{#if author.name}
-								<div class="author_info" bind:offsetHeight={authorsHeight}>
+								<div class="author_info">
 									<h3>{author.name}</h3><br/>
 									{@html author.text}<br/>
 								</div>
 							{/if}
 						{/each}
 					{/if}
+					</div>
 
 
 				</article>

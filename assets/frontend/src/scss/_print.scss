@@ -2,6 +2,7 @@
 
 @page {
   size: A4;
+  margin: 1;
 }
 
 * {
@@ -279,11 +280,10 @@ ul{display: none;}
 
 .page-footer-space {
   height: 18mm;
-
 }
 
 .author_info{
-  page-break-before: always;
+  // page-break-before: always;
   width: 70%;
   // padding: 1cm;
 }
@@ -297,10 +297,17 @@ ul{display: none;}
 .pageNum{
   position: relative;
   height: 296mm;
-  padding-top: 285mm;
-  padding-left: 200mm;
+  padding-top: 282mm;
+  padding-left: 195mm;
   box-sizing: border-box;
+  font-size: 12px;
   // border: 1px solid red;
+}
+
+.authorWrapper{
+	padding: 0px;
+  margin: 0px;
+  page-break-before: always;
 }
 
 // .text, .footnotes, .colophon, .author_info{
