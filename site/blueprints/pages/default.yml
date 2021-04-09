@@ -48,6 +48,7 @@ tabs:
 
           footnotes:
             type: writer
+            label: Interne Notizen (wird nicht auf der Website angezeigt)
 
       - width: 1/3
         sections:
