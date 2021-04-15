@@ -1,0 +1,51 @@
+Title: Kanon, Gegen-Kanon und darüber hinaus
+
+----
+
+Beautiful: Kanon, Gegen-Kanon und darüber hinaus<br>Kunstausstellungsgeschichte von 1895 bis 2022
+
+----
+
+Issue: 
+
+----
+
+Subtitle: Podcast-Vorlesung
+
+----
+
+Text: [{"content":{"level":"h2","text":"Kanon, Gegen-Kanon und dar\u00fcber hinaus<br>Kunstausstellungsgeschichte von 1895 bis 2022<br>Podcast-Vorlesung"},"id":"90ba62a2-0f85-4c96-8b2e-96a6446f45c0","isHidden":false,"type":"heading"},{"content":{"text":"<em>Exhibitions are often the site of multiple imaginaries; what we see in an exhibition is the trigger for so many other associations and links. But the actual experience is often silent and privatised; the more distinguished and famous the venue of the exhibition, the more inhibited the response.<\/em>","citation":"Irit Rogoff"},"id":"31a01c82-cbea-4f47-a6ce-80d247748ef8","isHidden":false,"type":"quote"},{"content":{"text":"<p>Die Podcast-Vorlesung widmet sich der Geschichte von Kunstausstellungen im 20. und beginnenden 21. Jahrhundert als Geschichte der Gegenwart. Von dieser spricht Michel Foucault als \u201eGenealogie\u201c. Ihm zufolge ist eine solche parteiisch und bezieht sich auf eine \u201eprek\u00e4re Gegenwart\u201c, zu der sie in ein kritisches Verh\u00e4ltnis treten will. In diesem Sinne geht die Vorlesung von Ausstellungen ebenso als von ihrer Geschichtsschreibung als \u201eumk\u00e4mpftes Terrain\u201c aus. Sie verweigert den Kanon nicht, sondern stellt ihn vor, will ihn erweitern, greift in ihn ein, zeigt ihn als \u201egemacht\u201c auf und will sich in ihn einschreiben. Sie bezieht sich auf die Ausstellungsgeschichte als eine Geschichte von Ver\u00e4nderungen, K\u00e4mpfen und Br\u00fcchen, aber auch von parallelen Erfahrungen und persistierenden Imaginationen. In diesem Sinne begegnen wir \u201eMeilensteinen\u201c aus dem Kanon in Museen, Galerien und wiederkehrenden Gro\u00dfausstellungen von Venedig \u00fcber Sao Paulo bis Dakar ebenso wie weniger bekannten aber nicht weniger relevanten historischen Referenzen f\u00fcr die Umbr\u00fcche und Fragen, die f\u00fcr ein aktuelles Ausstellen wichtig erscheinen.<\/p>"},"id":"2d2b429b-e77e-4169-ad46-383a83215a5e","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["plattencover-vl-podcast-sommersemester_seite_1.jpg"],"src":"","alt":"","caption":null,"link":"","ratio":"","crop":"false"},"id":"6a3251c2-20ab-477c-b1ca-fcd027bf50ea","isHidden":false,"type":"image"},{"content":{"location":"kirby","image":["plattencover-vl-podcast-sommersemester_seite_2.jpg"],"src":"","alt":"","caption":null,"link":"","ratio":"","crop":"false"},"id":"9613afb0-03d8-4dce-975d-bdc3062b36f5","isHidden":false,"type":"image"}]
+
+----
+
+Attributes: 
+
+----
+
+Titleimage:
+
+- screenshot-2020-02-08-12.43.13.png
+
+----
+
+Authors: 
+
+----
+
+Downloads: 
+
+----
+
+Links: 
+
+----
+
+Keywords: 
+
+----
+
+Date: 
+
+----
+
+Color: #f3c903

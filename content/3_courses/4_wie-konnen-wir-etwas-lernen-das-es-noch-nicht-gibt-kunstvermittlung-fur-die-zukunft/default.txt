@@ -1,0 +1,52 @@
+Title: Wie können wir etwas lernen, das es noch nicht gibt? Kunstvermittlung für die Zukunft
+
+----
+
+Beautiful: Wie können wir etwas lernen, das es noch nicht gibt? Kunstvermittlung für die Zukunft
+
+----
+
+Issue: 
+
+----
+
+Subtitle: 
+
+----
+
+Text: [{"content":{"level":"h2","text":"<strong>Wie k\u00f6nnen wir etwas lernen, das es noch nicht gibt? Kunstvermittlung f\u00fcr die Zukunft<br><\/strong>Seminar von Prof. Dr. Nora Sternfeld"},"id":"8866ae16-4055-46f5-a870-4f0cdc618ac8","isHidden":false,"type":"heading"},{"content":{"text":"<p>Wenn wir davon ausgehen, dass Kunst und Vermittlung die bestehenden Verh\u00e4ltnisse infrage stellen k\u00f6nnen, dann geschieht dies auf zweierlei Weise: Einerseits wird das Sichtbare, Sagbare und Zeigbare durch kritische Vermittlung br\u00fcchig, diskutier- und hinterfragbar. Andererseits k\u00f6nnen andere M\u00f6glichkeiten zu sehen und zu wissen zutage treten. Diese betreffen das Wissen von K\u00e4mpfen, aber auch das Wissen von einer anderen M\u00f6glichkeit. Sie lassen neue Formen des Zusammen-Denkens und Zusammen-Handelns entstehen, in denen Strukturen neu verstanden und Ressourcen neu verbunden werden. Wir zeigen uns also etwas, das es noch nicht gibt.<\/p><p>Das Seminar widmet sich vor diesem Hintergrund Handlungsformen, Interventionen und Imaginationen in der Kunstvermittlung. Fragen in diesem Zusammenhang werden sein: Welche Handlungsr\u00e4ume haben Kunstvermittler*innen in Ausstellungen? Wie \u00fcberschneiden sich k\u00fcnstlerische und edukative Praktiken in der Geschichte der Kunst, der Vermittlung und des Kuratierens? Wie lassen sich Bildungsr\u00e4ume und Ausstellungen demokratisieren?<\/p><p>Ein weiterer Aspekt des Seminars fragt nach den damit verbundenen r\u00e4umlichen Dimensionen. In Kooperation mit dem Studio Experimentelles Design der HFBK soll die Aula Wartenau als Vermittlungsraum f\u00fcr das, was es noch nicht gibt, umgestaltet werden.<\/p><p>Im Rahmen der Ausstellung \u201eNot Fully Human, Not Human at All\u201c im Hamburger Kunstverein entwickeln wir im dritten Teil des Seminars online Vermittlungsprogramme zu den einzelnen k\u00fcnstlerischen Beitr\u00e4gen und verstehen sie als Vorschl\u00e4ge f\u00fcr eine andere m\u00f6gliche Zukunft.<\/p><p>&nbsp;<\/p><p><br><\/p><p>&nbsp;<\/p>"},"id":"7dec9906-31b7-4442-a42a-cc7bf1e97c30","isHidden":false,"type":"text"}]
+
+----
+
+Attributes: 
+
+----
+
+Titleimage:
+
+- >
+  saddie-choua_lamb-chops-should-not-be-overcooked.png
+
+----
+
+Authors: 
+
+----
+
+Downloads: 
+
+----
+
+Links: 
+
+----
+
+Keywords: 
+
+----
+
+Date: 
+
+----
+
+Color: #22c959
