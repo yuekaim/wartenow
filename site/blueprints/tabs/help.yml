@@ -19,3 +19,12 @@ fields:
     label: Image captions
     text: |
       can be edited when clicking onto an image in the uploads section.
+
+  videos:
+    type: info
+    text: |
+      In the block editor you can also add videos. For embeds from YouTube or Vimeo, select the "Video" BLock, for embedding a video from the HFBK Mediathek, select the "HTML" block:
+      1. Go to the video page at HFBK Medithek
+      2. Click on "Share"/"Teilen"
+      3. Copy the iFrame code
+      4. Paste that into the newly created HTML block
