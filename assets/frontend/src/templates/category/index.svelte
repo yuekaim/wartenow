@@ -24,7 +24,8 @@
     .about {
         display: flex;
         font-family: 'Favorit', sans-serif;
-        margin-left: 20rem;
+        margin-left: auto;
+        margin-right: auto;
         padding: 1rem;
         letter-spacing: 0.01em;
         max-width: 900px;
