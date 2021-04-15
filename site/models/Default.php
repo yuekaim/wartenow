@@ -7,9 +7,14 @@ class DefaultPage extends Page {
         $json = [];
         foreach( $this->content()->authors()->toStructure() as $author ){
             if( $full ){
+
+                if( $image = $author->image()->toFile() ){
+                    $image = $image->json('portrait');
+                }
+
                 $json[] = [
                     'name' => $author->name()->value(),
-                    'image' => $author->image()->json('file'),
+                    'image' => $image,
                     'link' => $author->link()->value(),
                     'text' => $author->intro()->kirbytext()->value(),
                 ];
@@ -93,13 +98,17 @@ class DefaultPage extends Page {
     public function json( bool $full = false ): array {
         $json = parent::json( $full );
 
+        if( $image = $this->titleImage()->toFile() ){
+            $image = $image->json('landscape');
+        }
+
         // abstract dataset for list of posts
         $json = array_merge($json, [
             'title' => $this->beautiful()->value(),
             'subtitle' => $this->subtitle()->value(),
             'category' => $this->parent()->uid(),
             'date' => $this->date()->toDate('d.m.Y'),
-            'image' => $this->titleImage()->json('image'),
+            'image' => $image,
             'color' => $this->color()->value(),
             'issue' => $this->issue()->value(),
             'authors' => $this->authors( $full ),
