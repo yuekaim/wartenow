@@ -31,6 +31,7 @@
         position: sticky;
         display: flex;
         top: 0;
+        top: 1rem;
         width: 100%;
         justify-content: space-between;
         padding: 1rem;
