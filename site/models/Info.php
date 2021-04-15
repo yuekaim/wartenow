@@ -5,9 +5,14 @@ class InfoPage extends Page {
     public function jsonTeam(): array {
         $json = [];
         foreach( $this->team()->toStructure() as $author ){
+
+            if( $image = $author->image()->toFile() ){
+                $image = $image->json('portrait');
+            }
+
             $json[] = [
                 'name' => $author->name()->value(),
-                'image' => $author->image()->json('image'),
+                'image' => $image,
                 'link' => $author->link()->value(),
                 'text' => $author->intro()->kirbytext()->value(),
             ];

@@ -150,11 +150,19 @@ Kirby::plugin('moritzebeling/headless', [
 				return $json;
 			}
 
+			$sizes = option( 'thumbs.srcsets.'.$size,
+				option('moritzebeling.headless.thumbs.srcset') );
 			$srcset = [];
-			foreach( option('moritzebeling.headless.thumbs.srcset') as $width ){
+			foreach( $sizes as $width ){
+				if( is_array( $width ) ){
+					$url = $this->thumb( $width )->url();
+					$width = $width['width'];
+				} else {
+					$url = $this->thumb(['width' => $width])->url();
+				}
 				$srcset[] = [
 					'width' => $width,
-					'url' => $this->thumb(['width' => $width])->url(),
+					'url' => $url
 				];
 			}
 
