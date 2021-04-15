@@ -22,7 +22,6 @@
 <style lang="scss">
 
     .about {
-        display: flex;
         font-family: 'Favorit', sans-serif;
         margin-left: auto;
         margin-right: auto;
@@ -34,11 +33,13 @@
         background-color: #eee;
         border-radius: 0.5em;
         border-width: 15px;
-        justify-content: center;
         box-shadow: 0px 0px 9px 9px #eee;
         z-index: -2;
 
 
+    div.about{
+        margin: 1rem; 
+    }
 
 
     }
