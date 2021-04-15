@@ -21,31 +21,9 @@ Team:
 - 
   name: Anja Steidinger
   image:
-    - mg_9775_etwas-heller.jpg
+    - anjafoto.jpg
   link: ""
-  intro: >
-    Anja Steidinger ist Künstlerin und
-    Professorin für Kunstpädagogik an der
-    HFBK Hamburg. Sie arbeitet an den
-    Schnittstellen von Kunst, Politik und
-    Bildung. Von 2006 bis 2020 hat sie in
-    Barcelona gelebt. Dort ist auch ihre
-    Dissertationsarbeit zu künstlerischen
-    (Selbst)-Repräsentationen von Unbehagen
-    im Kontext der spanischen
-    Wirtschaftskrise entstanden (Publikation
-    Edition Metzel, München 2015). Sie ist
-    Mitbegründerin des spanischen
-    aktivistischen Künstler:innenkollektivs
-    Enmedio und des medienpädagogischen
-    Projektes für Kinder La Maleta del Cine
-    in Barcelona. Ihre oftmals auf
-    gemeinschaftlicher Produktion basierende
-    Arbeitsweise verbindet dekoloniale,
-    antidiskriminierende Perspektiven mit
-    lokalen Kunstprojekten und entwickelt
-    aus künstlerischer Intervention als
-    kritische Praxis neue Handlungsräume.
+  intro: 'Anja Steidinger ist Künstlerin und Professorin für Kunstpädagogik an der HFBK Hamburg. Sie arbeitet an den Schnittstellen von Kunst, Politik und Bildung. Von 2006 bis 2020 hat sie in Barcelona gelebt. Dort ist auch ihre Dissertationsarbeit zu künstlerischen (Selbst)-Repräsentationen von Unbehagen im Kontext der spanischen Wirtschaftskrise entstanden (Publikation Edition Metzel, München 2015). Sie ist Mitbegründerin des spanischen aktivistischen Künstler:innenkollektivs Enmedio und des medienpädagogischen Projektes für Kinder La Maleta del Cine in Barcelona. Ihre oftmals auf gemeinschaftlicher Produktion basierende Arbeitsweise verbindet dekoloniale, antidiskriminierende Perspektiven mit lokalen Kunstprojekten und entwickelt aus künstlerischer Intervention als kritische Praxis neue Handlungsräume. Photo: Robert Lühmann'
 - 
   name: Nele Sock
   image:

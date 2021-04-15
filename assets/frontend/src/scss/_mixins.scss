@@ -38,18 +38,20 @@ $large2: size( 18 ); // 216px
 /* fonts */
 
 @mixin regular {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Favorit', sans-serif;
     font-style: normal;
-    font-weight: 400;
-
+    font-weight: normal;
 }
 @mixin bold {
-    font-family: 'Inter', sans-serif;
+    @include regular;
+}
+@mixin italic {
+    font-family: 'Favorit Italic', sans-serif;
     font-style: normal;
-    font-weight: 900;
+    font-weight: normal;
 }
 @mixin mono {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Favorit Mono', monospace;
     font-style: normal;
     font-weight: normal;
 }

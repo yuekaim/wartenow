@@ -1,12 +1,26 @@
 @import 'reset';
 
-// @font-face {
-// 	font-family: 'Sans';
-// 	src: url('/fonts/Inter-Light.woff2') format('woff2'),
-// 		 url('/fonts/Inter-Light.woff') format('woff');
-// 	font-weight: normal;
-// 	font-style: normal;
-// }
+@font-face {
+	font-family: 'Favorit Regular';
+	src: url('/assets/fonts/EduFavorit-Regular.woff2') format('woff2'),
+		 url('/assets/fonts/EduFavorit-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Favorit Italic';
+	src: url('/assets/fonts/EduFavorit-RegularItalic.woff2') format('woff2'),
+		 url('/assets/fonts/EduFavorit-RegularItalic.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Favorit Mono';
+	src: url('/assets/fonts/EduFavoritMono-Regular.woff2') format('woff2'),
+		 url('/assets/fonts/EduFavoritMono-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 
 @import 'mixins';
 
@@ -59,6 +73,9 @@ h2 {
 }
 h3 {
 	@include bold;
+}
+i, em {
+	@include italic;
 }
 .mono {
 	@include mono;
