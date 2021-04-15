@@ -22,7 +22,24 @@
 <style lang="scss">
 
     .about {
-        margin: 1rem;
+        display: flex;
+        font-family: 'Favorit', sans-serif;
+        margin-left: 20rem;
+        padding: 1rem;
+        letter-spacing: 0.01em;
+        max-width: 900px;
+        line-height: 1.1em;
+        font-size: 1.1em;
+        background-color: #eee;
+        border-radius: 0.5em;
+        border-width: 15px;
+        justify-content: center;
+        box-shadow: 0px 0px 9px 9px #eee;
+        z-index: -2;
+
+
+
+
     }
 
 </style>
