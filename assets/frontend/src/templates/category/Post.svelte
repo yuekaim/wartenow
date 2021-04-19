@@ -114,9 +114,9 @@
 
     span{
       background-color: #eee;
-      // padding: -10px;
+      padding: 2px;
       // color: #eee;
-      box-shadow: 0px 8px 10px 10px #eee,
+      // box-shadow: 0px 8px 10px 10px #eee,
     }
 
     article:hover{
