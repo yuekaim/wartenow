@@ -7,12 +7,15 @@ fields:
     text: |
       Footnotes will be counted automatically. Just add [^Fußnoten-Beschreibung] in the running text to add a footnote.
 
+      Unfortunately it is (currently) not possible to have another square brackets [...] inside a footnote.
+      So this: [^Footnote [...] text] should be converted to [^Footnote (...) text].
+
   images:
     type: info
     text: |
       Images can be uploaded in various sizes but best is:
       **JPG**, RGB color space
-      **500kb-4mb** filesize or **2000-4000px** width
+      **500 KB – 4 MB** filesize or **2000 – 4000 px** width
 
   figcaptions:
     type: info

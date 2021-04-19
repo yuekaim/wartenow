@@ -3,6 +3,8 @@
 vendor
 node_modules
 /assets/frontend/build
+set_acls
+set_permissions
 
 # ------------
 # System files

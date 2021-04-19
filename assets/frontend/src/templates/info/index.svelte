@@ -22,6 +22,11 @@
             <h2>Team</h2>
         </Persons>
 
+        <div class="credits">
+            <dt>Graphic Design & Website:</dt>
+            <dd>Kimberly Duck, Moritz Ebeling, Cleo Miao</dd>
+        </div>
+
     </article>
 
 </Load>
@@ -60,7 +65,10 @@
       box-shadow: 0px 0px 0px 9px #eee;
       font-size: 1em;
       max-width: 900px;
-
     }
 
+    .credits {
+        color: #bbb;
+        margin-top: 4rem;
+      }
 </style>

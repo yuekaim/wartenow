@@ -22,7 +22,7 @@
 <style lang="scss">
 
     .about {
-        font-family: 'Favorit', sans-serif;
+        display: flex;
         margin-left: auto;
         margin-right: auto;
         padding: 1rem;
@@ -35,12 +35,6 @@
         border-width: 15px;
         box-shadow: 0px 0px 9px 9px #eee;
         z-index: -2;
-
-
-    div.about{
-        margin: 1rem; 
-    }
-
 
     }
 

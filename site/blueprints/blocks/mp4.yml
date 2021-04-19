@@ -1,0 +1,6 @@
+name: MP4 Video Url
+icon: code
+preview: code
+fields:
+
+  url: fields/url

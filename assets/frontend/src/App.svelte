@@ -2,6 +2,7 @@
 
 	import { Router, Link, Route } from "svelte-navigator";
 
+	import Animation from './animation/SvgExample.svelte';
 	import Header from './components/Header.svelte';
 	import Footer from './components/Footer.svelte';
 
@@ -18,9 +19,12 @@
 </script>
 
 <Router url="{url}">
+
 	<Header pages={data.pages} categories={data.categories} />
 
 	<Route path="info" component={Info} />
+
+	<Route path="anim" component={Animation} />
 
 	<Route path="/">
 		<Start posts={data.posts}/>
@@ -42,6 +46,7 @@
 	</Route>
 
 	<Footer />
+
 </Router>
 
 <style lang="scss">
