@@ -108,8 +108,8 @@ export var animation = function( canvas ) {
                     sprite: {
                         texture: '/assets/svg/wartenau.svg'
                     }
-                }}
-            );
+                },
+              });
     var boxB = Bodies.rectangle(200, 100, 80, 50, {
                 render: {
                     sprite: {
@@ -134,7 +134,8 @@ export var animation = function( canvas ) {
     // var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
 
     // add all of the bodies to the world
-    Composite.add(engine.world, [boxA, boxB, boxC, boxD, shape1, shape2]);
+    Composite.add(engine.world, [boxA, boxB, boxC, boxD,
+      shape1, shape2]);
 
     // Walls
     var offset = 300,

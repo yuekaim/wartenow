@@ -8,7 +8,8 @@
 </script>
 
 <header>
-    <Link to="/"><img id="logo" alt="Logo" height="100%;" width="auto" src="/assets/icons/logo.svg"></Link>
+    <div class="placeholder"></div>
+
 
     <nav class="categories">
         <Link class="button" to="/">All</Link>
@@ -32,15 +33,28 @@
         display: flex;
         top: 0;
         top: 1rem;
-        width: 100%;
+        width: 80%;
+        left: 20%;
         justify-content: space-between;
         padding: 1rem;
         align-items: flex-start;
+        z-index: 100;
+    }
+
+    .categories{
+      display: flex;
+      flex-wrap: wrap;
     }
 
     img {
         height: 4rem;
         width: auto;
+    }
+
+    .placeholder{
+      width: 10vw;
+      height: 10vh;
+      pointer-events: none;
     }
 
     // .categories{
@@ -49,8 +63,6 @@
     //   }
     // }
 
-    #logo{
-      z-index: -100;
-    }
+
 
 </style>

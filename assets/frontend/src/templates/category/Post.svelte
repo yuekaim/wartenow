@@ -14,6 +14,7 @@
 </script>
 
 <Link to={post.path}>
+<div class="article">
     <article style="--theme-color:{post.color};
     transform:translate({random3}rem, {random4}rem) skew(0rad);">
 <!-- skew({random1}rad, {random2}rad) -->
@@ -53,6 +54,7 @@
         <span class="dot" style="background-color:{post.color};"></span>
 
     </article>
+</div>
 </Link>
 
 <style lang="scss">
@@ -62,6 +64,7 @@
         // background-color: #eee;
         padding: 0.5em;
         @include rounded;
+
         // border: 1px solid var(--theme-color);
         // margin: 50px;
         // border-radius: 1000px;
@@ -155,5 +158,7 @@
       filter: blur(100px);
       transition: 0.3s;
     }
+
+
 
 </style>

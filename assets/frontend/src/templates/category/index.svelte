@@ -34,7 +34,8 @@
         border-radius: 0.5em;
         border-width: 15px;
         box-shadow: 0px 0px 9px 9px #eee;
-        z-index: -2;
+        position: relative;
+        z-index: 0;
 
     }
 
