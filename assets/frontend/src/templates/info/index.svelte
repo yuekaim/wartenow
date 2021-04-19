@@ -34,6 +34,8 @@
 <style lang="scss">
 
     article {
+      position: absolute;
+      z-index: 100;
 
         padding-left: 9rem;
         margin: 4rem;
