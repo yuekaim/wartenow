@@ -83,7 +83,7 @@ i, em {
 	@include text-small;
 }
 
-blockquote {
+blockquote em {
 	&:before{
 		content:"»";
 	}

@@ -58,6 +58,9 @@ class DefaultPage extends Page {
         $startAt = 1;
         $notes   = [];
         foreach($this->text()->toBlocks() as $block){
+            if(!($block instanceof Kirby\Cms\Block )){
+                continue;
+            }
             if(in_array($block->type(), ['text', 'markdown'])){
                 // we get the text with footnotes references but no bottom footnotes container
                 $text = $block->text()->withoutBlocksFootnotes($startAt);
@@ -81,6 +84,9 @@ class DefaultPage extends Page {
         $startAt = 1;
         $notes   = [];
         foreach($this->text()->toBlocks() as $block){
+            if(!($block instanceof Kirby\Cms\Block )){
+                continue;
+            }
             if(in_array($block->type(), ['text', 'markdown'])){
                 $notesArr = $block->text()->onlyBlocksFootnotes($startAt);
                 if($notesArr !== '') {

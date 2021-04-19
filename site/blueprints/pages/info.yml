@@ -20,7 +20,7 @@ tabs:
             label:
               en: About {{ site.title }}
               de: Über {{ site.title }}
-            type: textarea
+            type: writer
 
       - width: 1/3
         sections:
