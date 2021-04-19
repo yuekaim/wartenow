@@ -3,13 +3,20 @@
   import Matter from 'matter-js';
 
     // module aliases
-  var Engine = Matter.Engine,
-      Render = Matter.Render,
-      Runner = Matter.Runner,
-      Bodies = Matter.Bodies,
-      MouseConstraint = Matter.MouseConstraint,
-      Mouse = Matter.Mouse,
-      Composite = Matter.Composite;
+    var Engine = Matter.Engine,
+        Render = Matter.Render,
+        Runner = Matter.Runner,
+        Common = Matter.Common,
+        MouseConstraint = Matter.MouseConstraint,
+        Mouse = Matter.Mouse,
+        Composite = Matter.Composite,
+        Vertices = Matter.Vertices,
+        Svg = Matter.Svg,
+        Body = Matter.Body,
+        Bodies = Matter.Bodies;
+//
+// // provide concave decomposition support library
+//   Common.setDecomp(require('poly-decomp'));
 
   // create an engine
   var engine = Engine.create(),
@@ -26,6 +33,16 @@
         wireframes: false,
       }
   });
+
+Render.run(render);
+
+// create runner
+var runner = Runner.create();
+Runner.run(runner, engine);
+
+    engine.gravity.y = -1;
+    engine.gravity.x = -1;
+
 
   // create two boxes and a ground
   var boxA = Bodies.rectangle(400, 200, 80, 80);
@@ -55,6 +72,41 @@
       	Bodies.rectangle(wall.width/2, wall.height + offset/2, wall.width, offset, wallSettings), // bottom
       	Bodies.rectangle(-offset/2, wall.height/2 - 6000, offset, wall.height + 12000, wallSettings), //left
       ]);
+
+
+  // svg test
+
+  // add bodies
+      if (typeof fetch !== 'undefined') {
+          var select = function(root, selector) {
+              return Array.prototype.slice.call(root.querySelectorAll(selector));
+          };
+
+          var loadSvg = function(url) {
+              return fetch(url)
+                  .then(function(response) { return response.text(); })
+                  .then(function(raw) { return (new window.DOMParser()).parseFromString(raw, 'image/svg+xml'); });
+          };
+
+
+
+          loadSvg('/assets/svg/svg.svg').then(function(root) {
+              var color = Common.choose(['#f19648', '#f5d259', '#f55a3c', '#063e7b', '#ececd1']);
+
+              var vertexSets = select(root, 'path')
+                  .map(function(path) { return Svg.pathToVertices(path, 30); });
+
+              Composite.add(world, Bodies.fromVertices(400, 80, vertexSets, {
+                  render: {
+                      fillStyle: color,
+                      strokeStyle: color,
+                      lineWidth: 1
+                  }
+              }, true));
+          });
+      } else {
+          Common.warn('Fetch is not available. Could not load SVG.');
+      }
 
   // add mouse control
   var mouse = Mouse.create(render.canvas),
@@ -87,11 +139,11 @@
 
 </script>
 
-<div use:init></div>
+<!-- <div use:init></div> -->
 
 <style lang="scss">
 
-  
+
 
   canvas{
     position: absolute;
