@@ -23,7 +23,8 @@
 
 	<Route path="info" component={Info} />
 
-	<Route path="anim" component={Animation} />
+	<!-- <Route path="anim" component={Animation} /> -->
+	<Animation />
 
 	<Route path="/" primary={false}>
 		<Start posts={data.posts}/>

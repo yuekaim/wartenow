@@ -7,6 +7,7 @@
 
   <?= css('assets/frontend/build/bundle.css') ?>
 
+
   <?php snippet('favicon'); ?>
   <?php snippet('jsonld'); ?>
 
@@ -17,6 +18,8 @@
 </head>
 <!-- This website was made by Kim, Cleo and Moritz at HFBK Hamburg Klasse Digitale Grafik -->
 <body>
+  <?= js('assets/js/pathseg.min.js') ?>
+  <?= js('assets/js/poly-decomp.min.js') ?>
   <?= js('assets/frontend/build/bundle.js') ?>
 </body>
 </html>

@@ -9,6 +9,7 @@
 <style lang="scss">
 
   .canvas {
+    z-index: 0;
     position: fixed;
     top: 0;
     left: 0;

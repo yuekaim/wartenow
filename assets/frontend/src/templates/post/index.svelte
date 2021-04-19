@@ -104,6 +104,9 @@
 <style lang="scss">
 
 	article {
+		position: absolute;
+		left: 15vw;
+		widows: 85vw;
 		margin: 1rem;
 		@media (min-width: 680px ){
 			margin: 2rem;
