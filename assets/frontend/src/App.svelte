@@ -2,7 +2,7 @@
 
 	import { Router, Link, Route } from "svelte-navigator";
 
-	import Animation from './animation/Animation.svelte';
+	import Animation from './animation/SvgExample.svelte';
 	import Header from './components/Header.svelte';
 	import Footer from './components/Footer.svelte';
 
