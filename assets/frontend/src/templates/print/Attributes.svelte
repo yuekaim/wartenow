@@ -6,7 +6,7 @@
 
 {#if attributes.length > 0}
     <section class="colophon">
-        
+
         {#each attributes as attr}
             <dl class="mono">
                 <dt>{attr.title}</dt>
@@ -14,6 +14,12 @@
             </dl>
             <br/>
         {/each}
+
+        <dl class="mono">
+            <dt>Graphic Design & Website</dt>
+            <dd>Kimberly Duck, Moritz Ebeling, Cleo Miao</dd>
+        </dl>
+
     </section>
 {/if}
 
