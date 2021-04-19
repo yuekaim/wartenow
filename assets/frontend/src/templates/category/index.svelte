@@ -23,7 +23,6 @@
 
     .about {
         display: flex;
-        font-family: 'Favorit', sans-serif;
         margin-left: auto;
         margin-right: auto;
         padding: 1rem;
@@ -37,9 +36,6 @@
         justify-content: center;
         box-shadow: 0px 0px 9px 9px #eee;
         z-index: -2;
-
-
-
 
     }
 
