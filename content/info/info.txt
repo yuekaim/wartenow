@@ -2,11 +2,7 @@ Title: Info
 
 ----
 
-Text:
-
-Zwischen Kunst und Pädagogik, zwischen Theorie und Praxis, zwischen Disziplinen und ihrer Durchkreuzung sowie zwischen Institutionen und ihrer kritischen Befragung angesiedelt, ist die Kunstpädagogik mit vielen Erfahrungen, Aufbrüchen und Widersprüchen verbunden, die wir an der HFBK Hamburg reflektieren und diskutieren.
-
-Neben der Auseinandersetzung mit historischen und aktuellen Positionen der Kunstpädagogik und Kunstvermittlung geht es aber vor allem um die Entwicklung neuer Handlungsformen: um künstlerische, vermittlerische und kuratorische Praxis als Ausgangspunkt von Prozessen des (Ver-)Lernens, von kollaborativen Interventionen sowie als Forschung und kritische Wissensproduktion im gesellschaftlichen Kontext.
+Text: <p>Zwischen Kunst und Pädagogik, zwischen Theorie und Praxis, zwischen Disziplinen und ihrer Durchkreuzung sowie zwischen Institutionen und ihrer kritischen Befragung angesiedelt, ist die Kunstpädagogik mit vielen Erfahrungen, Aufbrüchen und Widersprüchen verbunden, die wir an der HFBK Hamburg reflektieren und diskutieren.</p><p>Neben der Auseinandersetzung mit historischen und aktuellen Positionen der Kunstpädagogik und Kunstvermittlung geht es aber vor allem um die Entwicklung neuer Handlungsformen: um künstlerische, vermittlerische und kuratorische Praxis als Ausgangspunkt von Prozessen des (Ver-)Lernens, von kollaborativen Interventionen sowie als Forschung und kritische Wissensproduktion im gesellschaftlichen Kontext.</p>
 
 ----
 
@@ -23,7 +19,7 @@ Team:
   image:
     - anjafoto.jpg
   link: ""
-  intro: 'Anja Steidinger ist Künstlerin und Professorin für Kunstpädagogik an der HFBK Hamburg. Sie arbeitet an den Schnittstellen von Kunst, Politik und Bildung. Von 2006 bis 2020 hat sie in Barcelona gelebt. Dort ist auch ihre Dissertationsarbeit zu künstlerischen (Selbst)-Repräsentationen von Unbehagen im Kontext der spanischen Wirtschaftskrise entstanden (Publikation Edition Metzel, München 2015). Sie ist Mitbegründerin des spanischen aktivistischen Künstler:innenkollektivs Enmedio und des medienpädagogischen Projektes für Kinder La Maleta del Cine in Barcelona. Ihre oftmals auf gemeinschaftlicher Produktion basierende Arbeitsweise verbindet dekoloniale, antidiskriminierende Perspektiven mit lokalen Kunstprojekten und entwickelt aus künstlerischer Intervention als kritische Praxis neue Handlungsräume. Photo: Robert Lühmann'
+  intro: 'Anja Steidinger ist Künstlerin und Professorin für Kunstpädagogik an der HFBK Hamburg. Sie arbeitet an den Schnittstellen von Kunst, Politik und Bildung. Von 2006 bis 2020 hat sie in Barcelona gelebt. Dort ist auch ihre Dissertationsarbeit zu künstlerischen (Selbst)-Repräsentationen von Unbehagen im Kontext der spanischen Wirtschaftskrise entstanden (Publikation Edition Metzel, München 2015). Sie ist Mitbegründerin des spanischen aktivistischen Künstler:innenkollektivs Enmedio und des medienpädagogischen Projektes für Kinder La Maleta del Cine in Barcelona. Ihre oftmals auf gemeinschaftlicher Produktion basierende Arbeitsweise verbindet dekoloniale, antidiskriminierende Perspektiven mit lokalen Kunstprojekten und entwickelt aus künstlerischer Intervention als kritische Praxis neue Handlungsräume. Photo: Robert Lühmann'
 - 
   name: Nele Sock
   image:
