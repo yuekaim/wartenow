@@ -116,7 +116,9 @@
       background-color: #eee;
       // padding: -10px;
       // color: #eee;
-      box-shadow: 0px 8px 10px 10px #eee,
+      box-shadow: 0px 0px 4px 4px #eee;
+      border-radius: 0.2em;
+      line-height: 1.4em;
     }
 
     article:hover{

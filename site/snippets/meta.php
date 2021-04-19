@@ -17,7 +17,7 @@ $title = $page->isHomePage() ? $site->title() : $page->title() .' • '. $site->
 
 ?>
 <title><?= $title ?></title>
-
+<link rel="icon" type="image/ico" href="../../../favicon.ico"/>
 <link rel="canonical" href="<?= $page->url() ?>" />
 <meta name="description" content="<?= $page->metaDescription() ?>">
 <meta name="keywords" content="<?= implode(',',$page->metaKeywords()) ?>">

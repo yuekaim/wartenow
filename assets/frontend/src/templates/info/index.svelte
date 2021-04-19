@@ -29,7 +29,9 @@
 <style lang="scss">
 
     article {
-        margin: 1rem;
+
+        padding-left: 9rem;
+        margin: 4rem;
 		@media (min-width: 680px ){
 			margin: 2rem;
 		}
@@ -42,6 +44,23 @@
     }
     h2 {
         margin-bottom: 1rem;
+    }
+
+    h1 {
+        margin-bottom: 2rem;
+        font-size: 4em;
+        line-height: 1em;
+    }
+
+    .text {
+      padding: 0.5em;
+      background-color: #eee;
+      border-radius: 0.5em;
+      border-width: 15px;
+      box-shadow: 0px 0px 0px 9px #eee;
+      font-size: 1em;
+      max-width: 900px;
+
     }
 
 </style>
