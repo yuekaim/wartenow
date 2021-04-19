@@ -1,4 +1,4 @@
-name: HTML (HFBK Video)
+name: Html (e.g. iframe video)
 icon: code
 preview: code
 fields:
@@ -6,6 +6,6 @@ fields:
   code:
     label: Code
     type: textarea
-    placeholder: <iframe src='https://mediathek.hfbk.net...></iframe>
+    placeholder: <iframe ...
     buttons: false
     font: monospace

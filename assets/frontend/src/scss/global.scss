@@ -149,6 +149,19 @@ main.page {
 		margin-top: 0.75em;
 		font-size: 1em;
 	}
+	.video {
+		width: 100%;
+		position: relative;
+		padding-bottom: 56.25%;
+		height: 0;
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
 }
 
 @keyframes slide-up {

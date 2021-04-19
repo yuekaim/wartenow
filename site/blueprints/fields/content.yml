@@ -13,4 +13,5 @@ fieldsets:
   - image
   - gallery
   - video
-  - hfbkVideo
+  - mp4
+  - html
