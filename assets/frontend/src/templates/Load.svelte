@@ -1,7 +1,5 @@
 <script>
 
-    import { blur } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
 	import { load } from "../utilities/load.js";
 
     export let path;
@@ -25,7 +23,7 @@
 </script>
 
 {#if show && !wait}
-    <div transition:blur="{{amount: 10, duration: 300}}">
+    <div>
         {#await data}
             <p>Loading...</p>
         {:then page}

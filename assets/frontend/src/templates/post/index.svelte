@@ -1,13 +1,12 @@
 <script>
 
-		import { navigate } from "svelte-navigator";
+		import { navigate, Link } from "svelte-navigator";
 		import Downloads from './Downloads.svelte';
 		import Imprint from './Imprint.svelte';
 		import Footnotes from './Footnotes.svelte';
 		import Persons from '../../components/Persons.svelte';
 		import Tags from '../../components/Tags.svelte';
 		import Image from '../../components/Image.svelte';
-		import Link from '../../components/Link.svelte';
 		import Links from '../../components/Links.svelte';
 		import Collapsable from '../../components/Collapsable.svelte';
 

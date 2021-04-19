@@ -14,11 +14,10 @@
 	import Load from './templates/Load.svelte';
 
 	export let data;
-	export let url = "";
 
 </script>
 
-<Router url="{url}">
+<Router>
 
 	<Header pages={data.pages} categories={data.categories} />
 
@@ -26,23 +25,27 @@
 
 	<Route path="anim" component={Animation} />
 
-	<Route path="/">
+	<Route path="/" primary={false}>
 		<Start posts={data.posts}/>
 	</Route>
 
-	<Route path="*category" let:params>
-		<Category category="{params.category}" />
-	</Route>
+	<Route path=":category/*" let:params primary={false}>
 
-	<Route path=":category/:slug" let:params>
-		<Load path="{params.category}/{params.slug}" let:prop={page}>
-			<Post {page} />
-		</Load>
-	</Route>
-	<Route path=":category/:slug/print" let:params>
-		<Load path="{params.category}/{params.slug}" let:prop={page}>
-			<Print {page} />
-		</Load>
+		<Route path="/">
+			<Category category="{params.category}" />
+		</Route>
+
+		<Route path=":slug" let:params={params2}>
+			<Load path="{params.category}/{params2.slug}" let:prop={page}>
+				<Post {page} />
+			</Load>
+		</Route>
+		<Route path=":slug/print" let:params={params2}>
+			<Load path="{params.category}/{params2.slug}" let:prop={page}>
+				<Print {page} />
+			</Load>
+		</Route>
+
 	</Route>
 
 	<Footer />

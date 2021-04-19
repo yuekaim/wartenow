@@ -26,7 +26,7 @@ class InfoPage extends Page {
         if( $full === true ){
             // full dataset for detailed view
             $json = array_merge( $json, [
-                'content' => $this->text()->toBlocks()->toHtml(),
+                'content' => $this->text()->value(),
                 'team' => $this->jsonTeam(),
             ]);
         }

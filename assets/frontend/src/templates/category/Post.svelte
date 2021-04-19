@@ -1,6 +1,6 @@
 <script>
 
-    import Link from '../../components/Link.svelte';
+    import {Link} from "svelte-navigator";
     import Image from '../../components/Image.svelte';
 
     export let post;

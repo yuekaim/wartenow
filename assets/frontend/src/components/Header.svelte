@@ -1,9 +1,10 @@
 <script>
 
-    import Link from "./Link.svelte";
+    import {Link} from "svelte-navigator";
 
     export let categories = [];
     export let pages = [];
+    console.log( categories, pages );
 
 </script>
 

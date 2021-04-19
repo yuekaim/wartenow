@@ -102,7 +102,7 @@ Kirby::plugin('moritzebeling/headless', [
 
 			$json = [
 				'title' => $this->title()->value(),
-				'path' => $this->id(),
+				'path' => '/'.$this->id(),
 				'template' => $this->intendedTemplate()->name()
 			];
 

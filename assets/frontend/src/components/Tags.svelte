@@ -1,6 +1,6 @@
 <script>
 
-    import Link from './Link.svelte';
+    import {Link} from "svelte-navigator";
     export let tags;
 
 </script>
