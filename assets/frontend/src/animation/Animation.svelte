@@ -120,6 +120,8 @@ Runner.run(runner, engine);
           }
       });
 
+  Render.setPixelRatio(render, 'auto');
+
   Composite.add(world, mouseConstraint);
 
   // keep the mouse in sync with rendering

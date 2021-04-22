@@ -43,6 +43,8 @@ export var animation = function( canvas ) {
         }
     });
 
+    Render.setPixelRatio(render, 'auto');
+
     Render.run(render);
 
 
@@ -106,28 +108,36 @@ export var animation = function( canvas ) {
     var boxA = Bodies.rectangle(400, 80, 180, 50, {
                 render: {
                     sprite: {
-                        texture: '/assets/svg/wartenau.svg'
+                        texture: '/assets/svg/wartenau.png',
+                        xScale: 0.8,
+                        yScale: 0.8
                     }
                 },
               });
     var boxB = Bodies.rectangle(200, 100, 80, 50, {
                 render: {
                     sprite: {
-                        texture: '/assets/svg/hfbk.svg'
+                        texture: '/assets/svg/hfbk.png',
+                        xScale: 0.8,
+                        yScale: 0.8
                     }
                 }}
             );
-    var boxC = Bodies.rectangle(600, 200, 80, 50, {
+    var boxC = Bodies.rectangle(300, 200, 80, 50, {
                 render: {
                     sprite: {
-                        texture: '/assets/svg/art.svg'
+                        texture: '/assets/svg/art.png',
+                        xScale: 0.8,
+                        yScale: 0.8
                     }
                 }}
             );
-    var boxD = Bodies.rectangle(600, 200, 180, 50, {
+    var boxD = Bodies.rectangle(250, 200, 180, 50, {
                 render: {
                     sprite: {
-                        texture: '/assets/svg/education.svg'
+                        texture: '/assets/svg/education.png',
+                        xScale: 0.8,
+                        yScale: 0.8
                     }
                 }}
             );
@@ -174,6 +184,7 @@ export var animation = function( canvas ) {
 
     // keep the mouse in sync with rendering
     render.mouse = mouse;
+
 
     // fit the render viewport to the scene
     Render.lookAt(render, {
