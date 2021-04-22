@@ -111,7 +111,7 @@
         position: relative;
         overflow: hidden;
         transform: translate(100px, 30px);
-        width: 200px;
+        width: 80%;
         // z-index: -10;
     }
 

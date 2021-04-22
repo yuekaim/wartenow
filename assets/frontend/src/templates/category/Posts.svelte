@@ -17,21 +17,19 @@
 
 <style lang="scss">
 
-
     ul {
+        padding: 2rem;
         @media (min-width: 600px){
+            padding: 8vw;
             display: grid;
             flex-wrap: wrap;
-            grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
-            gap: 0 10rem;
+            grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+            gap: 0 8vw;
         }
-        padding: 10rem;
     }
 
-
     li{
-        width: 300px;
-        margin: 2rem 5rem 5rem 0rem;
+        margin: 2rem;
     }
 
 </style>
