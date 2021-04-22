@@ -28,7 +28,7 @@ Kirby::plugin('moritzebeling/meta', [
 
 			if( $this->kirby()->languages()->count() > 1 ){
 				$json['inLanguage'] = [];
-				foreach( $site->kirby()->languages() as $lang ){
+				foreach( $this->kirby()->languages() as $lang ){
 					$jsonld['inLanguage'] = [
 						'@type' => 'Language',
 						'name' => $lang->name(),
@@ -65,17 +65,24 @@ Kirby::plugin('moritzebeling/meta', [
 			return array_slice( $tags, 0, 12 );
 
 		},
-		'ogImage' => function ( ?string $filenam = null ) {
+		'ogImage' => function ( ?string $fieldname = null ) {
 
-			$fieldname = option('moritzebeling.meta.fieldnames.image');
+			$fieldname = $fieldname ? $fieldname : option('moritzebeling.meta.fieldnames.image');
 
-			if( $this->hasImages() ){
-				if( $fieldname === false ){
-					return $this->image();
-				} else {
-					return $this->{$fieldname}->toFile();
+			if( $this->isHomePage() ){
+				if( $image = $this->site()->ogimage()->toFile() ){
+					return $image;
 				}
 			}
+
+			if( $this->hasImages() ){
+				if( $image = $this->content()->titleImage()->toFile() ){
+					return $image;
+				} else {
+					return $this->image();
+				}
+			}
+
 			return $this->site()->image();
 
 		},
@@ -88,6 +95,13 @@ Kirby::plugin('moritzebeling/meta', [
 				return $this->content()->title();
 			}
 			return $this->parent()->title();
+
+		},
+		'title' => function (): Kirby\Cms\Field {
+
+			if( $this->content()->title()->isNotEmpty() ){
+				return $this->content()->title();
+			}
 			return new Field( $this, 'title', $this->filename() );
 
 		},

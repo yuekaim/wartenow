@@ -25,8 +25,14 @@
 
             <div class="credits">
                 <dt>Graphic Design & Website:</dt>
-                <dd>Kimberly Duck, Moritz Ebeling, Cleo Miao</dd>
-                <p class="year">© {(new Date()).getFullYear()}, HFBK Hamburg</p>
+                <dd>
+                    Kimberly Duck,
+                    <a href="http://mortzebeling.com.com" target="_blank" rel="noopener noreferrer external">Moritz Ebeling</a>,
+                    Miao (Cleo Miao) Yuekai</dd>
+                <p class="year">
+                    © {(new Date()).getFullYear()},
+                    <a href="http://www.digitale-grafik.com" target="_blank" rel="noopener noreferrer external">Klasse Digitale Grafik HFBK Hamburg</a>
+                </p>
             </div>
 
         </div>
@@ -74,7 +80,7 @@
     }
 
     .credits {
-        color: #bbb;
+        color: #999;
         margin-top: 4rem;
       }
 </style>
