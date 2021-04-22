@@ -114,7 +114,7 @@
 		@media (min-width: 920px ){
 			margin: 4rem;
 		}
-		header, main, footer {
+		main, footer {
 			margin-bottom: 4rem;
 		}
 	}
@@ -157,12 +157,15 @@
 	}
 
 	.title-img {
-		margin-bottom: 4rem;
-		img {
-			width: 100%;
-			height: 100%;
-			object-position: center;
+		margin-bottom: 2rem;
+		margin-top: 2rem;
+		:global(img) {
+			width: 50%;
+			height: auto;
+			margin-left: auto;
+			margin-right: 10%;
 			object-fit: cover;
+			border-radius: 10px;
 		}
 	}
 
