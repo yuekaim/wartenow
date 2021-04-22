@@ -32,6 +32,7 @@
 
     li{
         margin-bottom: 4rem;
+        padding-right: 2rem;
         @media (min-width: 800px){
             margin: 2rem;
         }

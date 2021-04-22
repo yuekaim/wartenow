@@ -11,7 +11,9 @@
 
     {#if page.text}
         <div class="about">
-            {@html page.text}
+            <div class="wrapper">
+                {@html page.text}
+            </div>
         </div>
     {/if}
 
@@ -22,21 +24,23 @@
 <style lang="scss">
 
     .about {
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1rem;
-        letter-spacing: 0.01em;
-        max-width: 900px;
-        line-height: 1.1em;
-        font-size: 1.1em;
-        background-color: #eee;
-        border-radius: 0.5em;
-        border-width: 15px;
-        box-shadow: 0px 0px 9px 9px #eee;
+        margin-top: 2rem;
         position: relative;
         z-index: 0;
-
+        padding: 2rem;
+        .wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.1em;
+            letter-spacing: 0.01em;
+            font-size: 1.1em;
+            max-width: 900px;
+            padding: 1rem;
+            background-color: #eee;
+            border-radius: 0.5em;
+            border-width: 15px;
+            box-shadow: 0px 0px 9px 9px #eee;
+        }
     }
 
 </style>
