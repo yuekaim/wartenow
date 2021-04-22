@@ -34,9 +34,6 @@
         display: flex;
         pointer-events: none;
         top: 0;
-        top: 1rem;
-        // width: 80%;
-        // left: 20%;
         justify-content: space-between;
         padding: 1rem;
         align-items: flex-start;
@@ -48,27 +45,12 @@
       flex-wrap: wrap;
     }
 
-    img {
-        height: 4rem;
-        width: auto;
-    }
-
     .placeholder{
       width: 10vw;
-      height: 10vh;
-      pointer-events: none;
     }
 
     :global( a ){
         pointer-events: all;
     }
-
-    // .categories{
-    //   :global(a){
-    //     box-shadow: 0px 0px 2px 2px #eee;
-    //   }
-    // }
-
-
 
 </style>
