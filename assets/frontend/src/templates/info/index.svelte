@@ -9,24 +9,26 @@
 <Load path="info" let:prop={page}>
 
     <article>
+        <div class="wrapper">
 
-        <header>
-            <h1>Wartenau Art Education</h1>
-        </header>
+            <header>
+                <h1>Wartenau Art Education</h1>
+            </header>
 
-        <main class="text">
-            {@html page.content}
-        </main>
+            <main class="text">
+                {@html page.content}
+            </main>
 
-        <Persons persons={page.team}>
-            <h2>Team</h2>
-        </Persons>
+            <Persons persons={page.team}>
+                <h2>Team</h2>
+            </Persons>
 
-        <div class="credits">
-            <dt>Graphic Design & Website:</dt>
-            <dd>Kimberly Duck, Moritz Ebeling, Cleo Miao</dd>
+            <div class="credits">
+                <dt>Graphic Design & Website:</dt>
+                <dd>Kimberly Duck, Moritz Ebeling, Cleo Miao</dd>
+            </div>
+
         </div>
-
     </article>
 
 </Load>
@@ -34,19 +36,21 @@
 <style lang="scss">
 
     article {
-      position: absolute;
-      z-index: 100;
+        position: absolute;
 
-        padding-left: 9rem;
-        margin: 4rem;
-		@media (min-width: 680px ){
-			margin: 2rem;
-		}
-		@media (min-width: 920px ){
-			margin: 4rem;
-		}
+        z-index: 100;
+        width: 100%;
+        padding: 2rem;
+
         header, main, footer {
             margin-bottom: 2rem;
+        }
+        .wrapper {
+            max-width: 900px;
+            margin: 2rem auto;
+            @media (min-width: 920px ){
+                margin: 4rem auto;
+            }
         }
     }
     h2 {
@@ -66,7 +70,6 @@
       border-width: 15px;
       box-shadow: 0px 0px 0px 9px #eee;
       font-size: 1em;
-      max-width: 900px;
     }
 
     .credits {
