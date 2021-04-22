@@ -26,6 +26,7 @@
             <div class="credits">
                 <dt>Graphic Design & Website:</dt>
                 <dd>Kimberly Duck, Moritz Ebeling, Cleo Miao</dd>
+                <p class="year">© {(new Date()).getFullYear()}, HFBK Hamburg</p>
             </div>
 
         </div>

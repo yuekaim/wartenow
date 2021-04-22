@@ -1,19 +1,5 @@
 <script>
-
-    import { Link } from "svelte-navigator";
-
 </script>
 
-<footer>
-
-    <p class="year">© {(new Date()).getFullYear()}</p>
-
-</footer>
-
 <style lang="scss">
-
-    footer {
-        padding: 1rem;
-    }
-
 </style>
