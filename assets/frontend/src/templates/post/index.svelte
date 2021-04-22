@@ -95,7 +95,7 @@
 		</footer> -->
 
 		<div class="print-button">
-			<Link to="print" class="button" id="print">Print</Link>
+			<Link to="print" class="button">Print</Link>
 		</div>
 
 		<div class="bg-circle" style="background-color: {page.color};"></div>
