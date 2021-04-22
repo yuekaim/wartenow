@@ -160,6 +160,7 @@
 		bottom: 0;
 		right: 0;
 		padding: 1rem;
+		font-size: 2rem;
 	}
 
 	.title-img {
