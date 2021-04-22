@@ -7,19 +7,21 @@
 
 <ul>
     {#each posts as post}
-    <div class="post-wrapper">
+    <!-- <div class="post-wrapper"> -->
         <li class="slide-up">
             <Post {post} />
         </li>
-    </div>
+    <!-- </div> -->
     {/each}
 </ul>
 
 <style lang="scss">
 
     ul {
-        padding: 2rem;
+        padding-top: 8rem;
+        padding: 3rem;
         @media (min-width: 600px){
+            padding-top: 6rem;
             padding: 8vw;
             display: grid;
             flex-wrap: wrap;
@@ -29,7 +31,10 @@
     }
 
     li{
-        margin: 2rem;
+        margin-bottom: 4rem;
+        @media (min-width: 800px){
+            margin: 2rem;
+        }
     }
 
 </style>

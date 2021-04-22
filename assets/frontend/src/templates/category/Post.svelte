@@ -6,18 +6,19 @@
     export let post;
     console.log( post.authors );
 
-    let random1 = (Math.random() - 0.5) * 0.2;
-    let random2 = (Math.random() - 0.5) * 0.2;
-    let random3 = Math.ceil((Math.random() - 0.5) * 5);
-    let random4 = (Math.random() - 0.5) * 8;
+    function shiftRandom( factor = 4 ){
+        /* factor 1 ranges ~ -1rem - 1rem */
+        let rand = ( Math.random() * factor * 2 ) - factor;
+        return Math.round( rand * 10 ) / 10;
+    }
+
 
 </script>
 
 <Link to={post.path}>
-<div class="article">
+<!-- <div class="article"> -->
     <article style="--theme-color:{post.color};
-    transform:translate({random3}rem, {random4}rem) skew(0rad);">
-<!-- skew({random1}rad, {random2}rad) -->
+    transform:translate({shiftRandom(3)}vw, {shiftRandom(6)}vw) skew(0rad);">
         <div class="taxonomy">
             <div>
                 {#if post.authors}
@@ -54,7 +55,7 @@
         <span class="dot" style="background-color:{post.color};"></span>
 
     </article>
-</div>
+<!-- </div> -->
 </Link>
 
 <style lang="scss">
