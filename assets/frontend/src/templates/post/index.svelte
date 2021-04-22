@@ -28,96 +28,102 @@
 <svelte:window on:keydown={handleKeydown}/>
 
 <article>
+	<div class="wrapper">
 
-	<header>
+		<header>
 
-		{#if page.issue}
-			<p class="issue">{page.issue}</p>
+			{#if page.issue}
+				<p class="issue">{page.issue}</p>
+			{/if}
+
+			{#if page.authors}
+				<p class="authors">{page.authors.map(author => author.name).join(', ')}</p>
+			{/if}
+
+			<h1 class="title">{@html page.title}</h1>
+
+			{#if page.subtitle}
+				<h2 class="subtitle">{page.subtitle}</h2><br/>
+			{/if}
+
+		</header>
+
+		{#if page.image}
+			<figure class="title-img">
+				<Image image={page.image} />
+			</figure>
+		{/if}
+
+		{#if page.abstract}
+			<Collapsable title="Abstract" color={page.color}>
+				<div class="abstract">
+					{@html page.abstract}
+				</div>
+			</Collapsable>
 		{/if}
 
 		{#if page.authors}
-			<p class="authors">{page.authors.map(author => author.name).join(', ')}</p>
+			{#each page.authors as author}
+				{#if author.name}
+					<Collapsable title={author.name} color={page.color}>
+						<div class="author_info">
+							<p>{@html author.text}</p>
+						</div>
+					</Collapsable>
+				{/if}
+			{/each}
 		{/if}
 
-		<h1 class="title">{@html page.title}</h1>
+		<main class="page">
 
-		{#if page.subtitle}
-			<h2 class="subtitle">{page.subtitle}</h2><br/>
-		{/if}
-
-	</header>
-
-	{#if page.image}
-		<figure class="title-img">
-			<Image image={page.image} />
-		</figure>
-	{/if}
-
-	{#if page.abstract}
-		<Collapsable title="Abstract" color={page.color}>
-			<div class="abstract">
-				{@html page.abstract}
+			<div class="text">
+				{@html page.content}
 			</div>
-		</Collapsable>
-	{/if}
 
-	{#if page.authors}
-		{#each page.authors as author}
-			{#if author.name}
-				<Collapsable title={author.name} color={page.color}>
-					<div class="author_info">
-						<p>{@html author.text}</p>
-					</div>
-				</Collapsable>
+			{#if page.footnotes}
+				<Footnotes text={page.footnotes} />
 			{/if}
-		{/each}
-	{/if}
 
-	<main class="page">
+			<Imprint attributes={page.attributes} />
 
-		<div class="text">
-			{@html page.content}
+		</main>
+
+		<!-- <footer>
+			<Links links={page.links} />
+			<Downloads downloads={page.downloads} />
+			<Tags tags={page.keywords} />
+		</footer> -->
+
+		<div class="print-button">
+			<Link to="print" class="button" id="print">Print</Link>
 		</div>
 
-		{#if page.footnotes}
-			<Footnotes text={page.footnotes} />
-		{/if}
+		<div class="bg-circle" style="background-color: {page.color};"></div>
 
-		<Imprint attributes={page.attributes} />
-
-	</main>
-
-	<!-- <footer>
-		<Links links={page.links} />
-		<Downloads downloads={page.downloads} />
-		<Tags tags={page.keywords} />
-	</footer> -->
-
-	<div class="print-button">
-		<Link to="print" class="button" id="print">Print</Link>
 	</div>
-
-	<div class="bg-circle" style="background-color: {page.color};"></div>
-
 </article>
 
 <style lang="scss">
 
 	article {
-		position: absolute;
-		left: 15vw;
-		widows: 85vw;
-		margin: 1rem;
-		@media (min-width: 680px ){
-			margin: 2rem;
-		}
-		@media (min-width: 920px ){
-			margin: 4rem;
-		}
-		main, footer {
-			margin-bottom: 4rem;
-		}
-	}
+        position: absolute;
+
+        z-index: 100;
+        width: 100%;
+        padding: 2rem;
+
+        header, main, footer {
+            margin-bottom: 2rem;
+        }
+        .wrapper {
+            max-width: 900px;
+            margin: 2rem auto;
+            @media (min-width: 920px ){
+                margin: 4rem auto;
+            }
+        }
+    }
+
 	@media (min-width: 920px ){
 		header {
 			padding-right: 50%;
