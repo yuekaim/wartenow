@@ -9,8 +9,8 @@
 </script>
 
 <header>
-    <div class="placeholder"></div>
 
+    <div class="placeholder"></div>
 
     <nav class="categories">
         <Link class="button" to="/">All</Link>
@@ -32,10 +32,11 @@
     header {
         position: sticky;
         display: flex;
+        pointer-events: none;
         top: 0;
         top: 1rem;
-        width: 80%;
-        left: 20%;
+        // width: 80%;
+        // left: 20%;
         justify-content: space-between;
         padding: 1rem;
         align-items: flex-start;
@@ -56,6 +57,10 @@
       width: 10vw;
       height: 10vh;
       pointer-events: none;
+    }
+
+    :global( a ){
+        pointer-events: all;
     }
 
     // .categories{
