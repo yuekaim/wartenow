@@ -20,7 +20,7 @@ Attributes:
 
 Titleimage:
 
-- daniela.jpg
+- web_horizont_daniela.jpg
 
 ----
 

@@ -20,7 +20,7 @@ Attributes:
 
 Titleimage:
 
-- jay.jpg
+- web_horizont_jay.jpg
 
 ----
 

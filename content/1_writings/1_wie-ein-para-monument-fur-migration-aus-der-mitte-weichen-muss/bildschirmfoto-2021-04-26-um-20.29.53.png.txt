@@ -1,0 +1,5 @@
+Caption: Screenshot zu Berichterstattung. HNA 21. Juni 2018.
+
+----
+
+Template: blocks/image

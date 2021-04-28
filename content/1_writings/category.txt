@@ -2,4 +2,4 @@ Title: Writings
 
 ----
 
-Text: <p>In der Publikationsreihe&nbsp;<em>para-educational papers&nbsp;</em>publizieren wir Aufsätze, Essays, Interviews und experimentelle Formate der Textproduktion. Inhaltlich versammelt die Reihe reflexive Untersuchungen, kollaborative Interventionen, Investigationen und Imaginationen an der Schnittstelle zwischen Kunst und Pädagogik, Kuratieren und Vermittlung. Redaktionsteam: Nora Sternfeld, Anja Steidinger, Nele Sock, Carina Herring.</p>
+Text: <p>In der Publikationsreihe&nbsp;<em>para-educational papers&nbsp;</em>publizieren wir Aufsätze, Essays, Interviews und experimentelle Formate der Textproduktion. Die Reihe versammelt reflexive Untersuchungen, kollaborative Interventionen, Investigationen und Imaginationen an der Schnittstelle zwischen Kunst und Pädagogik, Kuratieren und Vermittlung. Redaktionsteam: Nora Sternfeld, Anja Steidinger, Nele Sock, Carina Herring.</p>

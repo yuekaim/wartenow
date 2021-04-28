@@ -2,7 +2,7 @@ Title: Versammeln & Auseinandersetzen..
 
 ----
 
-Issue:
+Issue: 
 
 ----
 
@@ -10,45 +10,45 @@ Subtitle: Wartenau Versammlung #1 Sibylle Peters
 
 ----
 
-Abstract:
+Abstract: 
 
 ----
 
-Text: [{"content":{"text":"<p>Dokumentation<\/p>"},"id":"d563e8ca-b7d3-4a10-a24a-8577ec2ce9a4","isHidden":false,"type":"text"},{"content":{"code":"<iframe src='https:\/\/mediathek.hfbk.net\/lecture2go-portlet\/player\/iframe\/?v=vyRsqiswbU6wVmZ4DKfIMAxx' frameborder='0' width='647' height='373' allowfullscreen><\/iframe>"},"id":"7a8eceea-7927-42c6-9a01-7759e9023cba","isHidden":false,"type":"html"}]
+Text: [{"content":{"text":"<p>Dokumentation<\/p>"},"id":"d563e8ca-b7d3-4a10-a24a-8577ec2ce9a4","isHidden":false,"type":"text"},{"content":{"code":"<iframe src='https:\/\/mediathek.hfbk.net\/lecture2go-portlet\/player\/iframe\/?v=336' frameborder='0' width='647' height='373' allowfullscreen><\/iframe>"},"id":"6ef34b0e-1fa3-45ae-ac0e-0a18d2faa2a0","isHidden":false,"type":"html"}]
 
 ----
 
-Attributes:
+Attributes: 
 
 ----
 
-Footnotes:
+Footnotes: 
 
 ----
 
 Titleimage:
 
-- sibylle.jpg
+- web_horizont-peters-2.jpg
 
 ----
 
-Authors:
+Authors: 
 
 ----
 
-Downloads:
+Downloads: 
 
 ----
 
-Links:
+Links: 
 
 ----
 
-Keywords:
+Keywords: 
 
 ----
 
-Date:
+Date: 
 
 ----
 

@@ -36,7 +36,7 @@ Attributes:
   title: 'Übersetzung aus dem Französischen:'
   value: '<p>Carina Herring, Nora Sternfeld</p>'
 - 
-  title: 'Grafikdesign:'
+  title: 'Design:'
   value: '<p>Miao (Cleo Miao) Yuekai, Kimberly Duck, Moritz Ebeling</p>'
 - 
   title: 'para-educational papers #01'
