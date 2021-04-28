@@ -1,0 +1,14 @@
+title: Imprint
+
+icon: mail
+
+options:
+  duplicate: false
+  delete: false
+  changeSlug: false
+  changeStatus: false
+
+fields:
+
+  text:
+    type: writer

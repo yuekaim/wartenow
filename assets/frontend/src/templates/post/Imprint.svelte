@@ -6,6 +6,7 @@
 
 {#if attributes.length > 0}
     <section>
+        <h4>Impressum</h4>
         {#each attributes as attr}
             <dl class="mono">
                 <dt>{attr.title}</dt>
@@ -19,6 +20,9 @@
 
     section {
         margin-top: 2rem;
+    }
+    h4 {
+        margin-bottom: 0.5em;
     }
     dl {
         + dl {

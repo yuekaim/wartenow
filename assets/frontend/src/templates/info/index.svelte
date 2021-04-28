@@ -1,5 +1,6 @@
 <script>
 
+    import { Link } from "svelte-navigator";
     import Load from '../Load.svelte';
     import Persons from '../../components/Persons.svelte';
     import Debug from '../../components/Debug.svelte';
@@ -34,6 +35,8 @@
                     <a href="http://www.digitale-grafik.com" target="_blank" rel="noopener noreferrer external">Klasse Digitale Grafik HFBK Hamburg</a>
                 </p>
             </div>
+
+            <Link to="/impressum" class="button">Impressum</Link>
 
         </div>
     </article>
@@ -82,5 +85,6 @@
     .credits {
         color: #999;
         margin-top: 4rem;
+        margin-bottom: 1rem;
       }
 </style>

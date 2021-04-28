@@ -8,6 +8,7 @@
 
 	import Start from './templates/start/index.svelte';
 	import Category from './templates/category/index.svelte';
+	import Imprint from './templates/imprint/index.svelte';
 	import Post from './templates/post/index.svelte';
 	import Info from './templates/info/index.svelte';
 	import Print from './templates/print/index.svelte';
@@ -47,6 +48,12 @@
 			</Load>
 		</Route>
 
+	</Route>
+
+	<Route path="impressum">
+		<Load path="impressum" let:prop={page}>
+			<Imprint {page} />
+		</Load>
 	</Route>
 
 	<Footer />

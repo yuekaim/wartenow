@@ -24,6 +24,7 @@ tabs:
             status: published
             template:
               - info
+              - imprint
               - mailinglist
 
   settings:
