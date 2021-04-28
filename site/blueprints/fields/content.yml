@@ -13,5 +13,5 @@ fieldsets:
   - image
   - gallery
   - video
-  - mp4
   - html
+  # - mp4

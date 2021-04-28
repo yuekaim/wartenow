@@ -2,6 +2,15 @@ label: Help
 icon: question
 fields:
 
+  blocks:
+    type: info
+    label: Block editor
+    text: |
+      The content of each article can be edited using the so-called "Block-Editor". That means, that the content as a whole consits of different building blocks to represent different types of media.
+      E.g. there is a "Text"-Block for regular text and and "Image"-Block to insert images.
+
+      To insert an image in between a longer text, it is necessary to first divide the text block into 2 seperate blocks. After that, a new image block can be added between them.
+
   footnotes:
     type: info
     text: |
@@ -26,8 +35,9 @@ fields:
   videos:
     type: info
     text: |
-      In the block editor you can also add videos. For embeds from YouTube or Vimeo, select the "Video" BLock, for embedding a video from the HFBK Mediathek, select the "HTML" block:
-      1. Go to the video page at HFBK Medithek
+      In the block editor you can also add videos.
+      For embeds from YouTube or Vimeo, select the "Video" Block, for embedding a video from the HFBK Mediathek, select the "HTML" block:
+      1. Go to the video page at HFBK Mediathek
       2. Click on "Share"/"Teilen"
       3. Copy the iFrame code
       4. Paste that into the newly created HTML block

@@ -6,7 +6,6 @@ empty:
   de: Noch keine Beiträge angelegt
 type: pages
 sortable: false
-info: "{{page.categories}}"
 image:
   back: white
 template: default

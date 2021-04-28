@@ -34,7 +34,7 @@ tabs:
         empty:
           en: No posts published yet
           de: Noch keine Beiträge veröffentlicht
-        status: listed
+        status: published
 
   info:
     icon: question

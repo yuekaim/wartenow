@@ -1,6 +1,17 @@
 title: Post
 icon: page
 
+status:
+  draft:
+    label: Draft
+    text: Only visible in the panel
+  unlisted:
+    label: In Review
+    text: Visible via direct URL
+  listed:
+    label: Published
+    text: Listed on the website
+
 tabs:
 
   content:
