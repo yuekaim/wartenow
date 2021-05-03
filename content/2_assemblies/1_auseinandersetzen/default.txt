@@ -28,7 +28,7 @@ Footnotes:
 
 Titleimage:
 
-- web_horizont-peters-2.jpg
+- web_horizont_peters.jpg
 
 ----
 

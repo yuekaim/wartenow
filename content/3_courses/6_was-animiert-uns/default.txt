@@ -14,11 +14,15 @@ Abstract:
 
 ----
 
-Text: [{"content":{"text":"<p>Der lateinische Begriff \u00bbanimare\u201d, der in dem Wort Animationsfilm steckt, bedeutet so viel wie \u203azum Leben erwecken\u2039 gleichwohl es im Produktionsprozess einer Filmanimation um das Anhalten von Bewegungsabl\u00e4ufen und um die Einzelbildherstellung geht. Animieren l\u00e4sst sich aber auch als motivierten Anfangspunkt einer bspw. k\u00fcnstlerischen Handlung begreifen. \u00bb<em>Was animiert uns etwas zu tun oder nicht zu tun? Was animiert unser Denken, und in welche Richtung \/ von welcher Position aus wird animiert?<\/em>\u00ab. In diesem Seminar konzentrieren wir uns auf diese doppelte Funktion der Animation, Formen des Sich-Selbst- und andere in Bewegung-Setzens und das Herstellen filmischer Animation hinsichtlich gegenwartsrelevanter Fragestellungen aus Politik, Gesellschaft und aus dem Kunstgeschehen. Das Sammeln von Methoden zur Gruppen- und Einzelarbeit und dem Experimentieren mit k\u00fcnstlerischen Praktiken + Techniken (Fotografie, Malerei, Collage, Zeichnung, Druckkunst, Plastik, Objektkunst, Performanz etc.), sowie das Entwickeln eines kritischen audiovisuellen Vokabulars, versorgt uns mit Kenntnissen Ideen, Konzepten und Positionen um k\u00fcnstlerische Projekte zu initiieren, sei es f\u00fcr den Ausstellungs- oder f\u00fcr den Schulbetrieb.<\/p>"},"id":"ee19c249-76b4-4b9d-8ea7-d650784f5a3f","isHidden":false,"type":"text"}]
+Text: [{"content":{"text":"<p>WAS ANIMIERT UNS? <br>Ausgangspunkte in der k\u00fcnstlerischen Produktion und im Wissenstransfer<br>Seminar von Prof. Dr. Anja Steidinger<\/p><p>Der lateinische Begriff \u00bbanimare\u201d, der in dem Wort Animationsfilm steckt, bedeutet so viel wie \u203azum Leben erwecken\u2039 gleichwohl es im Produktionsprozess einer Filmanimation um das Anhalten von Bewegungsabl\u00e4ufen und um die Einzelbildherstellung geht. Animieren l\u00e4sst sich aber auch als motivierten Anfangspunkt einer bspw. k\u00fcnstlerischen Handlung begreifen. \u00bb<em>Was animiert uns etwas zu tun oder nicht zu tun? Was animiert unser Denken, und in welche Richtung \/ von welcher Position aus wird animiert?<\/em>\u00ab. In diesem Seminar konzentrieren wir uns auf diese doppelte Funktion der Animation, Formen des Sich-Selbst- und andere in Bewegung-Setzens und das Herstellen filmischer Animation hinsichtlich gegenwartsrelevanter Fragestellungen aus Politik, Gesellschaft und aus dem Kunstgeschehen. Das Sammeln von Methoden zur Gruppen- und Einzelarbeit und dem Experimentieren mit k\u00fcnstlerischen Praktiken + Techniken (Fotografie, Malerei, Collage, Zeichnung, Druckkunst, Plastik, Objektkunst, Performanz etc.), sowie das Entwickeln eines kritischen audiovisuellen Vokabulars, versorgt uns mit Kenntnissen Ideen, Konzepten und Positionen um k\u00fcnstlerische Projekte zu initiieren, sei es f\u00fcr den Ausstellungs- oder f\u00fcr den Schulbetrieb.<\/p>"},"id":"ee19c249-76b4-4b9d-8ea7-d650784f5a3f","isHidden":false,"type":"text"}]
 
 ----
 
-Attributes: 
+Attributes:
+
+- 
+  title: ""
+  value: '<p>Photo: Intervention Enmedio Collective, 2016</p>'
 
 ----
 

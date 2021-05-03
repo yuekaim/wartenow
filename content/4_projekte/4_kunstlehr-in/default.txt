@@ -2,7 +2,7 @@ Title: Künstlehr:in
 
 ----
 
-Issue:
+Issue: 
 
 ----
 
@@ -16,13 +16,13 @@ Text: [{"content":{"text":"<p>Die Selbstdefinition und der Titel des kollektiven
 
 Attributes:
 
--
-  title: Impressum
-  value: '<p> </p>'
--
+- 
+  title: ""
+  value: '<p></p>'
+- 
   title: 'Videocredits: '
   value: '<p>Johanna Amelsberg, Lisa Damm, Saranja Hahn, Lotta Schlüter, Bahareh Talaie Kamalabadi, Cara Petrovic, Ariana Sampaio, Anja Steidinger, Janne Rasmus Wagner, Badrieh Wanli</p>'
--
+- 
   title: ""
   value: '<p></p>'
 
@@ -40,7 +40,7 @@ Titleimage:
 
 Authors:
 
--
+- 
   name: ""
   image: [ ]
   link: ""
@@ -48,13 +48,13 @@ Authors:
 
 ----
 
-Downloads:
+Downloads: 
 
 ----
 
 Links:
 
--
+- 
   link: https://gogle.com
 
 ----

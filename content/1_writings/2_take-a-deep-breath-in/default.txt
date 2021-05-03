@@ -21,9 +21,6 @@ Text: [{"content":{"text":"<p>Was w\u00e4re, wenn wir eines Tages dieses Museum 
 Attributes:
 
 - 
-  title: Impressum
-  value: '<p></p>'
-- 
   title: NORA STERNFELD
   value: '<p>Take A Deep Breath In. Das »Museum als Praxis« eröffnet im Oktober 2035</p>'
 - 

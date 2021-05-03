@@ -20,7 +20,7 @@ Attributes:
 
 Titleimage:
 
-- web_horizont-oriana-6.jpg
+- web_horizont_oriana-elic.jpg
 
 ----
 

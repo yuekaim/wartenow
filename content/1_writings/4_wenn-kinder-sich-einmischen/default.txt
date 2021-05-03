@@ -21,9 +21,6 @@ Text: [{"content":{"text":"<p>\u00bbDes enfants s\u2019en m\u00ealent\u00ab (Kin
 Attributes:
 
 - 
-  title: Impressum
-  value: '<p></p>'
-- 
   title: MARIE PRESTON
   value: '<p>Wenn Kinder sich einmischen</p>'
 - 
