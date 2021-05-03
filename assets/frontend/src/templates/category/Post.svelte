@@ -123,6 +123,7 @@
       box-shadow: 0px 0px 3px 3px #eee;
       border-radius: 0.2em;
       line-height: 1.6em;
+      box-decoration-break: clone;
     }
 
     article:hover{
