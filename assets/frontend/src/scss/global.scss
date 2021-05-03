@@ -109,6 +109,9 @@ main.page {
 	blockquote,
 	figure {
 		margin: 2rem;
+		img {
+			box-shadow: 0 0 10px 0px #d9d9d9;
+		}
 	}
 	figure iframe {
 		margin: 2rem;
@@ -121,6 +124,10 @@ main.page {
 			grid-template-columns: 1fr 1fr;
 			gap: 2rem;
 		}
+	}
+	figcaption {
+		margin-top: 0.5rem;
+		font-size: 0.7rem;
 	}
 	h1, h2 {
 		margin-top: 4rem;
@@ -147,8 +154,12 @@ main.page {
 		}
 	}
 	p {
-		margin-top: 0.75em;
 		font-size: 1em;
+	}
+	h1, h2, h3, h4, h5, h6, ul, ol, p, figure {
+		+ p {
+			margin-top: 0.75em;
+		}
 	}
 	.video {
 		width: 100%;

@@ -11,6 +11,12 @@ fields:
 
       To insert an image in between a longer text, it is necessary to first divide the text block into 2 seperate blocks. After that, a new image block can be added between them.
 
+  print:
+    type: info
+    text: |
+      Articles can only be printed using the Chrome browser.
+      Press the print button or hit `cmd+p` to start printing.
+
   footnotes:
     type: info
     text: |

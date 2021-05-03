@@ -27,9 +27,10 @@
             <div class="credits">
                 <dt>Graphic Design & Website:</dt>
                 <dd>
+                    Miao (Cleo Miao) Yuekai,
                     Kimberly Duck,
-                    <a href="http://mortzebeling.com.com" target="_blank" rel="noopener noreferrer external">Moritz Ebeling</a>,
-                    Miao (Cleo Miao) Yuekai</dd>
+                    <a href="http://mortzebeling.com" target="_blank" rel="noopener noreferrer external">Moritz Ebeling</a>,
+                </dd>
                 <p class="year">
                     © {(new Date()).getFullYear()},
                     <a href="http://www.digitale-grafik.com" target="_blank" rel="noopener noreferrer external">Klasse Digitale Grafik HFBK Hamburg</a>

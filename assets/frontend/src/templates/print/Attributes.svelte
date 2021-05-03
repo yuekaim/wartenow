@@ -17,7 +17,7 @@
 
         <dl class="mono">
             <dt>Graphic Design & Website</dt>
-            <dd>Kimberly Duck, Moritz Ebeling, Cleo Miao</dd>
+            <dd>Miao (Cleo Miao) Yuekai, Kimberly Duck, Moritz Ebeling</dd>
         </dl>
 
     </section>
