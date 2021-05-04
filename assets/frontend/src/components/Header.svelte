@@ -23,6 +23,7 @@
         {#each pages as page}
             <Link class="button" to={page.path}>{page.title}</Link>
         {/each}
+        <Link to="/impressum" class="button">Impressum</Link>
     </nav>
 
 </header>
