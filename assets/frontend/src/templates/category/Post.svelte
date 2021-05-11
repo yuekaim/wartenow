@@ -12,7 +12,6 @@
         return Math.round( rand * 10 ) / 10;
     }
 
-
 </script>
 
 <Link to={post.path}>
@@ -157,7 +156,7 @@
       z-index: -200;
       position: absolute;
       top: 0px;
-      filter: blur(100px);
+      filter: blur(60px);
       transition: 0.3s;
     }
 
