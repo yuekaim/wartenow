@@ -6,6 +6,8 @@ node_modules
 set_acls
 set_permissions
 
+/content/**
+
 # ------------
 # System files
 # ------------
