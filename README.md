@@ -12,8 +12,9 @@ This runs on [Kirby CMS](https://getkirby.com/docs/reference) and [Svelte](https
 
 2. Clone with current state of the project with Git:
 ```
-git clone git@github.com:yuekaim/wartenow.git
+git clone git@github.com:yuekaim/wartenow.git --recursive
 ```
+(the `--recursive` flag also clones kirby as a submodule)
 
 3. Install npm packeges to work on the frontend:
 ```
