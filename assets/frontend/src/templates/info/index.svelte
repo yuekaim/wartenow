@@ -3,7 +3,6 @@
     import { Link } from "svelte-navigator";
     import Load from '../Load.svelte';
     import Persons from '../../components/Persons.svelte';
-    import Debug from '../../components/Debug.svelte';
 
 </script>
 

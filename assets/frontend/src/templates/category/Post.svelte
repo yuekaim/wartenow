@@ -112,7 +112,6 @@
         overflow: hidden;
         transform: translate(100px, 30px);
         width: 80%;
-        // z-index: -10;
     }
 
     span{

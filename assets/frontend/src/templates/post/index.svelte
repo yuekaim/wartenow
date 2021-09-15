@@ -1,13 +1,9 @@
 <script>
 
 		import { navigate, Link } from "svelte-navigator";
-		import Downloads from './Downloads.svelte';
 		import Imprint from './Imprint.svelte';
 		import Footnotes from './Footnotes.svelte';
-		import Persons from '../../components/Persons.svelte';
-		import Tags from '../../components/Tags.svelte';
 		import Image from '../../components/Image.svelte';
-		import Links from '../../components/Links.svelte';
 		import Collapsable from '../../components/Collapsable.svelte';
 
 		export let page;
@@ -49,9 +45,14 @@
 		</header>
 
 		{#if page.image}
-			<figure class="title-img">
-				<Image image={page.image} />
-			</figure>
+			<div class="title-image">
+				<figure class="title-img">
+					<Image image={page.image} />
+					{#if page.image.caption}
+						<figcaption>{page.image.caption}</figcaption>
+					{/if}
+				</figure>
+			</div>
 		{/if}
 
 		{#if page.abstract}
@@ -163,16 +164,22 @@
 		font-size: 2rem;
 	}
 
-	.title-img {
+	.title-image {
 		margin-bottom: 2rem;
 		margin-top: 2rem;
-		:global(img) {
-			width: 50%;
-			height: auto;
+		figure {
+			width: 65%;
 			margin-left: auto;
 			margin-right: 10%;
+		}
+		:global(img) {
+			height: auto;
 			object-fit: cover;
 			border-radius: 10px;
+		}
+		figcaption {
+			margin-top: 0.5em;
+			padding: 0.1em;
 		}
 	}
 
