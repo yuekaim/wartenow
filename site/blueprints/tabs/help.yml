@@ -2,6 +2,14 @@ label: Help
 icon: question
 fields:
 
+  translations:
+    type: info
+    label: Translations
+    text: |
+      Deutsch ist die Hauptsprache der Webseite während Englisch die Sekundär-Sparache ist.
+      Oben links unter dem Seitentitel befindet sich der Sprachschalter mit dem man zwischen Sprachen wechseln kann.
+      Wenn man eine neue Seite in der Hauptsprache (DE) erstellt, bleibt der englische Inhalt solange identisch zum deutschen, bis zu dem Zeitplunk wo man zuerst eine EN-Änderung speichert. Von dann an sind beide sprachen unabhängig: Änderungen in der einen Sprache beeinflussen die 2. Sprache nicht.
+
   blocks:
     type: info
     label: Block editor
