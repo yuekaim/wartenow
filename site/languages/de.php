@@ -5,7 +5,7 @@ return [
 	'default' => true,
 	'direction' => 'ltr',
 	'name' => 'Deutsch',
-	'url' => '/',
+	'url' => 'de',
 	'slug' => [
 		'ä' => 'ae',
 		'ö' => 'oe',

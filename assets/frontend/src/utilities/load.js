@@ -1,15 +1,14 @@
 export async function load( path, callback = false ){
 
-    const url = `/json/${path}`;
+    const url = `/${path}.json`;
     console.log( url );
 
     const res = await fetch( url );
-
     const data = await res.json();
 
     if (res.ok) {
         if( callback !== false ){
-            callback();
+            callback( data );
         }
         return data;
     } else {

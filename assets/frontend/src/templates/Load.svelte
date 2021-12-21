@@ -1,38 +1,34 @@
 <script>
 
+    import { currentLanguage } from '../language/store.js';
 	import { load } from "../utilities/load.js";
 
     export let path;
-    let data;
-    let show, wait = false;
+    let page;
+    let loading = true;
 
-    function triggerFetch(){
-        show = false;
-        wait = true;
-        setTimeout(() => {
-            data = load( path, (d) => {
-                show = true;
-            });
-        }, 320);
-        setTimeout(() => {
-            wait = false;
-        }, 640);
+    async function triggerFetch( path ){
+        path = $currentLanguage + '/' + path;
+        loading = true;
+        load( path, (d) => {
+            page = d;
+            console.log( page );
+            loading = false;
+        });
     }
-    $: loading = triggerFetch( path );
+    $: triggerFetch( path );
+
+    function log(d){
+        console.log(d);
+    }
 
 </script>
 
-{#if show && !wait}
+{#if loading}
+    <p>Loading...</p>
+{:else}
     <div>
-        {#await data}
-            <p>Loading...</p>
-        {:then page}
-
-            <slot prop={page.data} />
-
-        {:catch error}
-            <p class="error">Error</p>
-        {/await}
+        <slot prop={page} />
     </div>
 {/if}
 

@@ -4,7 +4,6 @@
     import Image from '../../components/Image.svelte';
 
     export let post;
-    console.log( post.authors );
 
     function shiftRandom( factor = 4 ){
         /* factor 1 ranges ~ -1rem - 1rem */
