@@ -1,5 +1,6 @@
 <script>
 
+    import { currentLanguage } from '../language/store.js';
     import {Link} from "svelte-navigator";
 
     export let categories = [];
@@ -13,7 +14,7 @@
     <div class="placeholder"></div>
 
     <nav class="categories">
-        <Link class="button" to="/">All</Link>
+        <Link class="button" to="/{$currentLanguage}">All</Link>
         {#each categories as category}
             <Link class="button" to={category.path}>{category.title}</Link>
         {/each}
@@ -23,7 +24,7 @@
         {#each pages as page}
             <Link class="button" to={page.path}>{page.title}</Link>
         {/each}
-        <Link to="/impressum" class="button">Impressum</Link>
+        <Link to="/{$currentLanguage}/impressum" class="button">Impressum</Link>
     </nav>
 
 </header>
