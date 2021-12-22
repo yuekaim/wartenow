@@ -1,8 +1,5 @@
 <?php
 
-load([ 'moritzebeling\\headless\\jsonResponse' => 'src/jsonResponse.php' ], __DIR__);
-use moritzebeling\headless\jsonResponse as jsonResponse;
-
 Kirby::plugin('moritzebeling/headless', [
 
 	'options' => [
