@@ -3,6 +3,7 @@
 require_once 'models/Info.php';
 require_once 'models/Category.php';
 require_once 'models/Default.php';
+require_once 'models/Imprint.php';
 
 Kirby::plugin('kimcleomoritz/wartenau', [
 
@@ -10,6 +11,7 @@ Kirby::plugin('kimcleomoritz/wartenau', [
 		'default' => 'DefaultPage',
 		'info' => 'InfoPage',
 		'category' => 'CategoryPage',
+		'imprint' => 'ImprintPage',
 	],
 
 	'siteMethods' => [

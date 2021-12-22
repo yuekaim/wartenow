@@ -8,7 +8,15 @@ options:
   changeSlug: false
   changeStatus: false
 
-fields:
+columns:
 
-  text:
-    type: writer
+  - width: 2/3
+    fields:
+
+      text:
+        type: writer
+
+  - width: 1/3
+    sections:
+
+      uploads: sections/files
