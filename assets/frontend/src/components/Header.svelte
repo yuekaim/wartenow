@@ -1,6 +1,6 @@
 <script>
 
-    import { currentLanguage } from '../language/store.js';
+    import { currentLanguage, translation } from '../language/store.js';
     import {Link} from "svelte-navigator";
 
     export let categories = [];
@@ -25,6 +25,13 @@
             <Link class="button" to={page.path}>{page.title}</Link>
         {/each}
         <Link to="/{$currentLanguage}/impressum" class="button">Impressum</Link>
+
+        {#if $currentLanguage == 'de'}
+            <Link to="{$translation.de}" class="button">De</Link>
+        {:else}
+            <Link to="{$translation.en}" class="button">En</Link>
+        {/if}
+
     </nav>
 
 </header>

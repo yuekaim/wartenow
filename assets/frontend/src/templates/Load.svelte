@@ -1,6 +1,6 @@
 <script>
 
-    import { currentLanguage } from '../language/store.js';
+    import { currentLanguage, translation } from '../language/store.js';
 	import { load } from "../utilities/load.js";
 
     export let path;
@@ -12,7 +12,8 @@
         loading = true;
         load( path, (d) => {
             page = d;
-            console.log( page );
+            console.log( page.translation );
+            translation.set( page.translation );
             loading = false;
         });
     }
