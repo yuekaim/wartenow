@@ -14,7 +14,7 @@
     <div class="placeholder"></div>
 
     <nav class="categories">
-        <Link class="button" to="/{$currentLanguage}">All {$currentLanguage}</Link>
+        <Link class="button" to="/{$currentLanguage}">All</Link>
         {#each categories as category}
             <Link class="button" to={category.path}>{category.title}</Link>
         {/each}
@@ -27,9 +27,9 @@
         <Link to="/{$currentLanguage}/impressum" class="button">Impressum</Link>
 
         {#if $currentLanguage == 'en'}
-            <Link to="{$translations.de}" class="button">De</Link>
+            <a href="{$translations.de}" class="button">De</a>
         {:else}
-            <Link to="{$translations.en}" class="button">En</Link>
+            <a href="{$translations.en}" class="button">En</a>
         {/if}
 
     </nav>
