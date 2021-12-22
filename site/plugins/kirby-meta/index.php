@@ -46,12 +46,12 @@ Kirby::plugin('moritzebeling/meta', [
 			$fieldname = option('moritzebeling.meta.fieldnames.description');
 
 			if( $this->{$fieldname}()->isNotEmpty() ){
-				return $this->{$fieldname}()->value();
+				return (string)$this->{$fieldname}();
 			}
 			if( $this->site()->{$fieldname}()->isNotEmpty() ){
-				return $this->site()->{$fieldname}()->value();
+				return (string)$this->site()->{$fieldname}();
 			}
-			return $this->site()->title()->value();
+			return (string)$this->site()->title();
 
 		},
 		'metaKeywords' => function (): array {
