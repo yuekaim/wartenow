@@ -72,7 +72,9 @@ Kirby::plugin('moritzebeling/headless', [
 			];
 
 			if( $full && $this->text()->isNotEmpty() ){
-				$json['text'] = $this->text()->value();
+				$json['text'] = (string)$this->text();
+			}
+			if( $full ){
 				$json['translations'] = [
 					'de' => '/'.'de/'.$this->uri('de'),
 					'en' => '/'.'en/'.$this->uri('en')

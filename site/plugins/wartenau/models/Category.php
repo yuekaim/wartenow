@@ -12,7 +12,7 @@ class CategoryPage extends Page {
         if( $full === true ){
             // full dataset for detailed view
             $json = array_merge( $json, [
-                'text' => $this->text()->value(),
+                'text' => (string)$this->text(),
                 'posts' => $this->posts()->json()
             ]);
         }
