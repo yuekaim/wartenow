@@ -1,6 +1,6 @@
 <script>
 
-    import { currentLanguage, translation } from '../language/store.js';
+    import { currentLanguage, translations } from '../language/store.js';
 	import { load } from "../utilities/load.js";
 
     export let path;
@@ -12,12 +12,12 @@
         loading = true;
         load( path, (d) => {
             page = d;
-            console.log( page.translation );
-            translation.set( page.translation );
+            console.log( page.translations );
+            translations.set( page.translations );
             loading = false;
         });
     }
-    $: triggerFetch( path );
+    $: triggerFetch( path, $currentLanguage );
 
     function log(d){
         console.log(d);

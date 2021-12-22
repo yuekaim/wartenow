@@ -21,20 +21,4 @@ Kirby::plugin('kimcleomoritz/wartenau', [
         }
 	],
 
-	'pageMethods' => [
-
-	],
-
-	'pagesMethods' => [
-
-	],
-
-	'fileMethods' => [
-
-	],
-
-	'filesMethods' => [
-
-	],
-
 ]);

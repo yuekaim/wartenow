@@ -1,8 +1,13 @@
 <?php
 
+// error_reporting(-1);
+
 return [
 
     'debug' => true,
+
+	'languages' => true,
+	'languages.detect' => true,
 
     'thumbs' => [
 		'autoOrient' => false,
